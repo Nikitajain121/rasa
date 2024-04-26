@@ -1,0 +1,524 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+    - Can you help me with my math homework?
+    - Tell me a joke.
+    - I want to book a flight ticket.
+- intent: user_is_student
+  examples: |
+    - school
+    - college
+    - student
+    - kid
+    - learner
+- intent: user_is_instructor
+  examples: |
+    - instructor
+    - institute
+    - teacher
+- intent: Course_Queries
+  examples: |
+    - what are the courses offered?
+    - could you tell me about the available courses?
+    - I'm interested in learning about the courses you offer.
+    - Can you provide information about your course options?
+    - Which courses can I enroll in?
+    - courses list?
+- intent: Get_Started
+  examples: |
+    - How do I get started?
+    - How do I begin?
+    - What's the first step to get started?
+    - Can you guide me on starting?
+    - How can I initiate the process?
+    - What do I need to do to get started?
+    - I'm new here, where should I start?
+    - Can you help me begin?
+    - What's the starting point?
+    - Where do I start?
+- intent: live_class
+  examples: |
+    - Do you offer live classes?
+    - Are there any live sessions available?
+    - Can I attend live classes?
+    - What about live lectures?
+    - Are live classes included in the programs?
+- intent: demo_class
+  examples: |
+    - What is a free demo class and how do I register for it?
+    - Are the demo classes free?
+    - How can I join the free demo class?
+    - Do I need to pay for the demo classes?
+    - I need to pay for the demo classes?
+- intent: quiz_queries
+  examples: |
+    - Can you tell me about the quiz rules?
+    - How many participants are required for the quiz?
+    - Am I eligible to participate in the quiz?
+    - What is the format of the quiz?
+    - What's the difference between paid and unpaid quizzes?
+    - How are prizes distributed in quizzes?
+    - What should I do if I find a mistake in the quiz?
+    - Can I suggest topics for quizzes?
+    - What are the terms and conditions for participating in the quiz?
+    - Can you explain the rules and terms of the quiz?
+    - Where can I find information about the quiz rules?
+- intent: quiz_rules
+  examples: |
+    - What are the general rules for the quiz?
+    - Can you outline the rules of the quiz?
+    - Where can I find the rules for participating in the quiz?
+- intent: quiz_time_limit
+  examples: |
+    - How much time do I have to answer each question in the quiz?
+    - Is there a time limit for the quiz?
+    - What is the time limit for the quiz?
+- intent: min_participants_quiz
+  examples: |
+    - What is the minimum number of participants required for the quiz?
+    - Will the quiz proceed if there are not enough participants?
+    - Is there a minimum participation requirement for the quiz?
+- intent: quiz_registration_process
+  examples: |
+    - How do I register for the quiz?
+    - What is the process for signing up for the quiz?
+    - Can you guide me through the quiz registration process?
+- intent: quiz_eligibility
+  examples: |
+    - Who is eligible to participate in the quiz?
+    - Are there any criteria for eligibility in the quiz?
+    - What are the eligibility requirements for the quiz?
+- intent: quiz_format
+  examples: |
+    - What is the format of the quiz questions?
+    - How are the quiz questions structured?
+    - Can you describe the format of the quiz?
+- intent: suggesting_quiz_topics
+  examples: |
+    - How can I suggest topics for future quizzes?
+    - Is there a way to propose quiz topics?
+    - Where can I submit my ideas for quiz topics?
+- intent: room_queries
+  examples: |
+    - What are the features of rooms?
+    - Can you explain the types of rooms available?
+    - What incentives does BrainBucks offer for organizing events or quizzes in a room?
+    - Is there a way to suggest topics for quizzes in a room?
+    - How can I get insights or guidance for my exam in a room?
+- intent: room_enquiry
+  examples: |
+    - What are rooms and how do they work?
+    - Can you explain the concept of rooms?
+    - How are rooms used in BrainBucks?
+    - What are the main features of rooms?
+    - How do rooms help users collaborate and compete?
+    - What benefits do users get from participating in rooms?
+- intent: joining_room
+  examples: |
+    - How do I join a room?
+    - What is the process for joining a room?
+    - Can you guide me on how to join a room?
+    - Is there a specific way to join a room?
+- intent: connecting_in_room
+  examples: |
+    - How can I connect with friends or instructors in a room?
+    - Is there a feature to connect with others in a room?
+    - Can I chat with other participants or hosts in a room?
+    - What options do I have to interact with others in a room?
+- intent: room_types
+  examples: |
+    - What are the different types of rooms available?
+    - Can you explain the distinction between public and private rooms?
+    - How are public rooms different from private rooms?
+    - What are the features of public and private rooms?
+- intent: about_company
+  examples: |
+    - Tell me about Brainbucks
+    - What is the history of Brainbucks?
+    - Can you provide information about Brainbucks?
+    - How does Brainbucks work?
+    - Explain the functioning of Brainbucks.
+    - Can you tell me how to use Brainbucks?
+- intent: available_quizzes
+  examples: |
+    - What kind of quizzes are available on Brainbucks?
+    - Tell me about the quizzes on Brainbucks.
+    - What topics do the quizzes on Brainbucks cover?
+- intent: earning_rewards
+  examples: |
+    - How do I earn rewards on Brainbucks?
+    - What are the ways to earn rewards on Brainbucks?
+    - Can you explain the reward system on Brainbucks?
+- intent: safety_and_security
+  examples: |
+    - Is Brainbucks safe and secure?
+    - How secure is my information on Brainbucks?
+    - Can I trust the security of Brainbucks?
+- intent: compete_with_friends
+  examples: |
+    - Can I compete with my friends on Brainbucks?
+    - Is there a way to challenge my friends on Brainbucks?
+    - How can I compare scores with my friends on Brainbucks?
+- intent: quiz_limit
+  examples: |
+    - Is there a limit to the number of quizzes I can take on Brainbucks?
+    - Can I take unlimited quizzes on Brainbucks?
+    - How many quizzes can I participate in on Brainbucks?
+- intent: cost_of_joining
+  examples: |
+    - Is there a cost to joining Brainbucks?
+    - Do I need to pay to join Brainbucks?
+    - How much does it cost to become a member of Brainbucks?
+- intent: countries_availability
+  examples: |
+    - In how many countries is Brainbucks available?
+    - Is Brainbucks available globally?
+    - Where all can I access Brainbucks?
+- intent: reach_support
+  examples: |
+    - How to reach support
+    - How can I contact Brain_Bucks Customer Support?
+    - What are the contact methods for support?
+    - How do I get in touch with support?
+    - Where can I find support?
+    - How can I contact Brain_Bucks Customer Support?
+    - What are the contact methods for support?
+    - How do I get in touch with support?
+    - Where can I find support?
+- intent: response_time
+  examples: |
+    - How long does it take to receive a response from Brain_Bucks Customer Support?
+    - What is the expected response time from support?
+    - How quickly does support respond?
+
+- intent: immediate_assistance
+  examples: |
+    - Can I get immediate assistance from Brain_Bucks Customer Support?
+    - How do I get immediate help from support?
+    - Is immediate assistance available from support?
+- intent: availability
+  examples: |
+    - Is Brain_Bucks Customer Support available round the clock?
+    - What are the support hours?
+    - When can I contact support?
+- intent: expectations
+  examples: |
+    - What can I expect from Brain_Bucks's customer helpline number?
+    - What should I expect from support?
+    - What assistance is provided by support?
+- intent: provide_support
+  examples: |
+    - Do you provide customer support?
+    - Is customer support available?
+    - Can I get help from support?
+- intent: technical_support
+  examples: |
+    - How do I get technical support?
+    - What do I do for technical issues?
+    - Is technical support available?
+- intent: download_install
+  examples: |
+    - How can I download and install the app?
+    - Steps to download and install the application?
+    - Download and installation process?
+- intent: app_pricing
+  examples: |
+    - Is the app free or paid?
+    - What are the charges for the app?
+    - Pricing details of the application?
+- intent: update_app
+  examples: |
+    - How do I update the app?
+    - Updating the application?
+    - Steps for app updates?
+- intent: troubleshoot_issues
+  examples: |
+    - Common troubleshooting steps?
+    - What to do when facing issues with the app?
+    - Troubleshooting assistance?
+- intent: learning_programs_languages
+  examples: |
+    - In which languages are the learning programs available?
+    - What languages does the app support for learning?
+    - Supported languages for learning programs?
+- intent: internet_requirement
+  examples: |
+    - Does the app require internet connectivity?
+    - Is internet connection necessary for using the learning programs?
+    - Internet requirement for Brain_Bucks learning programs?
+- intent: downloadable_materials
+  examples: |
+    - Are there downloadable materials provided?
+    - Can I download study materials from the app?
+    - Availability of downloadable content?
+- intent: laptop_browser_accessibility
+  examples: |
+    - Can I access the app on my laptop?
+    - Is the app compatible with desktop browsers?
+    - How do I use BrainBucks on a computer?
+    - Can I use BrainBucks on my PC or Mac?
+    - Does BrainBucks have a web version for laptops?
+    - Is there a browser extension for BrainBucks?
+    - How can I access BrainBucks on a larger screen?
+- intent: subscription_billing
+  examples: |
+    - Is the app available for free?
+    - When do I start getting charged for using the app?
+    - Subscription and billing details?
+- intent: subscription_cancellation
+  examples: |
+    - Can I cancel my subscription?
+    - Is there an option to unsubscribe from the app?
+    - Subscription cancellation process?
+- intent: subscription_cost
+  examples: |
+    - What is the cost of subscribing to Brain_Bucks programs?
+    - Pricing details for subscribing to learning programs?
+    - Subscription cost for accessing courses?
+- intent: profiles_limit
+  examples: |
+    - How many profiles can I add on the Brain_Bucks App?
+    - Limit on the number of profiles allowed?
+    - Profile management in the app?
+- intent: multiple_accounts_brainbucks
+  examples: |
+    - Can I open more than one BrainBucks account?
+    - Policy on having multiple accounts?
+    - Handling multiple accounts on BrainBucks?
+- intent: app_not_loading
+  examples: |
+    - The app is not loading, what should I do?
+    - Why is the app not loading on my device?
+    - How do I fix the app if it's not loading?
+    - The loading screen stays forever and the app doesn't open. How to solve this?
+    - I've tried restarting my phone, but the app still won't load. What's the next step?
+    - I keep getting a blank screen when trying to open the app. How can I resolve this issue?
+    - The app crashes every time I try to open it. Is there a fix for this?
+    - I've updated the app, but it still won't load. What could be causing this problem?
+- intent: verification_code_issue
+  examples: |
+    - My verification code is not getting verified, what should I do?
+    - How do I resolve issues with the verification code?
+    - Why is my verification code not working?
+    - I'm having trouble with my verification code, help!
+    - What do I do if my verification code doesn't work?
+- intent: login_problem
+  examples: |
+    - I'm having trouble logging into the app, what should I do?
+    - Why can't I log in to my account?
+    - How do I fix login issues with the app?
+    - Every time I try to log in, I get an error message. What's wrong?
+    - I forgot my password and can't log in. How do I reset it?
+    - When I enter my credentials, nothing happens. What's the problem?
+    - Is there a way to log in with a different account?
+    - The login button doesn't seem to work. What should I do?
+- intent: payment_issue
+  examples: |
+    - I'm facing problems with making a payment in the app, what should I do?
+    - Why is my payment not going through in the app?
+    - How do I resolve payment issues with the app?
+- intent: earn_bb_money
+  examples: |
+    - How can I earn BB money ?
+    - What are the ways to earn BB money ?
+    - Is there a way to get more BB money  for free?
+    - Can you tell me how to earn BB money  on the platform?
+- intent: use_bb_money
+  examples: |
+    - How do I use BB money ?
+    - What can I do with my BB money ?
+    - Can you explain how to spend BB money ?
+    - How are BB money used in games and quizzes?
+- intent: bb_money_withdrawal_details
+  examples: |
+    - How do I withdraw BB money ?
+    - What are the details for withdrawing BB money ?
+    - Can I cash out my BB money ?
+    - What is the process for withdrawing BB money ?
+- intent: minimum_withdrawal_limit
+  examples: |
+    - What is the minimum withdrawal limit for BB money ?
+    - Is there a minimum amount of BB money I need to withdraw?
+    - How much do I need to have before I can withdraw my BB money ?
+- intent: game_cost
+  examples: |
+    - How much does it cost to play a game?
+    - What is the BB money cost for playing games?
+    - How many BB money  do I need to play a game?
+    - Can you tell me the cost of playing games?
+- intent: internet_connection_loss
+  examples: |
+    - What happens if I lose my internet connection during a game?
+    - Do I lose my BB money if my internet connection drops during a quiz?
+    - How is my game affected if I have a poor internet connection?
+- intent: wrong_quiz_joined
+  examples: |
+    - I joined the wrong quiz by mistake, what should I do?
+    - Can I exit a quiz if I joined the wrong one?
+    - How do I leave a quiz I didn't mean to join?
+- intent: free_plays
+  examples: |
+    - What are Free Plays?
+    - Can I play games for free?
+    - Do I get any free attempts in quizzes?
+    - How do Free Plays work?
+- intent: question_mistake
+  examples: |
+    - What should I do if I find a mistake in a question?
+    - Can I report errors in quiz questions?
+    - How do I notify about a wrong question in a quiz?
+- intent: buy_bb_money
+  examples: |
+    - How can I buy BB money ?
+    - What is the process to purchase BB money ?
+    - Can I get more BB money by buying them?
+    - Where can I buy BB money ?
+- intent: withdrawal_process
+  examples: |
+    - How does the withdrawal process work?
+    - What are the steps for withdrawing winnings?
+    - Can you guide me through the withdrawal process?
+    - What should I do to withdraw my winnings?
+- intent: withdrawal_problem
+  examples: |
+    - I'm facing issues with withdrawing my winnings, what should I do?
+    - What can I do if I encounter problems with withdrawals?
+    - How do I resolve withdrawal-related problems?
+    - Who should I contact if I have trouble withdrawing my winnings?
+- intent: withdrawal_minimum_amount
+  examples: |
+    - What is the minimum amount I can withdraw?
+    - Is there a minimum withdrawal limit for winnings?
+    - How much do I need to have before I can withdraw my winnings?
+- intent: data_protection_measures
+  examples: |
+    - What data protection measures are in place?
+    - How is my data protected?
+    - Can you tell me about the security measures?
+    - What security measures do you have in place?
+- intent: user_data_control
+  examples: |
+    - How can I control my data?
+    - What control do I have over my data?
+    - Can I manage my personal information?
+    - Is it possible to update my account information?
+- intent: security_reporting
+  examples: |
+    - How do I report security issues?
+    - What should I do if I encounter a security problem?
+    - Is there a way to report security vulnerabilities?
+    - How can I notify the security team about issues?
+- intent: account_recovery_process
+  examples: |
+    - How can I recover my account?
+    - What should I do if I forget my login credentials?
+    - Can you help me regain access to my account?
+    - I've lost my password, what's the account recovery process?
+    - How do I reset my account password?
+    - What are the steps for account recovery?
+    - Is there a way to retrieve my account if I'm locked out?
+    - Can you assist me with account recovery?
+    - My account is locked, what are my options?
+    - Where can I find information on account recovery?
+    - What should I do if I'm unable to log in to my account?
+- intent: terms_and_conditions
+  examples: |
+    - What are the terms and conditions for participating?
+    - Are there any rules I need to agree to before participating?
+    - Can you provide information on the terms and conditions?
+    - Where can I find the terms and conditions?
+- intent: get_paid_instructions
+  examples: |
+    - How can I get paid?
+    - What are the steps to withdraw money?
+    - How do I withdraw my earnings?
+    - Can you explain the payment process?
+    - What is the procedure for receiving payments?
+    - I want to cash out my earnings, what should I do?
+    - Is there a way to transfer my earnings to my bank account?
+    - Where can I find information on payment withdrawals?
+    - How does the payment system work on this platform?
+    - I'm confused about how to receive payments, can you help?
+- intent: quiz_instructions
+  examples: |
+    - How do I take a quiz?
+    - Can you guide me on how to start a quiz?
+    - What are the steps to participate in a quiz?
+    - How can I begin a quiz?
+- intent: get_user_name
+  examples: |
+    - my name is [Rahul](user_name)
+    - you can call me [Priya](user_name)
+    - please refer to me as [Aarav](user_name)
+    - I go by [Aisha](user_name)
+    - my name is [Vikram](user_name)
+    - people call me [Ananya](user_name)
+    - I'm known as [Arjun](user_name)
+    - you can call me [Anjali](user_name)
+    - I prefer to be called [Karan](user_name)
+    - my friends call me [Neha](user_name)
+    - I respond to [Riya](user_name)
+    - you can address me as [Rohan](user_name)
+    - I am [Sneha](user_name)
+    - my name's [Kunal](user_name)
+    - please refer to me as [Swati](user_name)
+    - call me [Amit](user_name)
+    - you can call me [Jaya](user_name)
+    - my full name is [Vishal](user_name)
+    - I am [Pooja](user_name)
+    - just call me [Sanjay](user_name)
+    - i am [shivanya](user_name)
+- intent: tell_name
+  examples: |
+    - what is your name?
+    - tell me your name
+    - what others call you
+    - what should i call you?
+    - who are you?
+    - hey what is your name?
+    - name please?
+    - hey what is your name
+- intent: how_are_you
+  examples: |
+    - hey how are you doing
+- synonym: bb_money
+  examples: |
+    - token
+    - tokens
+    - BB money
+    - bb_money
+- synonym: brainbucks
+  examples: |
+    - BrainBucks
+    - BRAINBUCKS
+    - brainbucks
+    - brain_bucks
+    - Brain_Bucks
+    - BRAIN_BUCKS
