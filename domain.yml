@@ -1,0 +1,391 @@
+version: '3.1'
+intents:
+- Course_Queries
+- Get_Started
+- about_company
+- account_recovery_process
+- app_not_loading
+- app_pricing
+- availability
+- available_quizzes
+- bb_money_withdrawal_details
+- buy_bb_money
+- compete_with_friends
+- connecting_in_room
+# - contact_methods
+- cost_of_joining
+- countries_availability
+- data_protection_measures
+- demo_class
+- download_install
+- downloadable_materials
+- earn_bb_money
+- earning_rewards
+- expectations
+- free_plays
+- game_cost
+#- general_participation_rules
+- get_paid_instructions
+- get_user_name
+- greet
+- how_are_you
+- immediate_assistance
+- internet_connection_loss
+- internet_requirement
+- joining_room
+- laptop_browser_accessibility
+- learning_programs_languages
+- live_class
+- login_problem
+- min_participants_quiz
+- minimum_withdrawal_limit
+- multiple_accounts_brainbucks
+- paid_vs_unpaid_quizzes
+- payment_issue
+- prizes_distribution
+- profiles_limit
+- provide_support
+- question_mistake
+- quiz_eligibility
+- quiz_format
+- quiz_instructions
+- quiz_limit
+- quiz_queries
+- quiz_registration_process
+- quiz_rules
+- quiz_time_limit
+- reach_support
+# - refer_friend
+- reporting_mistakes_quiz
+- response_time
+- room_enquiry
+- room_queries
+- room_types
+- safety_and_security
+- security_reporting
+- subscription_billing
+- subscription_cancellation
+- subscription_cost
+- suggesting_quiz_topics
+- technical_support
+- tell_name
+- terms_and_conditions
+# - track_referral_status
+- troubleshoot_issues
+- update_app
+- use_bb_money
+- user_data_control
+- user_is_instructor
+- user_is_student
+- verification_code_issue
+- withdrawal_minimum_amount
+- withdrawal_problem
+- withdrawal_process
+- wrong_quiz_joined
+responses:
+  utter_name_greet:
+  - text: hey {user_name} I hope you find brain_bucks amazing
+  utter_greet:
+  - text: Hey! I'm Nikita bot..I'm here to assist you. Can you tell me what is your name?
+  utter_out_of_scope:
+  - text: Sorry, I can't handle that request.
+  utter_safety_and_security:
+  - text: Brain_Bucks takes user security and privacy seriously. We have measures in place to protect your personal information and adhere to strict privacy policies.
+  utter_data_protection_measures:
+  - text: We have implemented various data protection measures to ensure the security and privacy of your information.
+  utter_user_data_control:
+  - text: You have full control over your data. You can manage and update your personal information through your account settings.
+  utter_security_reporting:
+  - text: If you encounter any security issues, please report them to our security team at our toll free number and mail us @  immediately so that we can investigate and address them.
+  utter_how_are_you:
+  - text: I'm just a bot, so I don't have feelings, but thanks for asking!
+  utter_choice:
+  - text: Please identity yourself.
+    buttons:
+    - title: STUDENT
+      payload: /user_is_student
+    - title: INSTRUCTOR
+      payload: /user_is_instructor
+  utter_get_started:
+  - text: |
+      "Select the language -
+      Confirm your age
+      Add your phone number and fill in the OTP
+      Enter your name, gender, and the exam you're preparing for
+      There are a list of exams you can choose from:
+      - UPSC
+      - SSC
+      - RRB
+      - Banking
+      - Neet
+      - JEE
+      - Current Affairs
+      - General Knowledge
+      - Delhi Police
+      - NDA
+      - CDS
+      - RPSC
+      - CRPF
+      - REET
+      - WEB DEVELOPMENT
+      Select "Start Preparing" to move ahead."
+  utter_account_recovery:
+  - text: If you need to recover your account, please follow the account recovery process provided on our platform.
+  utter_terms_and_conditions:
+  - text: Participants must agree to the terms and conditions set forth by the organizers before participating in the quiz. These terms and conditions may include rules regarding privacy, data usage, and any other relevant aspects of the quiz.
+  utter_about_company:
+  - text: Brain_Bucks is a quiz website where users can test their knowledge and earn rewards for their efforts. Simply sign up, choose a quiz, and start answering questions! The more questions you get right, the higher your score and the more rewards you can earn.
+  utter_available_quizzes:
+  - text: Brain_Bucks has a wide selection of quizzes on a variety of topics including history, pop culture, science, and more. Whether you're a trivia buff or just looking to learn something new, Brain_Bucks has something for everyone.
+  utter_countries_availability:
+  - text: Right now, Brain_Bucks is available only in India. But in the coming months, we are planning to make it globally accessible.
+  utter_download_install:
+  - text: To download and install the app, visit our website and follow the instructions provided there.
+  utter_app_pricing:
+  - text: The app is free to download. However, certain features may require a subscription or in-app purchases.
+  utter_update_instructions:
+  - text: |-
+      You can update the app from the app store or by visiting our website and downloading the latest version. To update the Brain_Bucks app, follow these steps:
+      1. Open the app store on your device.
+      2. Search for 'Brain_Bucks' in the search bar.
+      3. If an update is available, you'll see an 'Update' button next to the app.
+      4. Tap on the 'Update' button to download and install the latest version of the app.
+      5. Once the update is complete, you can open the app and enjoy the latest features and improvements!
+  utter_internet_requirement:
+  - text: Yes, internet connectivity is mandatory for using Brain_Bucks learning programs.
+  utter_laptop_browser_accessibility:
+  - text: Currently, the app is only available on Android phones and tablets. We're working on making it more device-friendly in the future.
+  utter_profiles_limit:
+  - text: You can add only one profile per device on the Brain_Bucks App. However, you can log in from multiple devices with the same profile.
+  utter_multiple_accounts_brainbucks:
+  - text: No, you cannot open more than one BrainBucks account. Operating multiple accounts is against our policy to maintain fairness.
+  utter_course_list:
+  - text: |-
+      "There are list of exams you can choose from–
+      UPSC
+      SSC
+      RRB
+      Banking
+      Neet
+      JEE
+      Current Affairs
+      General Knowledge
+      Delhi Police
+      NDA
+      CDS
+      RPSC
+      CRPF
+      REET
+      WEB DEVELOPMENT"
+  utter_live_class_response:
+  - text: Currently, we do not offer live classes. However, we are working on integrating live class features into our programs. Stay tuned for updates!
+  - text: We appreciate your interest in live classes. At the moment, we do not have live sessions available. We are actively working to introduce this feature soon.
+  utter_demo_class_response:
+  - text: Demo classes are completely free of charge. To register for a demo class,choose the course you want to attend and complete the registration process.Once registered, you will gain access to the initial some lectures. Additional lectures can be unlocked by subscribing to the course.
+  utter_learning_programs_languages:
+  - text: Our learning programs are available in Hindi and English.
+  utter_downloadable_materials:
+  - text: Yes, downloadable materials are provided for current affairs and connect topics. You can access them from the app.
+  utter_quiz_queries:
+  - text: Here are you list of queries you can pose about quizzes--
+    buttons:
+    - title: Quiz rules
+      payload: /quiz_rules
+    - title: Quiz time limit
+      payload: /quiz_time_limit
+    - title: Minimum participants for quiz
+      payload: /min_participants_quiz
+    - title: Quiz registration process
+      payload: /quiz_registration_process
+    - title: Quiz eligibility
+      payload: /quiz_eligibility
+    - title: Quiz format
+      payRoomsload: /quiz_format
+    - title: Paid vs. unpaid quizzes
+      payload: /paid_vs_unpaid_quizzes
+    - title: Prizes and their distribution
+      payload: /prizes_distribution
+    - title: Reporting mistakes in quizzes
+      payload: /reporting_mistakes_quiz
+    - title: Suggesting quiz topics
+      payload: /suggesting_quiz_topics
+  utter_quiz_rules:
+  - text: |
+      "Here are the general rules for participating in the quiz:
+       1. Eligibility: The quiz is open to individuals who meet the minimum age requirement (i.e., 18 years or older) and comply with any additional eligibility criteria specified by the organizers.
+        #magic__^^__line
+      2. Registration: Participants must register for the quiz by providing their personal information, including name, contact details, and any other required information as specified during the registration process.
+        #magic_^^__line
+      3. Quiz Format: The quiz will consist of a predetermined number of multiple-choice questions based on a predefined topic. A specified time limit will be provided for answering each question, and participants must submit their answers within the given time frame.
+        #magic_^^__line
+      4. Scoring: Each correctly answered question will carry a predetermined score, and incorrect answers will not incur any penalty.
+        #magic_^^__line
+      5. Ranking Criteria: The ranking of participants will be based on their cumulative scores achieved by correctly answering the questions.
+        #magic_^^__line
+      6. Monetary Rewards: The monetary rewards will be distributed to the top 20% rank holders based on the final rankings.
+        #magic_^^__line
+      7. Tiebreaker: In case of a tie in the final scores, the time taken to attempt questions will be used to determine the higher rank among the tied participants.
+        #magic_^^__line
+      8. Prize Distribution: The monetary rewards will be distributed to the winners via a specified payment method or bank transfer.
+        #magic_^^__line
+      9. Terms and Conditions: Participants must agree to the terms and conditions set forth by the organizers before 
+        #magic_^^___line
+      participating in the quiz, including rules regarding privacy, data usage, and any other relevant aspects of the quiz."
+  utter_quiz_time_limit:
+  - text: The time limit for each question in the quiz will be specified before the quiz begins. Participants must submit their answers within the given time frame for each question. Late submissions will not be accepted.
+  utter_min_participants_quiz:
+  - text: Even if there is a single particpant the quiz will be commeneced by the organizers. Participant will recieve back all the money he/she had put into the quiz.
+  utter_quiz_registration_process:
+  - text: To register for the quiz, participants must provide their personal information, including name, contact details, and any other required information specified during the registration process. Registration details will be provided closer to the quiz date.
+  utter_quiz_eligibility:
+  - text: The quiz is open to individuals who meet the minimum age requirement (i.e., 18 years or older) and comply with any additional eligibility criteria specified by the organizers. Participants must fulfill all eligibility criteria to participate in the quiz.
+  utter_quiz_format:
+  - text: The quiz will consist of a predetermined number of multiple-choice questions based on a predefined topic. Each question will be presented to participants, who must select the correct answer from the options provided.
+  utter_paid_vs_unpaid_quizzes:
+  - text: 'There are two types of quizzes: free to join and paid. Free quizzes do not require any entry fee, while paid quizzes require participants to pay an entry fee to join. The entry fee for paid quizzes may vary depending on the quiz.'
+  utter_suggesting_quiz_topics:
+  - text: Participants are welcome to suggest topics for future quizzes. They can submit their suggestions to the organizers, who will consider them for upcoming quiz events.
+  utter_quiz_limit:
+  - text: There is no limit to the number of quizzes you can participate in on BrainBucks! Feel free to join as many quizzes as you'd like and test your knowledge to the fullest.
+  utter_quiz_instructions:
+  - text: |-
+      To take a quiz, follow these steps:
+      1. Log in to your account.
+      2. Navigate to the quiz section.
+      3. Choose a category from the options: Hard, Medium, or Easy.
+      4. Each category has a corresponding difficulty level and marks assigned to it.
+      5. Select any category to start the quiz.
+  utter_free_plays:
+  - text: Free Plays allow you to participate in certain games without using your BrainBucks. Enjoy the fun and challenge without any cost!
+  utter_question_mistake:
+  - text: If participants notice any mistakes or discrepancies in the quiz questions or answers, they should report them to the organizers immediately. The organizers will review the reported issues and take appropriate action to rectify them.
+  utter_wrong_quiz_joined:
+  - text: Unfortunately, if you join a quiz by mistake, we are unable to refund your bb_money . We recommend playing the quiz anyway, as you still have a chance to win!
+  utter_joining_room:
+  - text: To join a room, simply navigate to the rooms section and select the room you'd like to join. Follow the prompts to enter the room and start participating.
+  utter_connecting_in_room:
+  - text: You can connect with friends or instructors in a room by utilizing the chat or messaging features available. Feel free to interact with other participants or hosts to exchange insights and guidance.
+  utter_room_types:
+  - text: 'We offer two types of rooms: public and private. Public rooms are open to anyone and allow for competition and collaboration. Private rooms are exclusive spaces where you can learn and earn with a select group of individuals. Each type of room has its own unique features and benefits.'
+  utter_room_queries_buttons:
+  - text: 'Rooms are spaces/platforms where you can collaborate and compete. We offer both public and private rooms. In public rooms, anyone can join and compete, while private rooms allow you to learn and earn with people of your choice. BrainBucks provides incentives to hosts and participants for organizing events/quizzes on the topic of their choice in the room. You can join any of the rooms and suggest quiz topics. Additionally, you will have the opportunity to connect with the host and get insights/guidance for your exam.Here are the options for Room Queries:'
+    buttons:
+    - title: Room Rules
+      payload: /room_rules
+    - title: Joining a Room
+      payload: /joining_room
+    - title: Connecting with Friends or Instructors on rooms
+      payload: /connecting_in_room
+    - title: Types of Rooms
+      payload: /room_types
+  utter_earning_rewards:
+  - text: To earn rewards on Brain_Bucks, simply participate in quizzes and other activities and achieve high scores. The more questions you get right, the more rewards you can earn. Rewards may include cash, prizes, or other incentives.
+  utter_get_paid_instructions:
+  - text: |-
+      To get paid, follow these steps:
+      1. Enter the amount you want to withdraw.
+      2. Enter your bank name.
+      3. Provide your account number.
+      4. Enter the IFSC code of your bank.
+      5. Provide your contact number.
+
+      Please note: There is a transaction fee of Rs 10 per transaction.
+  utter_subscription_billing:
+  - text: The app is free to download. However, charges may apply for registering for paid events and subscribing to classes.
+  utter_subscription_cancellation:
+  - text: Subscription cancellation details will be provided on our website as we add more classes to our platform.
+  utter_subscription_cost:
+  - text: The cost of subscribing to Brain_Bucks programs varies depending on the personalized package. Please consult our counselor for more details.
+  utter_cost_of_joining:
+  - text: No. Brain_Bucks is free to join and use. You can earn rewards for participating in quizzes without any upfront costs.
+  utter_payment_issue:
+  - text: If you're facing problems with making a payment in the app, ensure that your payment method is valid and try again. If the issue persists, contact our support team for assistance.
+  utter_earn_bb_money:
+  - text: You can earn bb_money by participating in quizzes, completing challenges, inviting friends to the platform, and engaging in other activities specified on the platform.
+  utter_use_bb_money:
+  - text: bb_money  can be used to play games, participate in quizzes, unlock premium features, and access exclusive content on the platform.
+  utter_bb_money_withdrawal_details:
+  - text: To withdraw bb_money , you can use the withdrawal feature available on the platform. Follow the instructions provided to complete the withdrawal process.
+  utter_minimum_withdrawal_limit:
+  - text: The minimum withdrawal limit for bb_money  is 50 Rs. Please note that there is an administration fee of Rs 10 on all withdrawals, and additional bank charges may apply.
+  utter_game_cost:
+  - text: The cost of playing games varies depending on the game. Each game requires a different amount of bb_money , typically ranging from 5 to 50 bb_money .
+  utter_prizes_distribution:
+  - text: 'The distribution of prizes in the quiz is as follows: The cash prize pool will be distributed among the winners based on their rankings.The distribution formula takes into account factors such as accuracy and time taken to complete the quiz.'
+  utter_buy_bb_money:
+  - text: To buy bb_money , you need to open an account on our platform. Once you have an active account, you can purchase bb_money  by clicking on the 'Buy bb_money ' link. Follow the instructions provided to complete the purchase.
+  utter_withdrawal_process:
+  - text: To withdraw your winnings, you first need to submit ID verification for approval by our administration team. Once validated, you can withdraw all or part of your winnings. Withdrawals may take up to 15 working days to process.
+  utter_withdrawal_problem:
+  - text: If you encounter any problems with withdrawing your winnings, please contact our customer support team for assistance. They'll help you resolve the issue and ensure you receive your winnings.
+  utter_withdrawal_minimum_amount:
+  - text: The minimum amount you can withdraw is 50 Rs. Please note that there is an administration fee of Rs 10 on all withdrawals, and additional bank charges may apply. It's more cost-effective to withdraw larger amounts to minimize fees.
+  utter_reach_support:
+  - text: 'You can reach Brain_Bucks Customer Support through various channels: - Chat with our chatbot - Call our toll-free number - Send an email to support@example.com'
+  utter_response_time:
+  - text: Our goal is to respond to inquiries within 24 hours. However, response times may vary depending on the volume of queries received.
+  # utter_contact_methods:
+  # - text: 'You can contact Brain_Bucks Customer Support through the following methods: - Chat with our chatbot - Call our toll-free number - Send an email to support@example.com'
+  utter_immediate_assistance:
+  - text: For immediate assistance, please call our toll-free number during operating hours. Alternatively, you can use our chatbot for instant support.
+  utter_availability:
+  - text: Brain_Bucks Customer Support is available from 10am to 6pm, Monday to Saturday. Chatbot and email support are available round the clock.
+  utter_expectations:
+  - text: 'From Brain_Bucks Customer Support, you can expect: - Prompt and helpful responses - Assistance in resolving issues and providing guidance - Professional and courteous service'
+  utter_provide_support:
+  - text: Yes, we provide customer support to all our users. You can reach us via email at support@example.com or through our support site.
+  utter_technical_support:
+  - text: For technical support, please contact our technical team through our chatbot or by calling our toll-free number.
+  # utter_troubleshooting:
+  # - text: If you encounter any issues with the app, please check our FAQ section on the website or contact our support team for assistance.
+  utter_troubleshoot_issues:
+  - text: |-
+      If you're experiencing any issues with the app, here are some common troubleshooting steps you can try:
+      1. Restart the app: Close the app completely and then reopen it.
+      2. Check your internet connection: Ensure you have a stable internet connection.
+      3. Update the app: Make sure you have the latest version of the app installed.
+      4. Clear app cache: Clearing the app cache can resolve certain issues.
+      5. Contact support: If the problem persists, feel free to contact our support team for assistance.
+  utter_app_not_loading:
+  - text: If the app is not loading, please try uninstalling and reinstalling it. If the issue persists, contact our technical support team for assistance.
+  utter_verification_code_issue:
+  - text: If you're experiencing issues with the verification code, please check if you entered it correctly. If the problem continues, contact our support team for further assistance.
+  utter_login_problem:
+  - text: If you're having trouble logging into the app, ensure that you're using the correct credentials. If you're still unable to log in, contact our technical support team for help.
+  utter_internet_connection_loss:
+  - text: If you lose your internet connection during a game, our system will attempt to reconnect multiple times. However, if the connection cannot be established, your game will end, and bb_money  will not be refunded.
+  utter_compete_with_friends:
+  - text: Yes. Brain_Bucks has a social component where you can challenge friends to quizzes and compare scores using the ROOMS platform and other quiz events.
+  # utter_refer_friend:
+  # - text: To refer a friend, simply use your unique referral link provided in your account settings. Share this link with your friends, and when they sign up using your link, you'll both earn rewards.You can earn upto 50000 .Our reward system offers various benefits, including cash rewards, discounts, or points redeemable for products or services. The more referrals you make, the more rewards you can earn.
+  # utter_track_referral_status:
+  # - text: You can track the status of your referrals by logging into your account and checking the referral section. Here, you'll find information about the number of referrals made, rewards earned, and their status.
+  utter_ask_user_name:
+  - text: Hi there! What's your name?
+  utter_name:
+  - text: My name is Nikita Bot.
+slots:
+  user_name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: user_name
+entities:
+- user_name
+actions:
+- utter_name
+- utter_name_greet
+- action_get_user_name
+- utter_ask_user_name
+- utter_how_are_you
+- utter_greet
+- utter_demo_class_response
+- utter_live_class_response
+- utter_get_started
+- utter_course_list
+- utter_choice
+- utter_out_of_scope
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
