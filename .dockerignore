@@ -1,0 +1,7 @@
+tests/*
+*.md
+venv
+venva
+venvp
+.rasa
+story_graph.dot

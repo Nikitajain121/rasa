@@ -1,0 +1,14 @@
+version: '3.0'
+services:
+  rasa:
+    image: rasa_custom 
+    ports:
+      - 5005:5005
+    volumes:
+      - ./:/src
+    command: "rasa run --enable-api --port 5005 --cors \"*\" -m /models"
+  app:
+    image: rasa_action:latest
+    expose: 
+      - "5055"
+   # command: "rasa run actions"

@@ -11,20 +11,20 @@
 # https://rasa.com/docs/rasa/custom-actions
 
 action_endpoint:
- url: "http://localhost:5055/webhook"
+ url: "http://app:5055/webhook"
 
 # Tracker store which is used to store the conversations.
 # By default the conversations are stored in memory.
 # https://rasa.com/docs/rasa/tracker-stores
 
-tracker_store:
-  type: SQL
-  dialect: "postgresql"
-  url: "localhost" 
-  port: 5432
-  db: "postgres" 
-  username: "postgres" 
-  password: "postgre"
+# tracker_store:
+#   type: SQL
+#   dialect: "postgresql"
+#   url: "localhost" 
+#   port: 5432
+#   db: "postgres" 
+#   username: "postgres" 
+#   password: "postgre"
   # query:
   #   driver: my-driver
 #tracker_store:

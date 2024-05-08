@@ -1,0 +1,8 @@
+.rasa 
+credentials.yml
+*.env
+models/
+venv/
+venva/
+venvp/
+story_graph.dot
