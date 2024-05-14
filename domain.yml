@@ -1,8 +1,12 @@
 version: '3.1'
 intents:
+- affirm
+- deny
+- goodbye
 - Course_Queries
 - Get_Started
 - about_company
+- brainbucks_headquarters
 - account_recovery_process
 - app_not_loading
 - app_pricing
@@ -12,7 +16,6 @@ intents:
 - buy_bb_money
 - compete_with_friends
 - connecting_in_room
-# - contact_methods
 - cost_of_joining
 - countries_availability
 - data_protection_measures
@@ -24,7 +27,6 @@ intents:
 - expectations
 - free_plays
 - game_cost
-#- general_participation_rules
 - get_paid_instructions
 - get_user_name
 - greet
@@ -41,6 +43,7 @@ intents:
 - minimum_withdrawal_limit
 - multiple_accounts_brainbucks
 - paid_vs_unpaid_quizzes
+- inquire_paid_quiz
 - payment_issue
 - prizes_distribution
 - profiles_limit
@@ -55,7 +58,6 @@ intents:
 - quiz_rules
 - quiz_time_limit
 - reach_support
-# - refer_friend
 - reporting_mistakes_quiz
 - response_time
 - room_enquiry
@@ -70,13 +72,12 @@ intents:
 - technical_support
 - tell_name
 - terms_and_conditions
-# - track_referral_status
 - troubleshoot_issues
 - update_app
 - use_bb_money
 - user_data_control
-- user_is_instructor
-- user_is_student
+# - user_is_instructor
+# - user_is_student
 - verification_code_issue
 - withdrawal_minimum_amount
 - withdrawal_problem
@@ -86,7 +87,21 @@ responses:
   utter_name_greet:
   - text: hey {user_name} I hope you find brain_bucks amazing
   utter_greet:
-  - text: Hey! I'm Nikita bot..I'm here to assist you. Can you tell me what is your name?
+  - text: Hey! I'm Nikita bot..I'm here to assist you. You can ask me any question related with Brainbucks.
+  utter_affirm:
+  - text: "Great! Let's continue."
+  - text: "Awesome!"
+  - text: "Perfect!"
+  - text: "That's what I like to hear!"
+  utter_goodbye:
+  - text: "Goodbye! It was nice chatting with you. Have a great day!"
+  utter_deny:
+    - text: "Okay, no problem. If you change your mind or need assistance later, feel free to ask!"
+
+  utter_default:
+  - text: I'm sorry, I can't help you.
+  utter_please_rephrase:
+  - text: Sorry either this is a request I can't handle or I didn't understand. Can you rephrase?
   utter_out_of_scope:
   - text: Sorry, I can't handle that request.
   utter_safety_and_security:
@@ -99,13 +114,13 @@ responses:
   - text: If you encounter any security issues, please report them to our security team at our toll free number and mail us @  immediately so that we can investigate and address them.
   utter_how_are_you:
   - text: I'm just a bot, so I don't have feelings, but thanks for asking!
-  utter_choice:
-  - text: Please identity yourself.
-    buttons:
-    - title: STUDENT
-      payload: /user_is_student
-    - title: INSTRUCTOR
-      payload: /user_is_instructor
+  # utter_choice:
+  # - text: Please identity yourself.
+  #   buttons:
+  #   - title: STUDENT
+  #     payload: /user_is_student
+  #   - title: INSTRUCTOR
+  #     payload: /user_is_instructor
   utter_get_started:
   - text: |
       "Select the language -
@@ -139,6 +154,9 @@ responses:
   - text: Brain_Bucks has a wide selection of quizzes on a variety of topics including history, pop culture, science, and more. Whether you're a trivia buff or just looking to learn something new, Brain_Bucks has something for everyone.
   utter_countries_availability:
   - text: Right now, Brain_Bucks is available only in India. But in the coming months, we are planning to make it globally accessible.
+  utter_brainbucks_headquarters:
+  - text: The headquarters of Brainbucks is located at Chandatower, Vaishali Nagar, Jaipur.
+
   utter_download_install:
   - text: To download and install the app, visit our website and follow the instructions provided there.
   utter_app_pricing:
@@ -256,9 +274,12 @@ responses:
       4. Each category has a corresponding difficulty level and marks assigned to it.
       5. Select any category to start the quiz.
   utter_free_plays:
-  - text: Free Plays allow you to participate in certain games without using your BrainBucks. Enjoy the fun and challenge without any cost!
+  - text: Free Plays/quizzes allow you to participate in certain games without using your BrainBucks. Enjoy the fun and challenge without any cost!
   utter_question_mistake:
   - text: If participants notice any mistakes or discrepancies in the quiz questions or answers, they should report them to the organizers immediately. The organizers will review the reported issues and take appropriate action to rectify them.
+  utter_inquire_paid_quiz:
+  - text: Paid quizzes offer additional features and rewards compared to free quizzes. To join a paid quiz, you need to pay an entry fee, which may vary depending on the quiz. However, they often come with higher stakes and greater rewards.
+
   utter_wrong_quiz_joined:
   - text: Unfortunately, if you join a quiz by mistake, we are unable to refund your bb_money . We recommend playing the quiz anyway, as you still have a chance to win!
   utter_joining_room:
@@ -288,7 +309,6 @@ responses:
       3. Provide your account number.
       4. Enter the IFSC code of your bank.
       5. Provide your contact number.
-
       Please note: There is a transaction fee of Rs 10 per transaction.
   utter_subscription_billing:
   - text: The app is free to download. However, charges may apply for registering for paid events and subscribing to classes.
@@ -299,7 +319,7 @@ responses:
   utter_cost_of_joining:
   - text: No. Brain_Bucks is free to join and use. You can earn rewards for participating in quizzes without any upfront costs.
   utter_payment_issue:
-  - text: If you're facing problems with making a payment in the app, ensure that your payment method is valid and try again. If the issue persists, contact our support team for assistance.
+  - text: If you're facing problems with making a payment in the app, ensure that your payment method is valid and try again. If the issue persists, contact our support team for assistance at +917887940832 or mail us at info@brainbucks.in.
   utter_earn_bb_money:
   - text: You can earn bb_money by participating in quizzes, completing challenges, inviting friends to the platform, and engaging in other activities specified on the platform.
   utter_use_bb_money:
@@ -317,15 +337,13 @@ responses:
   utter_withdrawal_process:
   - text: To withdraw your winnings, you first need to submit ID verification for approval by our administration team. Once validated, you can withdraw all or part of your winnings. Withdrawals may take up to 15 working days to process.
   utter_withdrawal_problem:
-  - text: If you encounter any problems with withdrawing your winnings, please contact our customer support team for assistance. They'll help you resolve the issue and ensure you receive your winnings.
+  - text: If you encounter any problems with withdrawing your winnings, please contact our customer support team for assistance at +917887940832 or mail us at info@brainbucks.in . They'll help you resolve the issue and ensure you receive your winnings.
   utter_withdrawal_minimum_amount:
   - text: The minimum amount you can withdraw is 50 Rs. Please note that there is an administration fee of Rs 10 on all withdrawals, and additional bank charges may apply. It's more cost-effective to withdraw larger amounts to minimize fees.
   utter_reach_support:
   - text: 'You can reach Brain_Bucks Customer Support through various channels: - Chat with our chatbot - Call our toll-free number - Send an email to support@example.com'
   utter_response_time:
   - text: Our goal is to respond to inquiries within 24 hours. However, response times may vary depending on the volume of queries received.
-  # utter_contact_methods:
-  # - text: 'You can contact Brain_Bucks Customer Support through the following methods: - Chat with our chatbot - Call our toll-free number - Send an email to support@example.com'
   utter_immediate_assistance:
   - text: For immediate assistance, please call our toll-free number during operating hours. Alternatively, you can use our chatbot for instant support.
   utter_availability:
@@ -335,9 +353,7 @@ responses:
   utter_provide_support:
   - text: Yes, we provide customer support to all our users. You can reach us via email at support@example.com or through our support site.
   utter_technical_support:
-  - text: For technical support, please contact our technical team through our chatbot or by calling our toll-free number.
-  # utter_troubleshooting:
-  # - text: If you encounter any issues with the app, please check our FAQ section on the website or contact our support team for assistance.
+  - text: For technical support, please contact our technical team through our chatbot or by calling our toll-free number at +917887940832 or mail us at info@brainbucks.in .
   utter_troubleshoot_issues:
   - text: |-
       If you're experiencing any issues with the app, here are some common troubleshooting steps you can try:
@@ -345,21 +361,17 @@ responses:
       2. Check your internet connection: Ensure you have a stable internet connection.
       3. Update the app: Make sure you have the latest version of the app installed.
       4. Clear app cache: Clearing the app cache can resolve certain issues.
-      5. Contact support: If the problem persists, feel free to contact our support team for assistance.
+      5. Contact support: If the problem persists, feel free to contact our support team for assistance at +917887940832 or mail us at info@brainbucks.in.
   utter_app_not_loading:
-  - text: If the app is not loading, please try uninstalling and reinstalling it. If the issue persists, contact our technical support team for assistance.
+  - text: If the app is not loading, please try uninstalling and reinstalling it. If the issue persists, contact our technical support team for assistance at +917887940832 or mail us at info@brainbucks.in .
   utter_verification_code_issue:
-  - text: If you're experiencing issues with the verification code, please check if you entered it correctly. If the problem continues, contact our support team for further assistance.
+  - text: If you're experiencing issues with the verification code, please check if you entered it correctly. If the problem continues, contact our support team at +917887940832 or mail us at info@brainbucks.in for further assistance.
   utter_login_problem:
-  - text: If you're having trouble logging into the app, ensure that you're using the correct credentials. If you're still unable to log in, contact our technical support team for help.
+  - text: If you're having trouble logging into the app, ensure that you're using the correct credentials. If you're still unable to log in, contact our technical support team at +917887940832 or mail us at info@brainbucks.in for help.
   utter_internet_connection_loss:
   - text: If you lose your internet connection during a game, our system will attempt to reconnect multiple times. However, if the connection cannot be established, your game will end, and bb_money  will not be refunded.
   utter_compete_with_friends:
   - text: Yes. Brain_Bucks has a social component where you can challenge friends to quizzes and compare scores using the ROOMS platform and other quiz events.
-  # utter_refer_friend:
-  # - text: To refer a friend, simply use your unique referral link provided in your account settings. Share this link with your friends, and when they sign up using your link, you'll both earn rewards.You can earn upto 50000 .Our reward system offers various benefits, including cash rewards, discounts, or points redeemable for products or services. The more referrals you make, the more rewards you can earn.
-  # utter_track_referral_status:
-  # - text: You can track the status of your referrals by logging into your account and checking the referral section. Here, you'll find information about the number of referrals made, rewards earned, and their status.
   utter_ask_user_name:
   - text: Hi there! What's your name?
   utter_name:
@@ -374,18 +386,20 @@ slots:
 entities:
 - user_name
 actions:
+- action_get_user_name
+- utter_greet
 - utter_name
 - utter_name_greet
-- action_get_user_name
 - utter_ask_user_name
 - utter_how_are_you
-- utter_greet
 - utter_demo_class_response
 - utter_live_class_response
 - utter_get_started
 - utter_course_list
 - utter_choice
 - utter_out_of_scope
+- action_handle_out_of_context
+
 session_config:
-  session_expiration_time: 60
+  session_expiration_time: 5
   carry_over_slots_to_new_session: true

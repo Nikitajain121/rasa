@@ -1,10 +1,10 @@
 # The config recipe.
 # https://rasa.com/docs/rasa/model-configuration/
-recipe: default.v1
-
+version: "3.1"
 language: en
 
 pipeline:
+  #- name: rasa_plus.ml.LLMIntentClassifier
   - name: WhitespaceTokenizer
   - name: RegexFeaturizer
   - name: CRFEntityExtractor
@@ -24,9 +24,13 @@ pipeline:
     case_sensitive: False
   - name: SpacyEntityExtractor
     dimensions: ["PERSON", "ORG"]
+ 
 
 policies:
   - name: RulePolicy
+    core_fallback_threshold: 0.4
+    core_fallback_action_name: "action_default_fallback"
+    enable_fallback_prediction: True
   - name: MemoizationPolicy
  
   #extract features from the user's input based
