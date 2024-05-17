@@ -9,7 +9,7 @@ from rasa_sdk.events import UserUtteranceReverted
 from openai import OpenAI
 
 # Initialize OpenAI client with your API key
-client = OpenAI(api_key=OPENAI_KEY)
+client = OpenAI(api_key=${{secrets.OPENAI_KEY}})
 GPT_MODEL = "gpt-4" #"gpt-3.5-turbo-1106"
 
 class ActionHandleOutOfContext(Action):
