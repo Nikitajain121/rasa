@@ -1,18 +1,17 @@
 version: '3.1'
 intents:
-- affirm
-- deny
-- goodbye
 - Course_Queries
 - Get_Started
 - about_company
-- brainbucks_headquarters
 - account_recovery_process
+- add_data
+- affirm
 - app_not_loading
 - app_pricing
 - availability
 - available_quizzes
 - bb_money_withdrawal_details
+- brainbucks_headquarters
 - buy_bb_money
 - compete_with_friends
 - connecting_in_room
@@ -20,6 +19,7 @@ intents:
 - countries_availability
 - data_protection_measures
 - demo_class
+- deny
 - download_install
 - downloadable_materials
 - earn_bb_money
@@ -27,11 +27,14 @@ intents:
 - expectations
 - free_plays
 - game_cost
+- get_contact_number
 - get_paid_instructions
 - get_user_name
+- goodbye
 - greet
 - how_are_you
 - immediate_assistance
+- inquire_paid_quiz
 - internet_connection_loss
 - internet_requirement
 - joining_room
@@ -43,7 +46,6 @@ intents:
 - minimum_withdrawal_limit
 - multiple_accounts_brainbucks
 - paid_vs_unpaid_quizzes
-- inquire_paid_quiz
 - payment_issue
 - prizes_distribution
 - profiles_limit
@@ -76,8 +78,6 @@ intents:
 - update_app
 - use_bb_money
 - user_data_control
-# - user_is_instructor
-# - user_is_student
 - verification_code_issue
 - withdrawal_minimum_amount
 - withdrawal_problem
@@ -87,17 +87,16 @@ responses:
   utter_name_greet:
   - text: hey {user_name} I hope you find brain_bucks amazing
   utter_greet:
-  - text: Hey! I'm Nikita bot..I'm here to assist you. You can ask me any question related with Brainbucks.
+  - text: Hey! I'm Nikita bot..I'm here to assist you. You can ask me any question related with Brainbucks.Can I know your name?
   utter_affirm:
-  - text: "Great! Let's continue."
-  - text: "Awesome!"
-  - text: "Perfect!"
-  - text: "That's what I like to hear!"
+  - text: Great! Let's continue.
+  - text: Awesome!
+  - text: Perfect!
+  - text: That's what I like to hear!
   utter_goodbye:
-  - text: "Goodbye! It was nice chatting with you. Have a great day!"
+  - text: Goodbye! It was nice chatting with you. Have a great day!
   utter_deny:
-    - text: "Okay, no problem. If you change your mind or need assistance later, feel free to ask!"
-
+  - text: Okay, no problem. If you change your mind or need assistance later, feel free to ask!
   utter_default:
   - text: I'm sorry, I can't help you.
   utter_please_rephrase:
@@ -114,13 +113,6 @@ responses:
   - text: If you encounter any security issues, please report them to our security team at our toll free number and mail us @  immediately so that we can investigate and address them.
   utter_how_are_you:
   - text: I'm just a bot, so I don't have feelings, but thanks for asking!
-  # utter_choice:
-  # - text: Please identity yourself.
-  #   buttons:
-  #   - title: STUDENT
-  #     payload: /user_is_student
-  #   - title: INSTRUCTOR
-  #     payload: /user_is_instructor
   utter_get_started:
   - text: |
       "Select the language -
@@ -156,7 +148,6 @@ responses:
   - text: Right now, Brain_Bucks is available only in India. But in the coming months, we are planning to make it globally accessible.
   utter_brainbucks_headquarters:
   - text: The headquarters of Brainbucks is located at Chandatower, Vaishali Nagar, Jaipur.
-
   utter_download_install:
   - text: To download and install the app, visit our website and follow the instructions provided there.
   utter_app_pricing:
@@ -279,7 +270,6 @@ responses:
   - text: If participants notice any mistakes or discrepancies in the quiz questions or answers, they should report them to the organizers immediately. The organizers will review the reported issues and take appropriate action to rectify them.
   utter_inquire_paid_quiz:
   - text: Paid quizzes offer additional features and rewards compared to free quizzes. To join a paid quiz, you need to pay an entry fee, which may vary depending on the quiz. However, they often come with higher stakes and greater rewards.
-
   utter_wrong_quiz_joined:
   - text: Unfortunately, if you join a quiz by mistake, we are unable to refund your bb_money . We recommend playing the quiz anyway, as you still have a chance to win!
   utter_joining_room:
@@ -374,8 +364,8 @@ responses:
   - text: Yes. Brain_Bucks has a social component where you can challenge friends to quizzes and compare scores using the ROOMS platform and other quiz events.
   utter_ask_user_name:
   - text: Hi there! What's your name?
-  utter_name:
-  - text: My name is Nikita Bot.
+  utter_ask_phone:
+  - text: May I Know your mobile number please
 slots:
   user_name:
     type: text
@@ -383,23 +373,33 @@ slots:
     mappings:
     - type: from_entity
       entity: user_name
+  phone:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: phone
 entities:
+- phone
 - user_name
+forms:
+  Form_Info:
+    required_slots:
+    - user_name
+    - phone
 actions:
-- action_get_user_name
 - utter_greet
-- utter_name
+- utter_ask_phone
+- action_save_data
+- action_get_user_name
 - utter_name_greet
-- utter_ask_user_name
 - utter_how_are_you
 - utter_demo_class_response
 - utter_live_class_response
 - utter_get_started
 - utter_course_list
-- utter_choice
 - utter_out_of_scope
 - action_handle_out_of_context
-
 session_config:
   session_expiration_time: 5
   carry_over_slots_to_new_session: true

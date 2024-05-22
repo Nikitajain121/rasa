@@ -2,42 +2,77 @@ version: "3.1"
 
 stories:
 
+# - story: interactive_story_1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: get_user_name
+#     entities:
+#     - user_name: {user_name}
+#   - slot_was_set:
+#     - user_name: {user_name}
+#   - action: action_save_data
+#   - action: utter_ask_phone
+#   - intent: get_contact_number
+#     entities:
+#     - phone: {phone}
+#   - slot_was_set:
+#     - phone: {phone}
+#   - action: action_save_data
+
+# - story: interactive_story_1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: get_user_name
+#   - intent: get_user_name
+#     entities:
+#     - user_name: {user_name}
+#   - action: action_extract_slots
+#   - slot_was_set:
+#     - user_name: {user_name}
+#   - action: action_save_data
+#   - action: utter_ask_phone
+#   - intent: get_contact_number
+#     entities:
+#     - phone: {phone}
+#   - slot_was_set:
+#     - phone: {phone}
+#   - action: action_save_data
+
 - story: interactive_story_1
   steps:
-  - intent: tell_name
-  - action: utter_name
-  - action: utter_ask_user_name
+  - intent: greet
+  - action: utter_greet
+  # - intent: get_user_name
   - intent: get_user_name
     entities:
-    - user_name:  {user_name}
+    - user_name: {user_name}
   - action: action_extract_slots
   - slot_was_set:
     - user_name: {user_name}
-  - action: action_get_user_name
+  - action: utter_ask_phone
+  - intent: get_contact_number
+    entities:
+    - phone: {phone}
   - slot_was_set:
-    - user_name:  {user_name}
-  - action: utter_name_greet
+    - phone: {phone}
+  - action: action_save_data
 
 - story: interactive_story_1
   steps:
-  - intent: how_are_you
-  - action: utter_how_are_you
-
-- story: interactive_story_1
-  steps:
-  - intent: tell_name
-  - action: utter_name
-  - action: utter_ask_user_name
+  - intent: greet
+  - action: utter_greet
   - intent: get_user_name
     entities:
-    - user_name: shivanya
-    - PERSON: shivanya
-  - slot_was_set:
-    - user_name: shivanya
+    - user_name: {user_name}
   - action: action_extract_slots
   - slot_was_set:
-    - user_name: shivanya
-  - action: action_get_user_name
+    - user_name: {user_name}
+  - action: utter_ask_phone
+  - intent: get_contact_number
+    entities:
+    - phone: {phone}
   - slot_was_set:
-    - user_name: shivanya
-  - action: utter_name_greet
+    - phone: {phone}
+  - action: action_save_data

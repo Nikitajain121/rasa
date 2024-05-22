@@ -15,7 +15,6 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-    - tell me your name
     - your name??
     - what's going on
 - intent: goodbye
@@ -71,7 +70,6 @@ nlu:
     - fantastic
     - wonderful
     - splendid
-
 - intent: deny
   examples: |
     - No, thanks.
@@ -84,7 +82,6 @@ nlu:
     - I decline.
     - I'll pass.
     - deny
-
 - intent: out_of_scope
   examples: |
     - I want to order food
@@ -107,19 +104,6 @@ nlu:
     - What's the best restaurant in town?
     - How do I start a business?
     - Can you fix my computer?
-
-# - intent: user_is_student
-#   examples: |
-#     - school
-#     - college
-#     - student
-#     - kid
-#     - learner
-# - intent: user_is_instructor
-#   examples: |
-#     - instructor
-#     - institute
-#     - teacher
 - intent: Course_Queries
   examples: |
     - What courses are currently available?
@@ -137,7 +121,6 @@ nlu:
     - How do I know if a course is suitable for my skill level?
     - Do you offer any certification courses?
     - Can I enroll in multiple courses at once?
-
 - intent: Get_Started
   examples: |
     - I'm new here, what should I do first?
@@ -153,7 +136,6 @@ nlu:
     - I'm eager to start learning, what's my first step?
     - Is there a tutorial or guide to help me begin?
     - How long does it take to get started once I sign up?
-
 - intent: live_class
   examples: |
     - Are there any upcoming live classes?
@@ -171,7 +153,6 @@ nlu:
     - Are live classes accessible from mobile devices?
     - Can I access past live sessions?
     - Do live classes have a specific duration or schedule?
-
 - intent: demo_class
   examples: |
     - Are there any upcoming demo classes?
@@ -184,7 +165,6 @@ nlu:
     - Are demo classes conducted online?
     - Can I request a personalized demo class?
     - Are there different time slots available for demo classes?
-
 - intent: quiz_queries
   examples: |
     - Can you tell me about the quiz rules?
@@ -212,7 +192,6 @@ nlu:
     - Can you provide an overview of the quiz guidelines?
     - I'm unsure about the rules of the quiz, can you clarify?
     - Are there specific instructions I should know before participating in the quiz?
-    
 - intent: quiz_time_limit
   examples: |
     - How much time do I have to answer each question in the quiz?
@@ -234,19 +213,18 @@ nlu:
     - Are there penalties for not completing the quiz within the time limit?
     - Can I request additional time for the quiz due to unforeseen circumstances?
     - Does the quiz time limit vary based on the difficulty of questions?
-    
 - intent: min_participants_quiz
   examples: |
-    - What is the minimum number of participants required for the quiz?
+    - What is the minimum phone of participants required for the quiz?
     - Will the quiz proceed if there are not enough participants?
     - Is there a minimum participation requirement for the quiz?
-    - Do you have any threshold for the number of participants in the quiz?
+    - Do you have any threshold for the phone of participants in the quiz?
     - How many people need to participate in the quiz for it to take place?
     - Can the quiz be conducted if there are only a few participants?
     - Is there a minimum quota of participants needed to start the quiz?
-    - Are there any restrictions on the number of participants in the quiz?
+    - Are there any restrictions on the phone of participants in the quiz?
     - What happens if the minimum participant requirement is not met?
-    - Is there a cutoff for the number of participants in the quiz?
+    - Is there a cutoff for the phone of participants in the quiz?
 - intent: quiz_registration_process
   examples: |
     - How do I register for the quiz?
@@ -264,12 +242,11 @@ nlu:
     - Can I register for the quiz on behalf of someone else?
     - Are there age restrictions for quiz registration?
     - Can I modify my registration details after submission?
-    - Is there a limit on the number of participants for quiz registration?
+    - Is there a limit on the phone of participants for quiz registration?
     - How do I confirm my registration for the quiz?
     - What confirmation method is used for quiz registration?
     - Can I cancel my quiz registration if needed?
     - Are there any prerequisites for quiz registration?
-
 - intent: quiz_eligibility
   examples: |
     - Who is eligible to participate in the quiz?
@@ -282,13 +259,12 @@ nlu:
     - Can employees of BrainBucks participate in the quiz?
     - Are there any restrictions based on geographical location for quiz participation?
     - Can minors participate in the quiz with parental consent?
-    - Is there a limit on the number of times one can participate in the quiz?
+    - Is there a limit on the phone of times one can participate in the quiz?
     - Are there any disqualifying factors for quiz participation?
     - Are there specific language requirements for quiz participation?
     - Can individuals with disabilities participate in the quiz?
     - Is there a maximum age limit for quiz participation?
     - Are there any prerequisites for eligibility verification?
-
 - intent: quiz_format
   examples: |
     - What is the format of the quiz questions?
@@ -308,9 +284,8 @@ nlu:
     - Are there any multimedia elements included in the quiz questions?
     - Can participants request hints for quiz questions?
     - Are there different difficulty levels for quiz questions?
-    - Is there a limit on the number of attempts for quiz questions?
+    - Is there a limit on the phone of attempts for quiz questions?
     - How are tiebreakers handled in the quiz?
-
 - intent: suggesting_quiz_topics
   examples: |
     - How can I suggest topics for future quizzes?
@@ -322,7 +297,7 @@ nlu:
     - Are there any rewards for suggesting quiz topics?
     - Who evaluates the suggested quiz topics?
     - Can participants suggest quiz topics anonymously?
-    - Are there limitations on the number of quiz topics one can suggest?
+    - Are there limitations on the phone of quiz topics one can suggest?
     - How frequently are new quiz topics chosen?
     - Are there any guidelines for suggesting quiz topics?
     - Can quiz topics be related to current events or specific themes?
@@ -333,7 +308,6 @@ nlu:
     - Are there any restrictions on the content of suggested quiz topics?
     - Is there a feedback mechanism for rejected quiz topic suggestions?
     - Are there any specific channels for communicating quiz topic suggestions?
-
 - intent: room_queries
   examples: |
     - What are the features of rooms?
@@ -352,11 +326,10 @@ nlu:
     - Can users invite others to join a room?
     - Are there any community guidelines for interactions in rooms?
     - Can participants earn rewards for active participation in rooms?
-    - Are there any limits on the number of participants in a room?
+    - Are there any limits on the phone of participants in a room?
     - How are room activities monitored for compliance with policies?
     - Can users host private events or discussions in rooms?
     - Is there a process for reporting inappropriate behavior in rooms?
-
 - intent: room_enquiry
   examples: |
     - What are rooms and how do they work?
@@ -366,7 +339,7 @@ nlu:
     - How do rooms help users collaborate and compete?
     - What benefits do users get from participating in rooms?
     - Are rooms accessible on all devices?
-    - Is there a limit on the number of rooms a user can create?
+    - Is there a limit on the phone of rooms a user can create?
     - Are there any restrictions on room naming conventions?
     - Can users create public and private rooms?
     - How are room activities archived for future reference?
@@ -379,7 +352,6 @@ nlu:
     - Can users create subgroups within a room for specific discussions?
     - How are room administrators appointed and managed?
     - Is there a limit on the duration of room activities?
-
 - intent: joining_room
   examples: |
     - How do I join a room?
@@ -394,14 +366,13 @@ nlu:
     - Can I join a room as a guest user?
     - How are invitations sent for joining a room?
     - Can I join a room from different devices?
-    - Is there a limit on the number of participants in a room?
+    - Is there a limit on the phone of participants in a room?
     - Are there restrictions on joining rooms based on user roles?
     - Can I view the room activities before joining?
     - How are room access permissions managed?
     - Are there any age restrictions for joining certain rooms?
     - Can users join rooms anonymously?
     - Is there a process for verifying user identities before joining a room?
-
 - intent: connecting_in_room
   examples: |
     - How can I connect with friends or instructors in a room?
@@ -424,7 +395,6 @@ nlu:
     - Are there options for blocking or reporting users in rooms?
     - How is user activity tracked and displayed in rooms?
     - Can users customize their notification settings for different rooms?
-
 - intent: room_types
   examples: |
     - What are the different types of rooms available?
@@ -434,7 +404,7 @@ nlu:
     - Are there specific requirements for creating public rooms?
     - Can users switch between public and private settings for a room?
     - How are permissions managed in public and private rooms?
-    - Are there limitations on the number of participants in public and private rooms?
+    - Are there limitations on the phone of participants in public and private rooms?
     - Can users customize the visibility settings for private rooms?
     - Is there a way to password protect private rooms?
     - Are public rooms accessible to all users?
@@ -446,7 +416,6 @@ nlu:
     - Are there moderator privileges available for managing public and private rooms?
     - How are user interactions monitored in public and private rooms?
     - Can users leave feedback or ratings for public and private rooms?
-
 - intent: about_company
   examples: |
     - Tell me about Brainbucks
@@ -475,7 +444,6 @@ nlu:
     - What should I know about Brainbucks?
     - what is brainbucks
     - what is bbucks
-
 - intent: available_quizzes
   examples: |
     - What kind of quizzes are available on Brainbucks?
@@ -503,7 +471,6 @@ nlu:
     - How does Brainbucks use and protect my personal information?
     - Is there a dedicated privacy policy page on Brainbucks' website?
     - What steps does Brainbucks take to prevent unauthorized access to user data?
-
 - intent: compete_with_friends
   examples: |
     - Can I compete with my friends on Brainbucks?
@@ -516,10 +483,9 @@ nlu:
     - Is there a feature to share quiz results with friends on Brainbucks?
     - How can I view my friends' activity or achievements on Brainbucks?
     - Are there social features for interacting with friends on Brainbucks?
-
 - intent: quiz_limit
   examples: |
-    - Is there a limit to the number of quizzes I can take on Brainbucks?
+    - Is there a limit to the phone of quizzes I can take on Brainbucks?
     - Can I take unlimited quizzes on Brainbucks?
     - How many quizzes can I participate in on Brainbucks?
     - Are there any restrictions on the frequency of quizzes I can participate in on Brainbucks?
@@ -528,7 +494,6 @@ nlu:
     - Are there penalties for exceeding the quiz limit on Brainbucks?
     - Can I request additional quizzes beyond the limit on Brainbucks?
     - How is the quiz limit enforced on Brainbucks?
-
 - intent: cost_of_joining
   examples: |
     - Is there a cost to joining Brainbucks?
@@ -540,7 +505,6 @@ nlu:
     - Can I access certain features of Brainbucks for free without joining?
     - Are there discounts or promotions available for new members joining Brainbucks?
     - Is there a trial period or free membership option available for Brainbucks?
-
 - intent: countries_availability
   examples: |
     - In how many countries is Brainbucks available?
@@ -566,7 +530,6 @@ nlu:
     - Can I call Brain_Bucks Customer Support?
     - Are there any online chat options for support?
     - How do I access the support portal?
-
 - intent: response_time
   examples: |
     - How long does it take to receive a response from Brain_Bucks Customer Support?
@@ -576,7 +539,6 @@ nlu:
     - Can I expect a prompt response from support?
     - Is there a guaranteed response time for support requests?
     - How soon can I expect assistance from support?
-
 - intent: immediate_assistance
   examples: |
     - Can I get immediate assistance from Brain_Bucks Customer Support?
@@ -586,7 +548,6 @@ nlu:
     - Is there an emergency support option for immediate help?
     - What should I do if I need urgent assistance from support?
     - Are there priority channels for immediate support requests?
-
 - intent: availability
   examples: |
     - Is Brain_Bucks Customer Support available round the clock?
@@ -605,10 +566,9 @@ nlu:
     - Do you have a physical office? Where is Brainbucks located?
     - Where can I visit Brainbucks' main office?
     - What is the address of Brainbucks' headquarters?
-
 - intent: expectations
   examples: |
-    - What can I expect from Brain_Bucks's customer helpline number?
+    - What can I expect from Brain_Bucks's customer helpline phone?
     - What should I expect from support?
     - What assistance is provided by support?
     - Are there any service level agreements for support assistance?
@@ -616,7 +576,6 @@ nlu:
     - What level of support quality should I anticipate?
     - Are there any support performance metrics available?
     - How does Brain_Bucks ensure customer satisfaction with support?
-
 - intent: provide_support
   examples: |
     - Do you provide customer support?
@@ -629,7 +588,6 @@ nlu:
     - Can users rely on support for assistance?
     - Is there a support ticketing system in place?
     - Can I expect knowledgeable assistance from support?
-
 - intent: technical_support
   examples: |
     - How do I get technical support?
@@ -642,7 +600,6 @@ nlu:
     - Can I expect timely resolution of technical issues?
     - Are there specific channels for technical support requests?
     - What expertise does the technical support team have?
-
 - intent: download_install
   examples: |
     - How can I download and install the app?
@@ -655,7 +612,6 @@ nlu:
     - Are there any prerequisites for installing the app?
     - How long does the app installation take?
     - Is the app installation straightforward?
-
 - intent: app_pricing
   examples: |
     - Is the app free or paid?
@@ -668,7 +624,6 @@ nlu:
     - How does the app pricing model work?
     - Are discounts available for long-term subscriptions?
     - Can I switch between different pricing tiers?
-
 - intent: update_app
   examples: |
     - How do I update the app?
@@ -681,7 +636,6 @@ nlu:
     - Is there a changelog available for app updates?
     - What should I do if the app update fails?
     - Are there any precautions I need to take before updating the app?
-
 - intent: troubleshoot_issues
   examples: |
     - Common troubleshooting steps?
@@ -694,7 +648,6 @@ nlu:
     - What should I do if the app crashes?
     - Are there known issues with the app?
     - How do I report technical problems with the app?
-
 - intent: learning_programs_languages
   examples: |
     - In which languages are the learning programs available?
@@ -707,7 +660,6 @@ nlu:
     - Is language customization available for learning materials?
     - Are subtitles or translations provided for learning videos?
     - Are there language proficiency requirements for accessing learning programs?
-
 - intent: internet_requirement
   examples: |
     - Does the app require internet connectivity?
@@ -720,7 +672,6 @@ nlu:
     - Can I download learning content for offline access?
     - What features are available offline in the app?
     - How does the app handle intermittent internet connections?
-
 - intent: downloadable_materials
   examples: |
     - Are there downloadable materials provided?
@@ -729,11 +680,10 @@ nlu:
     - How do I access downloadable resources?
     - Can I save learning materials for offline use?
     - Are there restrictions on downloading course materials?
-    - Is there a limit to the number of materials I can download?
+    - Is there a limit to the phone of materials I can download?
     - Can I download videos or only documents?
     - How often are downloadable materials updated?
     - Can I share downloaded materials with others?
-
 - intent: laptop_browser_accessibility
   examples: |
     - Can I access the app on my laptop?
@@ -746,7 +696,6 @@ nlu:
     - Can I switch between mobile and desktop versions seamlessly?
     - Are all features available on the web version?
     - Can I sync progress between the mobile app and web version?
-
 - intent: subscription_billing
   examples: |
     - Is the app available for free?
@@ -759,7 +708,6 @@ nlu:
     - How often is the subscription billed?
     - Are there different subscription plans available?
     - Can I change my subscription plan later?
-
 - intent: subscription_cancellation
   examples: |
     - Can I cancel my subscription?
@@ -771,7 +719,6 @@ nlu:
     - Are there any penalties for canceling the subscription?
     - How do I cancel auto-renewal of my subscription?
     - Can I get a refund if I cancel my subscription?
-
 - intent: subscription_cost
   examples: |
     - What is the cost of subscribing to Brain_Bucks programs?
@@ -784,20 +731,18 @@ nlu:
     - Are there any additional charges besides the subscription fee?
     - Is there a student discount available for subscriptions?
     - Are there any promotions or offers for new subscribers?
-
 - intent: profiles_limit
   examples: |
     - How many profiles can I add on the Brain_Bucks App?
-    - Limit on the number of profiles allowed?
+    - Limit on the phone of profiles allowed?
     - Profile management in the app?
     - Can I customize each profile with different settings?
-    - Is there a limit to the number of devices I can use per profile?
+    - Is there a limit to the phone of devices I can use per profile?
     - Can I switch between profiles easily?
     - Are profiles linked to individual subscriptions?
     - Can I delete profiles that I no longer need?
     - What information is associated with each profile?
     - Can I create profiles for family members or friends?
-
 - intent: multiple_accounts_brainbucks
   examples: |
     - Can I open more than one BrainBucks account?
@@ -806,11 +751,10 @@ nlu:
     - Is it allowed to have separate accounts for different purposes?
     - Can I merge multiple accounts into one?
     - What are the consequences of having multiple accounts?
-    - Is there a limit to the number of accounts per user?
+    - Is there a limit to the phone of accounts per user?
     - Can I transfer data between different BrainBucks accounts?
     - Are there any restrictions on using multiple accounts simultaneously?
     - How do I manage multiple accounts efficiently?
-
 - intent: app_not_loading
   examples: |
     - The app is not loading, what should I do?
@@ -833,7 +777,6 @@ nlu:
     - Is there a way to resend the verification code?
     - Are there alternative methods for verification if the code doesn't work?
     - How long is the verification code valid for?
-
 - intent: login_problem
   examples: |
     - I'm having trouble logging into the app, what should I do?
@@ -846,7 +789,6 @@ nlu:
     - The login button doesn't seem to work. What should I do?
     - I'm stuck in a login loop, how do I break out of it?
     - Are there any known issues with the login process?
-
 - intent: payment_issue
   examples: |
     - I'm facing problems with making a payment in the app, what should I do?
@@ -859,7 +801,6 @@ nlu:
     - What should I do if I'm double-charged for a transaction?
     - Are there any known issues with the payment system?
     - Can I get a refund for failed transactions?
-
 - intent: earn_bb_money
   examples: |
     - How can I earn BB money?
@@ -872,7 +813,6 @@ nlu:
     - How quickly can I accumulate BB money?
     - Can I earn BB money by completing quizzes or games?
     - Are there limitations on how much BB money I can earn?
-
 - intent: use_bb_money
   examples: |
     - How do I use BB money?
@@ -885,7 +825,6 @@ nlu:
     - Are there discounts or offers available when using BB money?
     - Can I convert BB money to real currency?
     - Are there restrictions on using BB money?
-
 - intent: bb_money_withdrawal_details
   examples: |
     - How do I withdraw BB money?
@@ -898,7 +837,6 @@ nlu:
     - Are there maximum limits for BB money withdrawal?
     - Can I withdraw BB money to any payment method?
     - Are there any restrictions on BB money withdrawal?
-
 - intent: minimum_withdrawal_limit
   examples: |
     - What is the minimum withdrawal limit for BB money?
@@ -911,7 +849,6 @@ nlu:
     - What happens if I don't meet the minimum withdrawal requirement?
     - Is the minimum withdrawal limit subject to change?
     - How often is the minimum withdrawal limit updated?
-
 - intent: game_cost
   examples: |
     - How much does it cost to play a game?
@@ -936,7 +873,6 @@ nlu:
     - Can I continue playing from where I left off if I reconnect to the internet?
     - Does the game pause automatically when the internet connection is lost?
     - Are there any troubleshooting steps recommended for internet connection problems?
-
 - intent: wrong_quiz_joined
   examples: |
     - I joined the wrong quiz by mistake, what should I do?
@@ -949,20 +885,18 @@ nlu:
     - Can I get a refund if I accidentally join the wrong quiz?
     - How do I ensure I'm joining the correct quiz next time?
     - Is there a confirmation step before joining a quiz to prevent mistakes?
-
 - intent: free_plays
   examples: |
     - What are Free Plays?
     - Can I play games for free?
     - Do I get any free attempts in quizzes?
     - How do Free Plays work?
-    - Are there any limitations on the number of Free Plays I can use?
+    - Are there any limitations on the phone of Free Plays I can use?
     - How often are Free Plays replenished?
     - Can I earn additional Free Plays by completing certain actions?
     - Are Free Plays restricted to specific games or quizzes?
     - Is there a time limit for using Free Plays?
     - Can I accumulate unused Free Plays for later use?
-
 - intent: paid_vs_unpaid_quizzes
   examples: |
     - Are there any paid quizzes available?
@@ -983,7 +917,6 @@ nlu:
     - Are there any prerequisites for paid quizzes?
     - What rewards can I earn from paid quizzes?
     - Are paid quizzes available for all users?
-    
 - intent: question_mistake
   examples: |
     - What should I do if I find a mistake in a question?
@@ -1008,7 +941,6 @@ nlu:
     - Are there any transaction fees associated with buying BB money?
     - How quickly are BB money credited to my account after purchase?
     - Can I cancel a BB money purchase if I change my mind?
-
 - intent: withdrawal_process
   examples: |
     - How does the withdrawal process work?
@@ -1021,7 +953,6 @@ nlu:
     - Can I track the status of my withdrawal request?
     - What information do I need to provide for a withdrawal?
     - Are there any fees associated with withdrawals?
-
 - intent: withdrawal_problem
   examples: |
     - I'm facing issues with withdrawing my winnings, what should I do?
@@ -1034,7 +965,6 @@ nlu:
     - Are there any troubleshooting steps for withdrawal problems?
     - How can I ensure smooth withdrawals in the future?
     - Is there a timeframe within which withdrawal issues are typically resolved?
-
 - intent: withdrawal_minimum_amount
   examples: |
     - What is the minimum amount I can withdraw?
@@ -1047,7 +977,6 @@ nlu:
     - How often can I withdraw winnings below the minimum amount?
     - Can I request partial withdrawals if I haven't reached the minimum amount?
     - Are there any exceptions to the withdrawal minimum amount policy?
-
 - intent: data_protection_measures
   examples: |
     - What data protection measures are in place?
@@ -1060,7 +989,6 @@ nlu:
     - Do you comply with data protection regulations?
     - Are there regular security audits conducted?
     - How transparent are you about data handling practices?
-
 - intent: user_data_control
   examples: |
     - How can I control my data?
@@ -1073,7 +1001,6 @@ nlu:
     - Is there a privacy settings section in my account?
     - What are my rights regarding data privacy and protection?
     - How can I export or download my data from the platform?
-
 - intent: security_reporting
   examples: |
     - How do I report security issues?
@@ -1086,7 +1013,6 @@ nlu:
     - What information should I include when reporting a security issue?
     - Is there a reward or bug bounty program for security reports?
     - How quickly are security issues addressed after reporting?
-
 - intent: account_recovery_process
   examples: |
     - How can I recover my account?
@@ -1112,7 +1038,6 @@ nlu:
     - Can I access a copy of the terms and conditions before agreeing to them?
     - What happens if I violate the terms and conditions?
     - Are there any restrictions or limitations outlined in the terms and conditions?
-
 - intent: get_paid_instructions
   examples: |
     - How can I get paid?
@@ -1137,7 +1062,6 @@ nlu:
     - Can I take quizzes at any time or are there scheduled sessions?
     - Do I need to register for quizzes in advance?
     - Are there different types of quizzes available?
-
 - intent: get_user_name
   examples: |
     - my name is [Rahul](user_name)
@@ -1166,7 +1090,40 @@ nlu:
     - [raghav](user_name)
     - [neelam](user_name)
     - [Sona](user_name)
-
+    - Nikk(user_name)
+    - [shanaya](user_name)
+    - [shakira](user_name)
+    - [gayatri](user_name)
+    - [twinkle](user_name)
+- intent: get_contact_number
+  examples: |
+    - my contact phone is [1234567890](phone)
+    - you can reach me at [9876543210](phone)
+    - my phone conatct is [5556667777](phone)
+    - please call me at [1112223333](phone)
+    - you can contact me on [4445556666](phone)
+    - I can be reached at [8889990000](phone)
+    - my phone is [7778889999](phone)
+    - here's my phone number: [6667778888](phone)
+    - my mobile phone is [9998887777](phone)
+    - my cell phone number is [1231231234](phone)
+    - you can dial [3213214321](phone) to reach me
+    - contact me at [5554443333](phone)
+    - call me on [1010101010](phone)
+    - my digits are [9090909090](phone)
+    - you can give me a ring at [2020202020](phone)
+    - reach out to me on [3030303030](phone)
+    - here is my phone: [4040404040](phone)
+    - the best phone to reach me is [5050505050](phone)
+    - my contact is [6060606060](phone)
+    - the phone you can call me on is [7070707070](phone)
+    - [2515656778](phone)
+    - [9876544290](phone)
+    - [4564111111](phone)
+    - [4567899902](phone)
+    - [4567222222](phone)
+    - [888888888](phone)
+    - [566767887](phone)
 - intent: tell_name
   examples: |
     - what is your name?
@@ -1179,7 +1136,6 @@ nlu:
     - hey what is your name
     - can you introduce yourself?
     - may I know your name?
-
 - intent: how_are_you
   examples: |
     - hey how are you doing?
@@ -1191,7 +1147,14 @@ nlu:
     - what's up?
     - how's everything?
     - are you well?
-
+- intent: add_data
+  examples: |
+    - i want to add some data to the excel sheet
+    - i want to add the user data to the excel sheet
+    - add user data
+    - ask me some questions to add the user data
+    - what information is required to add the data to the excel sheet
+    - add data
 - synonym: bb_money
   examples: |
     - token
@@ -1201,7 +1164,6 @@ nlu:
     - Brainbucks currency
     - virtual currency
     - credits
-
 - synonym: brainbucks
   examples: |
     - BrainBucks
@@ -1213,4 +1175,13 @@ nlu:
     - bbucks
     - BB
     - brain bucks
-    
+- synonym: phone
+  examples: |
+    - contact
+    - number
+    - call
+    - cell
+- synonym: name
+  examples: |
+    - user_name
+    - username

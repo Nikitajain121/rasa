@@ -23,7 +23,7 @@ pipeline:
     model: "en_core_web_lg"
     case_sensitive: False
   - name: SpacyEntityExtractor
-    dimensions: ["PERSON", "ORG"]
+    dimensions: ["PERSON"]
  
 
 policies:
