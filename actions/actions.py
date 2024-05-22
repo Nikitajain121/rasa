@@ -12,7 +12,7 @@ from rasa_sdk.events import UserUtteranceReverted
 from openai import OpenAI
 
 # Initialize OpenAI client with your API key
-client = OpenAI(api_key="sk-proj-2tTdgbONpH3mNDVDhx47T3BlbkFJcIYFaKmeEbZDpAMfNBqs")
+client = OpenAI(api_key=" ")
 GPT_MODEL = "gpt-3.5-turbo-1106"
 
 class ActionHandleOutOfContext(Action):
