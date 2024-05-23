@@ -17,7 +17,7 @@ def DataUpdate(user_name,phone):
     try:
         # Establish a connection to the PostgreSQL database
         connection = psycopg2.connect(
-            host="localhost",
+            host="98.70.11.123",
             user="postgres",
             password="postgre",  # Assuming password is 'postgre'
             database="postgres",
