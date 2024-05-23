@@ -10,7 +10,7 @@ import os
 import yaml
 from rasa_sdk.events import UserUtteranceReverted
 from openai import OpenAI
-
+### HWHHUW
 # Initialize OpenAI client with your API key
 client = OpenAI(api_key="sk-proj-gZ4oEmPRF9v8xT4aGaZzT3BlbkFJb9BUpgZzeEyMzt6GfnKE")
 GPT_MODEL = "gpt-3.5-turbo-1106"
