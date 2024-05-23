@@ -12,7 +12,7 @@
 
 # if using docker
 action_endpoint:
- url: "http://localhost:5055/webhook"
+ url: "http://app:5055/webhook"
 
 # not using docker
 # action_endpoint:
