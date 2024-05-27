@@ -17,6 +17,18 @@ nlu:
     - good afternoon
     - your name??
     - what's going on
+    - howdy
+    - greetings
+    - salutations
+    - yo
+    - how's it going
+    - hey man
+    - hi there
+    - hey buddy
+    - hello everyone
+    - hi folks
+    - what's new
+
 - intent: goodbye
   examples: |
     - bye
@@ -52,10 +64,17 @@ nlu:
     - bye-bye for now
     - see you around
     - see you soon
+    - take care
+    - later gator
+    - bye now
+    - be seeing you
+    - stay safe
+
 - intent: affirm
   examples: |
     - yes
     - y
+    - yeah
     - indeed
     - of course
     - that sounds good
@@ -70,6 +89,22 @@ nlu:
     - fantastic
     - wonderful
     - splendid
+    - absolutely
+    - sure
+    - definitely
+    - yup
+    - right
+    - you got it
+    - exactly
+    - affirmative
+    - sure thing
+    - sounds good
+    - that's right
+    - sure, why not
+    - fine by me
+    - totally
+    - you bet
+
 - intent: deny
   examples: |
     - No, thanks.
@@ -82,6 +117,25 @@ nlu:
     - I decline.
     - I'll pass.
     - deny
+    - no
+    - nah
+    - absolutely not
+    - definitely not
+    - not at all
+    - never
+    - no thanks
+    - not really
+    - unfortunately, no
+    - no, that's not it
+    - no, sorry
+    - I don't think so
+    - I'm afraid not
+    - not happening
+    - no can do
+    - nix
+    - negative
+    - I don't agree
+
 - intent: out_of_scope
   examples: |
     - I want to order food
@@ -104,6 +158,24 @@ nlu:
     - What's the best restaurant in town?
     - How do I start a business?
     - Can you fix my computer?
+    - What's your favorite color?
+    - Do you have any pets?
+    - How do I get to the airport?
+    - Can you tell me a story?
+    - Where is the nearest hospital?
+    - What's your favorite book?
+    - How do I apply for a job?
+    - What's the meaning of life?
+    - How do I lose weight?
+    - What should I have for dinner?
+    - Can you sing?
+    - Tell me a fun fact.
+    - How do I invest in stocks?
+    - Can you teach me a new language?
+    - What's your favorite movie?
+    - How do I fix a leaky faucet?
+
+
 - intent: Course_Queries
   examples: |
     - What courses are currently available?
