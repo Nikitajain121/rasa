@@ -8,26 +8,17 @@ nlu:
     - hello there
     - good morning
     - good evening
-    - moin
     - hey there
-    - let's go
-    - hey dude
     - goodmorning
-    - goodevening
     - good afternoon
-    - your name??
     - what's going on
     - howdy
-    - greetings
-    - salutations
-    - yo
     - how's it going
     - hey man
     - hi there
     - hey buddy
     - hello everyone
     - hi folks
-    - what's new
 
 - intent: goodbye
   examples: |
@@ -37,23 +28,10 @@ nlu:
     - catch you later
     - gotta go
     - i'm out
-    - later
-    - peace
-    - peace out
-    - take it easy
     - until next time
-    - cya
-    - adios
-    - sayonara
-    - auf wiedersehen
-    - arrivederci
-    - au revoir
-    - adieu
     - farewell
     - so long
     - toodle-oo
-    - toodle-pip
-    - cheerio
     - pip pip
     - tata
     - ta-ta
@@ -62,13 +40,10 @@ nlu:
     - byebye
     - bye for now
     - bye-bye for now
-    - see you around
     - see you soon
     - take care
-    - later gator
     - bye now
-    - be seeing you
-    - stay safe
+  
 
 - intent: affirm
   examples: |
@@ -80,21 +55,16 @@ nlu:
     - that sounds good
     - correct
     - okay nice
-    - okay, that's nice
+    - okay good
     - nice
     - cool
     - great
     - awesome
-    - sweet
     - fantastic
     - wonderful
-    - splendid
     - absolutely
     - sure
     - definitely
-    - yup
-    - right
-    - you got it
     - exactly
     - affirmative
     - sure thing
@@ -102,8 +72,6 @@ nlu:
     - that's right
     - sure, why not
     - fine by me
-    - totally
-    - you bet
 
 - intent: deny
   examples: |
@@ -114,8 +82,6 @@ nlu:
     - I'd rather not.
     - Nope.
     - No way.
-    - I decline.
-    - I'll pass.
     - deny
     - no
     - nah
@@ -128,13 +94,13 @@ nlu:
     - unfortunately, no
     - no, that's not it
     - no, sorry
-    - I don't think so
-    - I'm afraid not
-    - not happening
-    - no can do
-    - nix
-    - negative
-    - I don't agree
+
+- intent: ask_why
+  examples: |
+    - why
+    - what is the reason
+    - can you explain
+    - how does it work
 
 - intent: out_of_scope
   examples: |
@@ -174,6 +140,7 @@ nlu:
     - Can you teach me a new language?
     - What's your favorite movie?
     - How do I fix a leaky faucet?
+    - how to cook
 
 
 - intent: Course_Queries
@@ -204,6 +171,7 @@ nlu:
     - Where can I find information to start using your services?
     - Do you have any resources for beginners to get started?
     - What's the recommended path for newcomers?
+    - how to start using brain_bucks
     - Can you walk me through the steps to get started?
     - I'm eager to start learning, what's my first step?
     - Is there a tutorial or guide to help me begin?
@@ -297,8 +265,18 @@ nlu:
     - Are there any restrictions on the phone of participants in the quiz?
     - What happens if the minimum participant requirement is not met?
     - Is there a cutoff for the phone of participants in the quiz?
+
+- intent: reporting_mistakes_quiz
+  examples: |
+    - there is mistake in quiz 
+    - want to report a quiz fault
+    - reporting a quiz mistake 
+    - i want to rectify a quiz fault
+    - there is issue in my quiz
+
 - intent: quiz_registration_process
   examples: |
+    - fees of quiz ?
     - How do I register for the quiz?
     - What is the process for signing up for the quiz?
     - Can you guide me through the quiz registration process?
@@ -382,6 +360,7 @@ nlu:
     - Are there any specific channels for communicating quiz topic suggestions?
 - intent: room_queries
   examples: |
+    - what is a room
     - What are the features of rooms?
     - Can you explain the types of rooms available?
     - What incentives does BrainBucks offer for organizing events or quizzes in a room?
@@ -402,28 +381,28 @@ nlu:
     - How are room activities monitored for compliance with policies?
     - Can users host private events or discussions in rooms?
     - Is there a process for reporting inappropriate behavior in rooms?
-- intent: room_enquiry
-  examples: |
-    - What are rooms and how do they work?
-    - Can you explain the concept of rooms?
-    - How are rooms used in BrainBucks?
-    - What are the main features of rooms?
-    - How do rooms help users collaborate and compete?
-    - What benefits do users get from participating in rooms?
-    - Are rooms accessible on all devices?
-    - Is there a limit on the phone of rooms a user can create?
-    - Are there any restrictions on room naming conventions?
-    - Can users create public and private rooms?
-    - How are room activities archived for future reference?
-    - Are there notifications for new activities in rooms?
-    - Can users customize their room profiles?
-    - Are there any age restrictions for accessing certain room features?
-    - How is room content organized for easy navigation?
-    - Can users embed multimedia content in rooms?
-    - Are there templates available for setting up rooms?
-    - Can users create subgroups within a room for specific discussions?
-    - How are room administrators appointed and managed?
-    - Is there a limit on the duration of room activities?
+# - intent: room_enquiry
+#   examples: |
+#     - What are rooms and how do they work?
+#     - Can you explain the concept of rooms?
+#     - How are rooms used in BrainBucks?
+#     - What are the main features of rooms?
+#     - How do rooms help users collaborate and compete?
+#     - What benefits do users get from participating in rooms?
+#     - Are rooms accessible on all devices?
+#     - Is there a limit on the phone of rooms a user can create?
+#     - Are there any restrictions on room naming conventions?
+#     - Can users create public and private rooms?
+#     - How are room activities archived for future reference?
+#     - Are there notifications for new activities in rooms?
+#     - Can users customize their room profiles?
+#     - Are there any age restrictions for accessing certain room features?
+#     - How is room content organized for easy navigation?
+#     - Can users embed multimedia content in rooms?
+#     - Are there templates available for setting up rooms?
+#     - Can users create subgroups within a room for specific discussions?
+#     - How are room administrators appointed and managed?
+#     - Is there a limit on the duration of room activities?
 - intent: joining_room
   examples: |
     - How do I join a room?
@@ -521,6 +500,12 @@ nlu:
     - What kind of quizzes are available on Brainbucks?
     - Tell me about the quizzes on Brainbucks.
     - What topics do the quizzes on Brainbucks cover?
+    - Can you list the quiz categories on Brainbucks?
+    - Show me the available quizzes on Brainbucks.
+    - Which subjects are included in the quizzes on Brainbucks?
+    - What types of tests can I find on Brainbucks?
+    - Are there any specific quiz topics I can explore on Brainbucks?
+    - what type of questions will be asked in quizzes
 - intent: earning_rewards
   examples: |
     - How do I earn rewards on Brainbucks?
@@ -602,6 +587,9 @@ nlu:
     - Can I call Brain_Bucks Customer Support?
     - Are there any online chat options for support?
     - How do I access the support portal?
+    - How can I reach you ?
+    - How to contact them?
+
 - intent: response_time
   examples: |
     - How long does it take to receive a response from Brain_Bucks Customer Support?
@@ -885,6 +873,16 @@ nlu:
     - How quickly can I accumulate BB money?
     - Can I earn BB money by completing quizzes or games?
     - Are there limitations on how much BB money I can earn?
+- intent: prizes_distribution
+  examples: |
+    - How the prizes will be distributed?
+    - getting prizzes 
+    - will it be a cash prize
+    - will i get any cash money
+    - quiz prize to winners
+    - quiz money distribution 
+    - i got a rank what would be the price 
+
 - intent: use_bb_money
   examples: |
     - How do I use BB money?
@@ -989,18 +987,18 @@ nlu:
     - Are there any prerequisites for paid quizzes?
     - What rewards can I earn from paid quizzes?
     - Are paid quizzes available for all users?
-- intent: question_mistake
-  examples: |
-    - What should I do if I find a mistake in a question?
-    - Can I report errors in quiz questions?
-    - How do I notify about a wrong question in a quiz?
-    - Is there a way to provide feedback on quiz questions?
-    - Are there moderators who review and correct quiz questions?
-    - Can I suggest improvements or corrections for quiz questions?
-    - How quickly are reported question mistakes addressed?
-    - Are there any rewards or incentives for identifying question mistakes?
-    - What information should I include when reporting a question mistake?
-    - Is there a dedicated platform or channel for reporting question mistakes?
+# - intent: question_mistake
+#   examples: |
+#     - What should I do if I find a mistake in a question?
+#     - Can I report errors in quiz questions?
+#     - How do I notify about a wrong question in a quiz?
+#     - Is there a way to provide feedback on quiz questions?
+#     - Are there moderators who review and correct quiz questions?
+#     - Can I suggest improvements or corrections for quiz questions?
+#     - How quickly are reported question mistakes addressed?
+#     - Are there any rewards or incentives for identifying question mistakes?
+#     - What information should I include when reporting a question mistake?
+#     - Is there a dedicated platform or channel for reporting question mistakes?
 - intent: buy_bb_money
   examples: |
     - How can I buy BB money ?
@@ -1134,6 +1132,8 @@ nlu:
     - Can I take quizzes at any time or are there scheduled sessions?
     - Do I need to register for quizzes in advance?
     - Are there different types of quizzes available?
+    - how to take a quiz and earn money
+
 - intent: get_user_name
   examples: |
     - my name is [Rahul](user_name)
@@ -1162,7 +1162,7 @@ nlu:
     - [raghav](user_name)
     - [neelam](user_name)
     - [Sona](user_name)
-    - Nikk(user_name)
+    - [Nikk](user_name)
     - [shanaya](user_name)
     - [shakira](user_name)
     - [gayatri](user_name)
@@ -1196,18 +1196,19 @@ nlu:
     - [4567222222](phone)
     - [888888888](phone)
     - [566767887](phone)
-- intent: tell_name
-  examples: |
-    - what is your name?
-    - tell me your name
-    - what others call you
-    - what should i call you?
-    - who are you?
-    - hey what is your name?
-    - name please?
-    - hey what is your name
-    - can you introduce yourself?
-    - may I know your name?
+# - intent: tell_name
+#   examples: |
+#     - what is your name?
+#     - tell me your name
+#     - what others call you
+#     - what should i call you?
+#     - who are you?
+#     - hey what is your name?
+#     - name please?
+#     - hey what is your name
+#     - can you introduce yourself?
+#     - may I know your name?
+
 - intent: how_are_you
   examples: |
     - hey how are you doing?
@@ -1219,14 +1220,16 @@ nlu:
     - what's up?
     - how's everything?
     - are you well?
-- intent: add_data
-  examples: |
-    - i want to add some data to the excel sheet
-    - i want to add the user data to the excel sheet
-    - add user data
-    - ask me some questions to add the user data
-    - what information is required to add the data to the excel sheet
-    - add data
+    - how are you 
+
+# - intent: add_data
+#   examples: |
+#     - i want to add some data to the excel sheet
+#     - i want to add the user data to the excel sheet
+#     - add user data
+#     - ask me some questions to add the user data
+#     - what information is required to add the data to the excel sheet
+#     - add data
 - synonym: bb_money
   examples: |
     - token
@@ -1257,3 +1260,7 @@ nlu:
   examples: |
     - user_name
     - username
+- synonym: internet
+  examples: |
+    - net
+    - network
