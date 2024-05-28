@@ -4,7 +4,7 @@ intents:
 - Get_Started
 - about_company
 - account_recovery_process
-- add_data
+# - add_data
 - affirm
 - app_not_loading
 - app_pricing
@@ -50,7 +50,7 @@ intents:
 - prizes_distribution
 - profiles_limit
 - provide_support
-- question_mistake
+#- question_mistake
 - quiz_eligibility
 - quiz_format
 - quiz_instructions
@@ -62,7 +62,7 @@ intents:
 - reach_support
 - reporting_mistakes_quiz
 - response_time
-- room_enquiry
+# - room_enquiry
 - room_queries
 - room_types
 - safety_and_security
@@ -72,7 +72,8 @@ intents:
 - subscription_cost
 - suggesting_quiz_topics
 - technical_support
-- tell_name
+#- tell_name
+- ask_why
 - terms_and_conditions
 - troubleshoot_issues
 - update_app
@@ -83,11 +84,14 @@ intents:
 - withdrawal_problem
 - withdrawal_process
 - wrong_quiz_joined
+
 responses:
-  utter_name_greet:
-  - text: hey {user_name} I hope you find brain_bucks amazing
+  # utter_name_greet:
+  # - text: hey {user_name} I hope you find brain_bucks amazing
   utter_greet:
-  - text: Hey! I'm Nikita bot..I'm here to assist you. You can ask me any question related with Brainbucks.Can I know your name?
+  - text: Hey! I'm Niki bot..I'm here to assist you. You can ask me any question related with Brainbucks. Can I know your name?
+  utter_ask_why:
+  - text: I'd be happy to help you understand. Can you please provide more context or details about what you're asking?
   utter_affirm:
   - text: Great! Let's continue.
   - text: Awesome!
@@ -101,8 +105,8 @@ responses:
   - text: I'm sorry, I can't help you.
   utter_please_rephrase:
   - text: Sorry either this is a request I can't handle or I didn't understand. Can you rephrase?
-  utter_out_of_scope:
-  - text: Sorry, I can't handle that request.
+  # utter_out_of_scope:
+  # - text: Sorry, I can't handle that request.
   utter_safety_and_security:
   - text: Brain_Bucks takes user security and privacy seriously. We have measures in place to protect your personal information and adhere to strict privacy policies.
   utter_data_protection_measures:
@@ -220,26 +224,28 @@ responses:
       payload: /suggesting_quiz_topics
   utter_quiz_rules:
   - text: |
-      "Here are the general rules for participating in the quiz:
-       1. Eligibility: The quiz is open to individuals who meet the minimum age requirement (i.e., 18 years or older) and comply with any additional eligibility criteria specified by the organizers.
-        #magic__^^__line
+      utter_quiz_rules:
+  - text: |
+      Here are the general rules for participating in the quiz:
+
+      1. Eligibility: The quiz is open to individuals who meet the minimum age requirement (i.e., 18 years or older) and comply with any additional eligibility criteria specified by the organizers.
+     
       2. Registration: Participants must register for the quiz by providing their personal information, including name, contact details, and any other required information as specified during the registration process.
-        #magic_^^__line
+
       3. Quiz Format: The quiz will consist of a predetermined number of multiple-choice questions based on a predefined topic. A specified time limit will be provided for answering each question, and participants must submit their answers within the given time frame.
-        #magic_^^__line
+
       4. Scoring: Each correctly answered question will carry a predetermined score, and incorrect answers will not incur any penalty.
-        #magic_^^__line
+
       5. Ranking Criteria: The ranking of participants will be based on their cumulative scores achieved by correctly answering the questions.
-        #magic_^^__line
+
       6. Monetary Rewards: The monetary rewards will be distributed to the top 20% rank holders based on the final rankings.
-        #magic_^^__line
+
       7. Tiebreaker: In case of a tie in the final scores, the time taken to attempt questions will be used to determine the higher rank among the tied participants.
-        #magic_^^__line
+
       8. Prize Distribution: The monetary rewards will be distributed to the winners via a specified payment method or bank transfer.
-        #magic_^^__line
-      9. Terms and Conditions: Participants must agree to the terms and conditions set forth by the organizers before 
-        #magic_^^___line
-      participating in the quiz, including rules regarding privacy, data usage, and any other relevant aspects of the quiz."
+
+      9. Terms and Conditions: Participants must agree to the terms and conditions set forth by the organizers before participating in the quiz, including rules regarding privacy, data usage, and any other relevant aspects of the quiz.
+
   utter_quiz_time_limit:
   - text: The time limit for each question in the quiz will be specified before the quiz begins. Participants must submit their answers within the given time frame for each question. Late submissions will not be accepted.
   utter_min_participants_quiz:
@@ -259,15 +265,20 @@ responses:
   utter_quiz_instructions:
   - text: |-
       To take a quiz, follow these steps:
+
       1. Log in to your account.
+
       2. Navigate to the quiz section.
+
       3. Choose a category from the options: Hard, Medium, or Easy.
+
       4. Each category has a corresponding difficulty level and marks assigned to it.
+
       5. Select any category to start the quiz.
   utter_free_plays:
   - text: Free Plays/quizzes allow you to participate in certain games without using your BrainBucks. Enjoy the fun and challenge without any cost!
-  utter_question_mistake:
-  - text: If participants notice any mistakes or discrepancies in the quiz questions or answers, they should report them to the organizers immediately. The organizers will review the reported issues and take appropriate action to rectify them.
+  utter_reporting_mistakes_quiz:
+  - text: If participants notice any mistakes or discrepancies in the quiz questions or answers, they should report them to the organizers immediately. The organizers will review the reported issues and take appropriate action to rectify them.You can also contact at +917887940832 or mail us at info@brainbucks.in .
   utter_inquire_paid_quiz:
   - text: Paid quizzes offer additional features and rewards compared to free quizzes. To join a paid quiz, you need to pay an entry fee, which may vary depending on the quiz. However, they often come with higher stakes and greater rewards.
   utter_wrong_quiz_joined:
@@ -331,7 +342,7 @@ responses:
   utter_withdrawal_minimum_amount:
   - text: The minimum amount you can withdraw is 50 Rs. Please note that there is an administration fee of Rs 10 on all withdrawals, and additional bank charges may apply. It's more cost-effective to withdraw larger amounts to minimize fees.
   utter_reach_support:
-  - text: 'You can reach Brain_Bucks Customer Support through various channels: - Chat with our chatbot - Call our toll-free number - Send an email to support@example.com'
+  - text: 'You can reach Brain_Bucks Customer Support through various channels - Chat with our chatbot - Call our toll-free number at +917887940832 or mail us at info@brainbucks.in .'
   utter_response_time:
   - text: Our goal is to respond to inquiries within 24 hours. However, response times may vary depending on the volume of queries received.
   utter_immediate_assistance:
@@ -346,12 +357,18 @@ responses:
   - text: For technical support, please contact our technical team through our chatbot or by calling our toll-free number at +917887940832 or mail us at info@brainbucks.in .
   utter_troubleshoot_issues:
   - text: |-
-      If you're experiencing any issues with the app, here are some common troubleshooting steps you can try:
+      If you're experiencing any issues with the app, here are some common troubleshooting steps you can try-
+
       1. Restart the app: Close the app completely and then reopen it.
+
       2. Check your internet connection: Ensure you have a stable internet connection.
+
       3. Update the app: Make sure you have the latest version of the app installed.
+
       4. Clear app cache: Clearing the app cache can resolve certain issues.
+
       5. Contact support: If the problem persists, feel free to contact our support team for assistance at +917887940832 or mail us at info@brainbucks.in.
+  
   utter_app_not_loading:
   - text: If the app is not loading, please try uninstalling and reinstalling it. If the issue persists, contact our technical support team for assistance at +917887940832 or mail us at info@brainbucks.in .
   utter_verification_code_issue:
@@ -362,8 +379,8 @@ responses:
   - text: If you lose your internet connection during a game, our system will attempt to reconnect multiple times. However, if the connection cannot be established, your game will end, and bb_money  will not be refunded.
   utter_compete_with_friends:
   - text: Yes. Brain_Bucks has a social component where you can challenge friends to quizzes and compare scores using the ROOMS platform and other quiz events.
-  utter_ask_user_name:
-  - text: Hi there! What's your name?
+  # utter_ask_user_name:
+  # - text: Hi there! What's your name?
   utter_ask_phone:
   - text: May I Know your mobile number please
 slots:
@@ -392,13 +409,13 @@ actions:
 - utter_ask_phone
 - action_save_data
 - action_get_user_name
-- utter_name_greet
+#- utter_name_greet
 - utter_how_are_you
 - utter_demo_class_response
 - utter_live_class_response
 - utter_get_started
 - utter_course_list
-- utter_out_of_scope
+# - utter_out_of_scope
 - action_handle_out_of_context
 session_config:
   session_expiration_time: 5
