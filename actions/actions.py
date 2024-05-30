@@ -10,9 +10,18 @@ import os
 import yaml
 from rasa_sdk.events import UserUtteranceReverted
 from openai import OpenAI
+
+from dotenv import load_dotenv
+load_dotenv()
 ### HWHHUW
+
+
+import openai
+openai.api_key= os.environ.get('OPENAI_API_KEY')
+
+
 # Initialize OpenAI client with your API key
-client = OpenAI(api_key="##E")
+
 GPT_MODEL = "gpt-3.5-turbo-1106"
 
 class ActionHandleOutOfContext(Action):
