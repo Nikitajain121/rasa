@@ -16,7 +16,7 @@ from openai import OpenAI
 ### HWHHUW
 #openai.api_key= os.environ.get('OPENAI_API_KEY')
 
-OPENAI_API_KEY= "sk-proj-d5JigoxCXINhTGk28zgoT3BlbkFJSWVVZxbQqKSkjM06ORVK"
+OPENAI_API_KEY= ${{ secrets.OPENAI_API_KEY }}
 client = OpenAI(api_key=OPENAI_API_KEY)
 # Initialize OpenAI client with your API key
 
