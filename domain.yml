@@ -5,22 +5,19 @@ intents:
 - about_company
 - account_recovery_process
 - affirm
-- app_not_loading
-- app_pricing
+
 - ask_why
 - availability
 - available_quizzes
 - bb_money_withdrawal_details
-- brainbucks_headquarters
+
 - buy_bb_money
 - compete_with_friends
 - connecting_in_room
-- cost_of_joining
-- countries_availability
-- data_protection_measures
+
 - demo_class
 - deny
-- download_install
+
 - downloadable_materials
 - earn_bb_money
 - earning_rewards
@@ -38,17 +35,18 @@ intents:
 - internet_connection_loss
 - internet_requirement
 - joining_room
-- laptop_browser_accessibility
+
 - learning_programs_languages
 - live_class
 - login_problem
+
 - min_participants_quiz
 - minimum_withdrawal_limit
-- multiple_accounts_brainbucks
+
 - paid_vs_unpaid_quizzes
 - payment_issue
 - prizes_distribution
-- profiles_limit
+
 - provide_support
 - quiz_eligibility
 - quiz_format
@@ -63,23 +61,38 @@ intents:
 - response_time
 - room_queries
 - room_types
-- safety_and_security
-- security_reporting
-- subscription_billing
+
 - subscription_cancellation
 - subscription_cost
 - suggesting_quiz_topics
 - technical_support
+
 - terms_and_conditions
 - troubleshoot_issues
-- update_app
+
 - use_bb_money
-- user_data_control
+
 - verification_code_issue
 - withdrawal_minimum_amount
 - withdrawal_problem
 - withdrawal_process
 - wrong_quiz_joined
+
+- update_app
+- safety_and_security
+- profiles_limit
+- multiple_accounts_brainbucks
+- laptop_browser_accessibility
+- download_install
+- cost_of_joining
+- countries_availability
+- data_protection_measures
+- brainbucks_headquarters
+- app_not_loading
+- app_pricing
+- security_reporting
+- subscription_billing
+- user_data_control
 responses:
   utter_greet:
   - text: Hey! I'm Niki bot..I'm here to assist you. You can ask me any question related with Brainbucks.
@@ -240,6 +253,36 @@ responses:
         answering questions! The more questions you get right, the higher your
         score and the more rewards you can earn.
     buttons:
+    - title: Update App
+      payload: /update_app
+    - title: Safety and Security
+      payload: /safety_and_security
+    - title: Profiles Limit
+      payload: /profiles_limit
+    - title: Multiple Accounts BrainBucks
+      payload: /multiple_accounts_brainbucks
+    - title: Laptop Browser Accessibility
+      payload: /laptop_browser_accessibility
+    - title: Download Install
+      payload: /download_install
+    - title: Cost of Joining
+      payload: /cost_of_joining
+    - title: Countries Availability
+      payload: /countries_availability
+    - title: Data Protection Measures
+      payload: /data_protection_measures
+    - title: BrainBucks Headquarters
+      payload: /brainbucks_headquarters
+    - title: App Not Loading
+      payload: /app_not_loading
+    - title: App Pricing
+      payload: /app_pricing
+    - title: Security Reporting
+      payload: /security_reporting
+    - title: Subscription Billing
+      payload: /subscription_billing
+    - title: User Data Control
+      payload: /user_data_control
     - title: Main Menu
       payload: /utter_greet
     - title: Course Queries
@@ -712,8 +755,6 @@ responses:
       payload: /utter_greet
     - title: BrainBucks App
       payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
     - title: Quiz Queries
       payload: /quiz_queries
     - title: BBCoins
