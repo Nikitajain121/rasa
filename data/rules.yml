@@ -429,23 +429,6 @@ rules:
   - intent: terms_and_conditions
   - action: utter_terms_and_conditions
 
-# refer
-# - rule: Refer a friend
-#   steps:
-#   - intent: refer_friend
-#   - action: utter_refer_friend
-
-# - rule: Track referral status
-#   steps:
-#   - intent: track_referral_status
-#   - action: utter_track_referral_status
-
-# - rule: Reward system
-#   steps:
-#   - intent: reward_system
-#   - action: utter_reward_system
-
-
 - rule: Get Paid Instructions
   steps:
   - intent: get_paid_instructions

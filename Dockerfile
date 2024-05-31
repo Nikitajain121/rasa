@@ -1,18 +1,12 @@
 FROM python:3.8.10-slim
 
-# Set environment variables
-# ENV HOME=/app
-
-# # Set working directory
-# WORKDIR /app
 RUN mkdir /src
 WORKDIR /src
 # Install dependencies
 COPY requirements.txt .
  
 RUN python -m pip install -r requirements.txt
-# RUN rasa train
-# Copy project files
+
 COPY . .
 #COPY config.yml .
 # Train Rasa NLU model
