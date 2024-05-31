@@ -455,4 +455,3 @@ rules:
   steps:
   - intent: quiz_instructions
   - action: utter_quiz_instructions
-  

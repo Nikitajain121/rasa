@@ -11,15 +11,13 @@ import yaml
 from rasa_sdk.events import UserUtteranceReverted
 from openai import OpenAI
 
-from dotenv import load_dotenv
-load_dotenv()
+#from dotenv import load_dotenv
+#load_dotenv()
 ### HWHHUW
+#openai.api_key= os.environ.get('OPENAI_API_KEY')
 
-
-import openai
-openai.api_key= os.environ.get('OPENAI_API_KEY')
-
-
+OPENAI_API_KEY= "sk-proj-d5JigoxCXINhTGk28zgoT3BlbkFJSWVVZxbQqKSkjM06ORVK"
+client = OpenAI(api_key=OPENAI_API_KEY)
 # Initialize OpenAI client with your API key
 
 GPT_MODEL = "gpt-3.5-turbo-1106"

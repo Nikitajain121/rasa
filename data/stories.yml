@@ -76,3 +76,5 @@ stories:
   - slot_was_set:
     - phone: {phone}
   - action: action_save_data
+
+

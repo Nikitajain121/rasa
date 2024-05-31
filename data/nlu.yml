@@ -19,7 +19,6 @@ nlu:
     - hey buddy
     - hello everyone
     - hi folks
-
 - intent: goodbye
   examples: |
     - bye
@@ -43,8 +42,6 @@ nlu:
     - see you soon
     - take care
     - bye now
-  
-
 - intent: affirm
   examples: |
     - yes
@@ -72,7 +69,6 @@ nlu:
     - that's right
     - sure, why not
     - fine by me
-
 - intent: deny
   examples: |
     - No, thanks.
@@ -94,14 +90,12 @@ nlu:
     - unfortunately, no
     - no, that's not it
     - no, sorry
-
 - intent: ask_why
   examples: |
     - why
     - what is the reason
     - can you explain
     - how does it work
-
 - intent: out_of_scope
   examples: |
     - I want to order food
@@ -141,8 +135,129 @@ nlu:
     - What's your favorite movie?
     - How do I fix a leaky faucet?
     - how to cook
-
-
+- intent: about_company
+  examples: |
+    - Tell me about Brainbucks
+    - What is the history of Brainbucks?
+    - Can you provide information about Brainbucks?
+    - How does Brainbucks work?
+    - Explain the functioning of Brainbucks.
+    - Can you tell me how to use Brainbucks?
+    - More about Brainbucks
+    - I'm curious about Brainbucks
+    - What can you tell me about Brainbucks?
+    - Brainbucks background
+    - Where can I find details on Brainbucks?
+    - Tell me about Brainbucks' mission
+    - Explain Brainbucks' purpose
+    - What's the story behind Brainbucks?
+    - How did Brainbucks start?
+    - Any insights into Brainbucks' founding?
+    - Brief me on Brainbucks' history
+    - What sets Brainbucks apart?
+    - Key facts about Brainbucks
+    - Provide an overview of Brainbucks
+    - Brainbucks details, please
+    - What's the scoop on Brainbucks?
+    - Enlighten me about Brainbucks
+    - What should I know about Brainbucks?
+    - what is brainbucks
+    - what is bbucks
+    - What are the main features of Brainbucks?
+    - Give me some insights into Brainbucks.
+    - What distinguishes Brainbucks from other platforms?
+    - I want to learn more about Brainbucks.
+    - Could you elaborate on Brainbucks' offerings?
+    - What are the core values of Brainbucks?
+    - How can Brainbucks benefit me?
+    - Tell me about the team behind Brainbucks.
+    - Explain the goals of Brainbucks.
+    - Can you provide a summary of Brainbucks' services?
+    - What are the advantages of using Brainbucks?
+    - Describe the vision of Brainbucks.
+    - What makes Brainbucks unique?
+    - Can you share some success stories from Brainbucks?
+    - What industries does Brainbucks serve?
+    - What are the benefits of partnering with Brainbucks?
+    - How does Brainbucks contribute to learning?
+    - How does Brainbucks support its users?
+    - What are the values that guide Brainbucks?
+    - Tell me about Brainbucks' achievements.
+    - How does Brainbucks ensure quality?
+    - What resources does Brainbucks offer?
+    - Explain Brainbucks' approach to education.
+    - Can you provide statistics about Brainbucks' impact?
+    - How does Brainbucks empower its users?
+    - What are the objectives of Brainbucks?
+    - Can you tell me how you operate, Brainbucks?
+    - I'm interested in learning more about your platform, Brainbucks.
+    - What sets you apart, Brainbucks?
+    - Could you provide insights into your organization, Brainbucks?
+    - Enlighten me about your company, Brainbucks.
+    - What's your modus operandi, Brainbucks?
+    - I'm curious about your offerings, Brainbucks.
+    - What distinguishes you from others, Brainbucks?
+    - Give me some background on you, Brainbucks.
+    - How do you function, Brainbucks?
+    - Tell me about your mission, Brainbucks.
+    - How did you come into existence, Brainbucks?
+    - Can you elaborate on your purpose, Brainbucks?
+    - What's the story behind your establishment, Brainbucks?
+    - Any insights into your founding, Brainbucks?
+    - Brief me on your history, Brainbucks.
+    - What makes you stand out, Brainbucks?
+    - Share some key facts about yourself, Brainbucks.
+    - Provide an overview of your organization, Brainbucks.
+    - What should I know about you, Brainbucks?
+    - Enlighten me about yourself, Brainbucks.
+    - Can you provide more information about yourself, Brainbucks?
+    - Explain your goals, Brainbucks.
+    - Describe your vision, Brainbucks.
+    - How do you support your users, Brainbucks?
+    - What are the values that drive you, Brainbucks?
+    - Tell me about your achievements, Brainbucks.
+    - How do you ensure quality, Brainbucks?
+    - What resources do you offer, Brainbucks?
+    - Explain your approach to education, Brainbucks.
+    - Can you provide statistics about your impact, Brainbucks?
+    - How do you empower your users, Brainbucks?
+    - What are your objectives, Brainbucks?
+- intent: download_install
+  examples: |
+    - How can I download and install the app?
+    - Steps to download and install the application?
+    - Download and installation process?
+    - Where can I find the download link for the app?
+    - Is there a step-by-step guide for app installation?
+    - Can I download the app from multiple platforms?
+    - What are the system requirements for app installation?
+    - Are there any prerequisites for installing the app?
+    - How long does the app installation take?
+    - Is the app installation straightforward?
+- intent: app_pricing
+  examples: |
+    - Is the app free or paid?
+    - What are the charges for the app?
+    - Pricing details of the application?
+    - Are there any subscription plans available for the app?
+    - Can I use the app for free with limited features?
+    - Do I need to make in-app purchases?
+    - Are there any hidden costs associated with the app?
+    - How does the app pricing model work?
+    - Are discounts available for long-term subscriptions?
+    - Can I switch between different pricing tiers?
+- intent: update_app
+  examples: |
+    - How do I update the app?
+    - Updating the application?
+    - Steps for app updates?
+    - Is the app updated automatically?
+    - Where can I find information about app updates?
+    - Are there notifications for app updates?
+    - Can I manually check for app updates?
+    - Is there a changelog available for app updates?
+    - What should I do if the app update fails?
+    - Are there any precautions I need to take before updating the app?
 - intent: Course_Queries
   examples: |
     - What courses are currently available?
@@ -160,6 +275,55 @@ nlu:
     - How do I know if a course is suitable for my skill level?
     - Do you offer any certification courses?
     - Can I enroll in multiple courses at once?
+    - Which courses do you currently offer?
+    - What subjects are covered in your courses?
+    - Can you provide an overview of your course offerings?
+    - How many courses do you have available?
+    - Are there any specialty courses in your curriculum?
+    - I'm interested in your course selection. What can you tell me?
+    - Do you offer any free courses?
+    - Can you recommend a course for someone interested in programming?
+    - What are the prerequisites for your advanced courses?
+    - Are there any self-paced courses available?
+    - Do you provide any hands-on training in your courses?
+    - Can I preview a course before enrolling?
+    - Are there any discounts available for course bundles?
+    - Can I access course materials after completing a course?
+    - Do you offer support for course participants?
+    - Are your courses suitable for working professionals?
+    - What kind of assessments do you have in your courses?
+    - Are there any deadlines for course assignments?
+    - Can I transfer credits from other institutions to your courses?
+    - Do you offer any specialized training for specific industries?
+    - Can I enroll in courses from different disciplines simultaneously?
+    - How often do you update your course content?
+    - Do you provide job placement assistance for course graduates?
+    - Can I customize a course to fit my learning objectives?
+    - What learning formats do your courses offer?
+    - Can I access your courses on mobile devices?
+    - Are there any trial periods for your courses?
+    - How long does it typically take to complete a course?
+    - Are there any group discounts available for courses?
+    - Can I get a refund if I'm not satisfied with a course?
+    - Are there any prerequisites for enrolling in your courses?
+    - Do you offer any live instructor-led courses?
+    - Are your courses suitable for beginners?
+    - Can I access course materials offline?
+    - What kind of feedback do course participants receive?
+    - Do you offer any specialized training for career advancement?
+    - Can I enroll in courses if I'm located outside your country?
+    - How do I enroll in a course?
+    - Can I switch courses after enrolling in one?
+    - Are there any community forums for course discussions?
+    - Do you provide certificates upon course completion?
+    - How do I access technical support during a course?
+    - Are there any age restrictions for enrolling in your courses?
+    - Can I request additional resources for a course?
+    - What software or tools do I need for your courses?
+    - Are there any prerequisites for enrolling in your certification courses?
+    - Can I preview course content before enrolling?
+    - Are there any opportunities for networking with other course participants?
+    - Do you offer any scholarships for your courses?
 - intent: Get_Started
   examples: |
     - I'm new here, what should I do first?
@@ -218,6 +382,90 @@ nlu:
     - What are the terms and conditions for participating in the quiz?
     - Can you explain the rules and terms of the quiz?
     - Where can I find information about the quiz rules?
+    - How long does each quiz last?
+    - What are the instructions for joining a quiz?
+    - Are there any specific rules for different types of quizzes?
+    - Can you explain the quiz registration process?
+    - What should I do if I lose internet connection during a quiz?
+    - How many quizzes can I participate in simultaneously?
+    - Is there a limit to how many quizzes I can join per day?
+    - What is the eligibility criteria for entering a quiz?
+    - How do I know if I joined the wrong quiz?
+    - Can I get a refund for a paid quiz if I can't participate?
+    - What happens if I miss a quiz after registering?
+    - Are there any age restrictions for quiz participation?
+    - How is the quiz score calculated?
+    - Can I view the quiz results immediately after it ends?
+    - Are there any special quizzes for advanced participants?
+    - How do I prepare for a quiz?
+    - What are the rules for team quizzes?
+    - How do I report an issue during a quiz?
+    - What is the minimum number of participants required for a quiz to start?
+    - Can I invite friends to join a quiz with me?
+    - Are there any quizzes available for beginners?
+    - How often are new quizzes added?
+    - Can I see past quiz questions and answers?
+    - Do you have any tips for succeeding in a quiz?
+    - What are the rewards for winning a quiz?
+    - How do I know if a quiz is live or scheduled?
+    - Can I change my answers before submitting the quiz?
+    - Are there any penalties for quitting a quiz midway?
+    - How can I practice for a quiz?
+    - Can I retake a quiz if I don't perform well?
+    - What types of quizzes do you offer?
+    - Can you explain the different quiz categories?
+    - Are there any interactive or live quizzes?
+    - How do I get notified about upcoming quizzes?
+    - What are the guidelines for creating quiz questions?
+    - How secure are the quiz systems against cheating?
+    - What should I do if I encounter a technical issue during a quiz?
+    - How are quiz winners determined?
+    - Can I join a quiz that has already started?
+    - Are there any group or team quizzes available?
+    - How do I withdraw from a quiz after registration?
+    - What are the most popular quiz topics?
+    - Can I change my quiz category after registration?
+    - How do you handle ties in quiz scores?
+    - Is there a time limit for answering each quiz question?
+    - How do I receive my prize if I win a quiz?
+    - Are there any entry fees for the quizzes?
+    - Can I participate in multiple quizzes at the same time?
+    - What is the process for verifying quiz winners?
+    - How do I know if a quiz has been canceled or postponed?
+    - Can I suggest improvements to existing quizzes?
+    - What is the difference between live and scheduled quizzes?
+    - How are quizzes moderated to ensure fairness?
+    - Are there any quizzes with no time limits?
+    - Can I review my answers after submitting the quiz?
+    - How can I track my progress in quizzes over time?
+    - Are there any special requirements for participating in paid quizzes?
+    - How do you handle disputes over quiz results?
+    - Can I join quizzes hosted in other countries?
+    - What are the most challenging quizzes available?
+    - How do you ensure the accuracy of quiz questions?
+    - What kind of feedback do participants receive after a quiz?
+    - Are there any quizzes focused on specific industries or professions?
+    - How do I know if a quiz is suitable for my knowledge level?
+    - Are there any rewards for consistent quiz participation?
+    - Can I see how I rank compared to other quiz participants?
+    - What are the rules for quiz tie-breakers?
+    - Are there any seasonal or holiday-themed quizzes?
+    - Can I create my own quiz and share it with others?
+    - How often can I participate in the same quiz?
+    - What happens if there is an error in the quiz questions?
+    - Can I skip questions and return to them later during the quiz?
+    - Are there any practice quizzes available for new participants?
+    - How do you protect my data during quiz participation?
+    - Are there any leaderboards for quiz participants?
+    - Can I appeal a quiz result if I think there was a mistake?
+    - Are quizzes available in multiple languages?
+    - What measures are in place to prevent cheating in quizzes?
+    - How long does it take to receive prizes after winning a quiz?
+    - Can I see detailed explanations for quiz answers after completing it?
+    - Are there any partner organizations or sponsors for the quizzes?
+    - How do I unsubscribe from quiz notifications?
+    - What are the common reasons for disqualification in quizzes?
+    - Can I provide feedback on the quizzes I participate in?
 - intent: quiz_rules
   examples: |
     - What are the general rules for the quiz?
@@ -265,15 +513,13 @@ nlu:
     - Are there any restrictions on the phone of participants in the quiz?
     - What happens if the minimum participant requirement is not met?
     - Is there a cutoff for the phone of participants in the quiz?
-
 - intent: reporting_mistakes_quiz
   examples: |
-    - there is mistake in quiz 
+    - there is mistake in quiz
     - want to report a quiz fault
-    - reporting a quiz mistake 
+    - reporting a quiz mistake
     - i want to rectify a quiz fault
     - there is issue in my quiz
-
 - intent: quiz_registration_process
   examples: |
     - fees of quiz ?
@@ -381,28 +627,50 @@ nlu:
     - How are room activities monitored for compliance with policies?
     - Can users host private events or discussions in rooms?
     - Is there a process for reporting inappropriate behavior in rooms?
-# - intent: room_enquiry
-#   examples: |
-#     - What are rooms and how do they work?
-#     - Can you explain the concept of rooms?
-#     - How are rooms used in BrainBucks?
-#     - What are the main features of rooms?
-#     - How do rooms help users collaborate and compete?
-#     - What benefits do users get from participating in rooms?
-#     - Are rooms accessible on all devices?
-#     - Is there a limit on the phone of rooms a user can create?
-#     - Are there any restrictions on room naming conventions?
-#     - Can users create public and private rooms?
-#     - How are room activities archived for future reference?
-#     - Are there notifications for new activities in rooms?
-#     - Can users customize their room profiles?
-#     - Are there any age restrictions for accessing certain room features?
-#     - How is room content organized for easy navigation?
-#     - Can users embed multimedia content in rooms?
-#     - Are there templates available for setting up rooms?
-#     - Can users create subgroups within a room for specific discussions?
-#     - How are room administrators appointed and managed?
-#     - Is there a limit on the duration of room activities?
+    - How do I create a new room?
+    - What kind of events can be hosted in a room?
+    - Can I reserve a room for an extended period?
+    - How do I join an existing room?
+    - Are there any fees associated with using rooms?
+    - Can I set up recurring events in a room?
+    - What types of collaboration tools are integrated into rooms?
+    - How do I manage participants in a room?
+    - Are rooms accessible on mobile devices?
+    - Can I share files and documents within a room?
+    - Are there limits to how many rooms I can create?
+    - How can I promote my event or quiz in a room?
+    - What technical support is available for room issues?
+    - Can rooms be linked to external calendars?
+    - How do I edit the settings of a room I created?
+    - Are rooms available 24/7?
+    - Can I get analytics or reports on room activities?
+    - How do I enforce rules and guidelines in my room?
+    - What are the security measures for protecting room content?
+    - Can I customize the appearance of my room?
+    - How do I handle disruptive participants in a room?
+    - Are there tutorials available for using rooms?
+    - Can I record sessions held in a room?
+    - How do I delete a room that I no longer need?
+    - Are there different roles or permissions for room participants?
+    - Can I integrate third-party applications into a room?
+    - How do I set up notifications for room activities?
+    - Are there any success stories of using rooms effectively?
+    - Can I request additional features for my room?
+    - How do I resolve conflicts that arise in a room?
+    - Are there any best practices for hosting events in rooms?
+    - Can I monetize events or quizzes held in rooms?
+    - How do I ensure accessibility for all participants in a room?
+    - Can I receive feedback from participants after an event in a room?
+    - How do I manage the flow of discussion in a room?
+    - Are there options for breakout sessions within a room?
+    - Can rooms support multimedia presentations?
+    - How do I track attendance in a room event?
+    - Are there limitations on the types of activities that can be conducted in rooms?
+    - How do I ensure my room complies with community standards?
+    - Can I collaborate with other room hosts on joint events?
+    - How do I update participants on changes to room events?
+    - Are there tools for brainstorming or idea sharing in rooms?
+    - How can I ensure a high level of engagement in room activities?
 - intent: joining_room
   examples: |
     - How do I join a room?
@@ -467,34 +735,6 @@ nlu:
     - Are there moderator privileges available for managing public and private rooms?
     - How are user interactions monitored in public and private rooms?
     - Can users leave feedback or ratings for public and private rooms?
-- intent: about_company
-  examples: |
-    - Tell me about Brainbucks
-    - What is the history of Brainbucks?
-    - Can you provide information about Brainbucks?
-    - How does Brainbucks work?
-    - Explain the functioning of Brainbucks.
-    - Can you tell me how to use Brainbucks?
-    - More about Brainbucks
-    - I'm curious about Brainbucks
-    - What can you tell me about Brainbucks?
-    - Brainbucks background
-    - Where can I find details on Brainbucks?
-    - Tell me about Brainbucks' mission
-    - Explain Brainbucks' purpose
-    - What's the story behind Brainbucks?
-    - How did Brainbucks start?
-    - Any insights into Brainbucks' founding?
-    - Brief me on Brainbucks' history
-    - What sets Brainbucks apart?
-    - Key facts about Brainbucks
-    - Provide an overview of Brainbucks
-    - Brainbucks details, please
-    - What's the scoop on Brainbucks?
-    - Enlighten me about Brainbucks
-    - What should I know about Brainbucks?
-    - what is brainbucks
-    - what is bbucks
 - intent: available_quizzes
   examples: |
     - What kind of quizzes are available on Brainbucks?
@@ -589,7 +829,7 @@ nlu:
     - How do I access the support portal?
     - How can I reach you ?
     - How to contact them?
-
+    - any contact number
 - intent: response_time
   examples: |
     - How long does it take to receive a response from Brain_Bucks Customer Support?
@@ -617,15 +857,6 @@ nlu:
     - Are there any scheduled maintenance times when support may be unavailable?
     - Can I expect support assistance outside of regular business hours?
     - Are there any limitations to support availability?
-- intent: brainbucks_headquarters
-  examples: |
-    - Where is the headquarters of Brainbucks located?
-    - Can you tell me the address of Brainbucks' headquarters?
-    - Where can I find the main office of Brainbucks?
-    - What is the location of Brainbucks' headquarters?
-    - Do you have a physical office? Where is Brainbucks located?
-    - Where can I visit Brainbucks' main office?
-    - What is the address of Brainbucks' headquarters?
 - intent: expectations
   examples: |
     - What can I expect from Brain_Bucks's customer helpline phone?
@@ -648,6 +879,54 @@ nlu:
     - Can users rely on support for assistance?
     - Is there a support ticketing system in place?
     - Can I expect knowledgeable assistance from support?
+    - How do I contact customer support?
+    - Is there a phone number for customer support?
+    - Can I chat with a support agent?
+    - What are the hours of operation for customer support?
+    - How quickly does support respond to queries?
+    - Is there an email address for customer support?
+    - How do I report a problem to support?
+    - What should I do if I need immediate assistance?
+    - Can I get technical support for the app?
+    - Is there a support hotline available?
+    - How can I submit a support ticket?
+    - Are there FAQs available for common issues?
+    - Can support help me with account recovery?
+    - Is there a live chat option for support?
+    - What are the steps to get help from support?
+    - Can I schedule a call with customer support?
+    - Is support available on weekends?
+    - How do I escalate an issue to support management?
+    - What languages does customer support offer?
+    - Are there user guides or manuals available from support?
+    - How do I check the status of my support ticket?
+    - Is there a community forum for support questions?
+    - Can I request support for billing issues?
+    - How do I access support for app installation problems?
+    - Can support assist me with troubleshooting errors?
+    - What kind of issues can customer support help with?
+    - Is there a feedback form to contact support?
+    - How do I get support for subscription cancellations?
+    - Can I contact support via social media?
+    - Are there video tutorials available from support?
+    - How do I get support for password reset issues?
+    - Can I request a callback from support?
+    - What should I do if I'm not satisfied with support assistance?
+    - Is there a knowledge base for self-service support?
+    - How do I provide feedback on support services?
+    - Are there any charges for accessing customer support?
+    - Can I chat with a support bot for quick assistance?
+    - How do I get support for connectivity issues?
+    - Can I find support resources in different languages?
+    - How do I access premium support services?
+    - Is there a support app I can download?
+    - Can support help me with data protection queries?
+    - What is the best way to get urgent support?
+    - Can I get assistance with feature requests from support?
+    - Are there any support webinars or workshops available?
+    - How do I resolve account suspension issues with support?
+    - Can I find troubleshooting guides from support?
+    - How do I get help with app updates from support?
 - intent: technical_support
   examples: |
     - How do I get technical support?
@@ -660,42 +939,6 @@ nlu:
     - Can I expect timely resolution of technical issues?
     - Are there specific channels for technical support requests?
     - What expertise does the technical support team have?
-- intent: download_install
-  examples: |
-    - How can I download and install the app?
-    - Steps to download and install the application?
-    - Download and installation process?
-    - Where can I find the download link for the app?
-    - Is there a step-by-step guide for app installation?
-    - Can I download the app from multiple platforms?
-    - What are the system requirements for app installation?
-    - Are there any prerequisites for installing the app?
-    - How long does the app installation take?
-    - Is the app installation straightforward?
-- intent: app_pricing
-  examples: |
-    - Is the app free or paid?
-    - What are the charges for the app?
-    - Pricing details of the application?
-    - Are there any subscription plans available for the app?
-    - Can I use the app for free with limited features?
-    - Do I need to make in-app purchases?
-    - Are there any hidden costs associated with the app?
-    - How does the app pricing model work?
-    - Are discounts available for long-term subscriptions?
-    - Can I switch between different pricing tiers?
-- intent: update_app
-  examples: |
-    - How do I update the app?
-    - Updating the application?
-    - Steps for app updates?
-    - Is the app updated automatically?
-    - Where can I find information about app updates?
-    - Are there notifications for app updates?
-    - Can I manually check for app updates?
-    - Is there a changelog available for app updates?
-    - What should I do if the app update fails?
-    - Are there any precautions I need to take before updating the app?
 - intent: troubleshoot_issues
   examples: |
     - Common troubleshooting steps?
@@ -873,16 +1116,56 @@ nlu:
     - How quickly can I accumulate BB money?
     - Can I earn BB money by completing quizzes or games?
     - Are there limitations on how much BB money I can earn?
+    - What activities can help me earn BB money?
+    - Can I get BB money by participating in events?
+    - How do I maximize my BB money earnings?
+    - Are there bonuses for earning BB money?
+    - Can I earn BB money by watching ads?
+    - How does the referral program for earning BB money work?
+    - Are there surveys I can complete to earn BB money?
+    - Can I earn BB money by participating in challenges?
+    - What are the most effective ways to earn BB money?
+    - Are there seasonal promotions to earn BB money?
+    - Can I get BB money for providing feedback or reviews?
+    - Do I get BB money for daily logins?
+    - Are there any contests to earn BB money?
+    - Can I earn BB money by sharing content on social media?
+    - Is there a loyalty program for earning BB money?
+    - How often are new ways to earn BB money introduced?
+    - Are there specific tasks that give more BB money?
+    - Can I get BB money for completing certain levels in games?
+    - What are the terms and conditions for earning BB money?
+    - Are there special offers to earn extra BB money?
+    - Can I earn BB money for participating in beta testing?
+    - Are there hidden opportunities to earn BB money on the platform?
+    - Do I get BB money for attending webinars or workshops?
+    - Are there any partnerships that offer BB money incentives?
+    - How can I track my BB money earnings?
+    - Can I earn BB money by contributing content or tutorials?
+    - Are there weekly challenges to earn BB money?
+    - What are the best practices for earning BB money efficiently?
+    - Can I earn BB money for participating in community discussions?
+    - Is there a limit to how many times I can earn BB money in a day?
+    - How do I know if I qualify for BB money earning opportunities?
+    - Can I earn BB money by completing educational courses?
+    - Are there any hidden tips to boost my BB money earnings?
+    - Do I get BB money for achieving milestones on the platform?
+    - Are there any referral bonuses for earning BB money?
+    - How does completing surveys help me earn BB money?
+    - Can I earn BB money by participating in forums?
+    - Are there any exclusive offers for high BB money earners?
+    - What are the eligibility criteria for earning BB money?
+    - Can I get BB money for participating in feedback sessions?
+    - How do special events impact my BB money earnings?
 - intent: prizes_distribution
   examples: |
     - How the prizes will be distributed?
-    - getting prizzes 
+    - getting prizzes
     - will it be a cash prize
     - will i get any cash money
     - quiz prize to winners
-    - quiz money distribution 
-    - i got a rank what would be the price 
-
+    - quiz money distribution
+    - i got a rank what would be the price
 - intent: use_bb_money
   examples: |
     - How do I use BB money?
@@ -987,18 +1270,6 @@ nlu:
     - Are there any prerequisites for paid quizzes?
     - What rewards can I earn from paid quizzes?
     - Are paid quizzes available for all users?
-# - intent: question_mistake
-#   examples: |
-#     - What should I do if I find a mistake in a question?
-#     - Can I report errors in quiz questions?
-#     - How do I notify about a wrong question in a quiz?
-#     - Is there a way to provide feedback on quiz questions?
-#     - Are there moderators who review and correct quiz questions?
-#     - Can I suggest improvements or corrections for quiz questions?
-#     - How quickly are reported question mistakes addressed?
-#     - Are there any rewards or incentives for identifying question mistakes?
-#     - What information should I include when reporting a question mistake?
-#     - Is there a dedicated platform or channel for reporting question mistakes?
 - intent: buy_bb_money
   examples: |
     - How can I buy BB money ?
@@ -1133,7 +1404,6 @@ nlu:
     - Do I need to register for quizzes in advance?
     - Are there different types of quizzes available?
     - how to take a quiz and earn money
-
 - intent: get_user_name
   examples: |
     - my name is [Rahul](user_name)
@@ -1196,19 +1466,6 @@ nlu:
     - [4567222222](phone)
     - [888888888](phone)
     - [566767887](phone)
-# - intent: tell_name
-#   examples: |
-#     - what is your name?
-#     - tell me your name
-#     - what others call you
-#     - what should i call you?
-#     - who are you?
-#     - hey what is your name?
-#     - name please?
-#     - hey what is your name
-#     - can you introduce yourself?
-#     - may I know your name?
-
 - intent: how_are_you
   examples: |
     - hey how are you doing?
@@ -1220,16 +1477,7 @@ nlu:
     - what's up?
     - how's everything?
     - are you well?
-    - how are you 
-
-# - intent: add_data
-#   examples: |
-#     - i want to add some data to the excel sheet
-#     - i want to add the user data to the excel sheet
-#     - add user data
-#     - ask me some questions to add the user data
-#     - what information is required to add the data to the excel sheet
-#     - add data
+    - how are you
 - synonym: bb_money
   examples: |
     - token
