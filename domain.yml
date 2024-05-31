@@ -82,7 +82,7 @@ intents:
 - wrong_quiz_joined
 responses:
   utter_greet:
-  - text: Hey! I'm Niki bot..I'm here to assist you. You can ask me any question related with Brainbucks. Can I know your name?
+  - text: Hey! I'm Niki bot..I'm here to assist you. You can ask me any question related with Brainbucks.
     buttons:
     - title: BrainBucks App
       payload: /about_company
