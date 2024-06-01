@@ -100,7 +100,15 @@ rules:
   steps:
   - intent: Get_Started
   - action: utter_get_started
+- rule: Respond to queries about public rooms
+  steps:
+  - intent: query_public_rooms
+  - action: utter_public_rooms
 
+- rule: Respond to queries about private rooms
+  steps:
+  - intent: query_private_rooms
+  - action: utter_private_rooms
 # about the courses offered
 
 - rule: Respond to course queries
@@ -314,3 +322,88 @@ rules:
   steps:
   - intent: quiz_instructions
   - action: utter_quiz_instructions
+
+- rule: Respond to query about UPSC
+  steps:
+  - intent: query_exam_upsc
+  - action: utter_exam_upsc
+
+- rule: Respond to query about SSC
+  steps:
+  - intent: query_exam_ssc
+  - action: utter_exam_ssc
+
+- rule: Respond to query about RRB
+  steps:
+  - intent: query_exam_rrb
+  - action: utter_exam_rrb
+
+- rule: Respond to query about Banking exams
+  steps:
+  - intent: query_exam_banking
+  - action: utter_exam_banking
+
+- rule: Respond to query about NEET
+  steps:
+  - intent: query_exam_neet
+  - action: utter_exam_neet
+
+- rule: Respond to query about JEE
+  steps:
+  - intent: query_exam_jee
+  - action: utter_exam_jee
+
+- rule: Respond to query about Current Affairs
+  steps:
+  - intent: query_exam_current_affairs
+  - action: utter_exam_current_affairs
+
+- rule: Respond to query about General Knowledge
+  steps:
+  - intent: query_exam_gk
+  - action: utter_exam_gk
+
+- rule: Respond to query about Delhi Police exam
+  steps:
+  - intent: query_exam_delhi_police
+  - action: utter_exam_delhi_police
+
+- rule: Respond to query about NDA
+  steps:
+  - intent: query_exam_nda
+  - action: utter_exam_nda
+
+- rule: Respond to query about CDS
+  steps:
+  - intent: query_exam_cds
+  - action: utter_exam_cds
+
+- rule: Respond to query about RPSC
+  steps:
+  - intent: query_exam_rpsc
+  - action: utter_exam_rpsc
+
+- rule: Respond to query about CRPF
+  steps:
+  - intent: query_exam_crpf
+  - action: utter_exam_crpf
+
+- rule: Respond to query about REET
+  steps:
+  - intent: query_exam_reet
+  - action: utter_exam_reet
+
+- rule: Respond to query about Web Development
+  steps:
+  - intent: query_exam_web_dev
+  - action: utter_exam_web_dev
+
+- rule: Respond to query about paid quizzes
+  steps:
+  - intent: query_paid_quizzes
+  - action: utter_paid_quizzes
+
+- rule: Respond to query about free quizzes
+  steps:
+  - intent: query_free_quizzes
+  - action: utter_free_quizzes

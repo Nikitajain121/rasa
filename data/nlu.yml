@@ -19,6 +19,9 @@ nlu:
     - hey buddy
     - hello everyone
     - hi folks
+    - who are you
+    - who you 
+    - who you are
 - intent: goodbye
   examples: |
     - bye
@@ -751,6 +754,46 @@ nlu:
     - Are there moderator privileges available for managing public and private rooms?
     - How are user interactions monitored in public and private rooms?
     - Can users leave feedback or ratings for public and private rooms?
+
+- intent: query_public_rooms
+  examples: |
+    - Tell me about public rooms
+    - What are public rooms?
+    - How do public rooms work?
+    - Information on public rooms
+    - Details about public rooms
+    - Explain public rooms
+    - Can you describe public rooms?
+    - What can you tell me about public rooms?
+    - I'd like to know about public rooms
+    - Public rooms info
+    - Give me details on public rooms
+    - How can I join a public room?
+    - What is the purpose of public rooms?
+    - Are public rooms open to everyone?
+    - Who can join public rooms?
+
+- intent: query_private_rooms
+  examples: |
+    - Tell me about private rooms
+    - What are private rooms?
+    - How do private rooms work?
+    - Information on private rooms
+    - Details about private rooms
+    - Explain private rooms
+    - Can you describe private rooms?
+    - What can you tell me about private rooms?
+    - I'd like to know about private rooms
+    - Private rooms info
+    - Give me details on private rooms
+    - How can I join a private room?
+    - What is the purpose of private rooms?
+    - Are private rooms open to everyone?
+    - Who can join private rooms?
+    - How do I get access to a private room?
+    - What are the benefits of private rooms?
+    - Can you tell me how private rooms work?
+    - What's the difference between public and private rooms?
 - intent: available_quizzes
   examples: |
     - What kind of quizzes are available on Brainbucks?
@@ -1185,7 +1228,6 @@ nlu:
 
 - intent: paid_vs_unpaid_quizzes
   examples: |
-    - Are there any paid quizzes available?
     - Can you tell me the difference between paid and unpaid quizzes?
     - What are the benefits of paid quizzes over unpaid ones?
     - Are paid quizzes more challenging than unpaid ones?
@@ -1205,12 +1247,7 @@ nlu:
     - Can I earn back BB money by playing games?
     - Is there a way to test games before spending BB money?
     - Are there subscription options that include access to games?
-    - Can you provide information about paid quizzes?
-    - What are the benefits of joining paid quizzes?
-    - How much does it cost to join a paid quiz?
-    - Are there any prerequisites for paid quizzes?
-    - What rewards can I earn from paid quizzes?
-    - Are paid quizzes available for all users?
+
 - intent: buy_bb_money
   examples: |
     - How can I buy BB money ?
@@ -1448,6 +1485,231 @@ nlu:
     - how's everything?
     - are you well?
     - how are you
+- intent: query_exam_upsc
+  examples: |
+    - Tell me about UPSC
+    - What is UPSC?
+    - Information on UPSC exam
+    - Details about UPSC
+    - Explain UPSC
+    - What does UPSC stand for?
+    - How can I prepare for UPSC?
+    - What is the UPSC syllabus?
+    - UPSC exam details
+    - Can you give me information on UPSC?
+
+- intent: query_exam_ssc
+  examples: |
+    - Tell me about SSC
+    - What is SSC?
+    - Information on SSC exam
+    - Details about SSC
+    - Explain SSC
+    - What does SSC stand for?
+    - How can I prepare for SSC exams?
+    - What is the SSC syllabus?
+    - SSC exam details
+    - Can you give me information on SSC?
+
+- intent: query_exam_rrb
+  examples: |
+    - Tell me about RRB
+    - What is RRB?
+    - Information on RRB exam
+    - Details about RRB
+    - Explain RRB
+    - What does RRB stand for?
+    - How can I prepare for RRB exams?
+    - What is the RRB syllabus?
+    - RRB exam details
+    - Can you give me information on RRB?
+
+- intent: query_exam_banking
+  examples: |
+    - Tell me about Banking exams
+    - What are Banking exams?
+    - Information on Banking exams
+    - Details about Banking exams
+    - Explain Banking exams
+    - How can I prepare for Banking exams?
+    - What is the syllabus for Banking exams?
+    - Banking exam details
+    - Can you give me information on Banking exams?
+    - Which exams are included in Banking exams?
+
+- intent: query_exam_neet
+  examples: |
+    - Tell me about NEET
+    - What is NEET?
+    - Information on NEET exam
+    - Details about NEET
+    - Explain NEET
+    - What does NEET stand for?
+    - How can I prepare for NEET?
+    - What is the NEET syllabus?
+    - NEET exam details
+    - Can you give me information on NEET?
+
+- intent: query_exam_jee
+  examples: |
+    - Tell me about JEE
+    - What is JEE?
+    - Information on JEE exam
+    - Details about JEE
+    - Explain JEE
+    - What does JEE stand for?
+    - How can I prepare for JEE?
+    - What is the JEE syllabus?
+    - JEE exam details
+    - Can you give me information on JEE?
+
+- intent: query_exam_current_affairs
+  examples: |
+    - Tell me about Current Affairs
+    - What is Current Affairs?
+    - Information on Current Affairs
+    - Details about Current Affairs
+    - Explain Current Affairs
+    - How can I stay updated with Current Affairs?
+    - Importance of Current Affairs in exams
+    - Current Affairs for competitive exams
+    - What are Current Affairs?
+    - Current Affairs preparation tips
+
+- intent: query_exam_gk
+  examples: |
+    - Tell me about General Knowledge
+    - What is General Knowledge?
+    - Information on General Knowledge
+    - Details about General Knowledge
+    - Explain General Knowledge
+    - How can I improve my General Knowledge?
+    - Importance of General Knowledge in exams
+    - General Knowledge for competitive exams
+    - What topics are covered in General Knowledge?
+    - General Knowledge preparation tips
+
+- intent: query_exam_delhi_police
+  examples: |
+    - Tell me about Delhi Police exam
+    - What is the Delhi Police exam?
+    - Information on Delhi Police exam
+    - Details about Delhi Police exam
+    - Explain Delhi Police exam
+    - How can I prepare for Delhi Police exam?
+    - What is the syllabus for Delhi Police exam?
+    - Delhi Police exam details
+    - Can you give me information on Delhi Police exam?
+    - Tips for Delhi Police exam preparation
+
+- intent: query_exam_nda
+  examples: |
+    - Tell me about NDA
+    - What is NDA?
+    - Information on NDA exam
+    - Details about NDA
+    - Explain NDA
+    - What does NDA stand for?
+    - How can I prepare for NDA?
+    - What is the NDA syllabus?
+    - NDA exam details
+    - Can you give me information on NDA?
+
+- intent: query_exam_cds
+  examples: |
+    - Tell me about CDS
+    - What is CDS?
+    - Information on CDS exam
+    - Details about CDS
+    - Explain CDS
+    - What does CDS stand for?
+    - How can I prepare for CDS?
+    - What is the CDS syllabus?
+    - CDS exam details
+    - Can you give me information on CDS?
+
+- intent: query_exam_rpsc
+  examples: |
+    - Tell me about RPSC
+    - What is RPSC?
+    - Information on RPSC exam
+    - Details about RPSC
+    - Explain RPSC
+    - What does RPSC stand for?
+    - How can I prepare for RPSC exams?
+    - What is the RPSC syllabus?
+    - RPSC exam details
+    - Can you give me information on RPSC?
+
+- intent: query_exam_crpf
+  examples: |
+    - Tell me about CRPF
+    - What is CRPF?
+    - Information on CRPF exam
+    - Details about CRPF
+    - Explain CRPF
+    - What does CRPF stand for?
+    - How can I prepare for CRPF exams?
+    - What is the CRPF syllabus?
+    - CRPF exam details
+    - Can you give me information on CRPF?
+
+- intent: query_exam_reet
+  examples: |
+    - Tell me about REET
+    - What is REET?
+    - Information on REET exam
+    - Details about REET
+    - Explain REET
+    - What does REET stand for?
+    - How can I prepare for REET?
+    - What is the REET syllabus?
+    - REET exam details
+    - Can you give me information on REET?
+
+- intent: query_exam_web_dev
+  examples: |
+    - Tell me about Web Development
+    - What is Web Development?
+    - Information on Web Development course
+    - Details about Web Development
+    - Explain Web Development
+    - How can I learn Web Development?
+    - What does Web Development involve?
+    - Web Development course details
+    - Can you give me information on Web Development?
+    - Web Development preparation tips
+
+- intent: query_paid_quizzes
+  examples: |
+    - Tell me about paid quizzes
+    - What are paid quizzes?
+    - Information on paid quizzes
+    - Details about paid quizzes
+    - Explain paid quizzes
+    - How do paid quizzes work?
+    - What is the entry fee for paid quizzes?
+    - What are the rewards for paid quizzes?
+    - How much bb_money is required for paid quizzes?
+    - Are there any paid quizzes available?
+
+- intent: query_free_quizzes
+  examples: |
+    - Tell me about free quizzes
+    - What are free quizzes?
+    - Information on free quizzes
+    - Details about free quizzes
+    - Explain free quizzes
+    - How do free quizzes work?
+    - Are free quizzes available?
+    - Do I need to pay for free quizzes?
+    - How to join free quizzes?
+    - What is the reward for free quizzes?
+
+
+
+
+
 - synonym: bb_money
   examples: |
     - token

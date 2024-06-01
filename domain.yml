@@ -74,6 +74,28 @@ intents:
 - brainbucks_headquarters
 - app_pricing
 - user_data_control
+#exams
+- query_exam_upsc
+- query_exam_ssc
+- query_exam_rrb
+- query_exam_banking
+- query_exam_neet
+- query_exam_jee
+- query_exam_current_affairs
+- query_exam_gk
+- query_exam_delhi_police
+- query_exam_nda
+- query_exam_cds
+- query_exam_rpsc
+- query_exam_crpf
+- query_exam_reet
+- query_exam_web_dev
+
+- query_paid_quizzes
+- query_free_quizzes
+
+- query_private_rooms
+- query_public_rooms
 responses:
   utter_greet:
   - text: Hey! I'm Niki bot..I'm here to assist you. You can ask me any question related with Brainbucks.
@@ -317,7 +339,7 @@ responses:
 
 
   utter_how_are_you:
-  - text: I'm just a bot, so I don't have feelings, but thanks for asking!
+  - text: I'm Niki, just a bot, so I don't have feelings, but thanks for asking!
     buttons:
     - title: Main Menu
       payload: /greet
@@ -599,22 +621,22 @@ responses:
 
   utter_course_list:
   - text: |-
-      "There are list of exams you can choose from–
-      UPSC
-      SSC
-      RRB
-      Banking
-      Neet
-      JEE
-      Current Affairs
-      General Knowledge
-      Delhi Police
-      NDA
-      CDS
-      RPSC
-      CRPF
-      REET
-      WEB DEVELOPMENT"
+      "There are a list of exams you can choose from:
+      - UPSC
+      - SSC
+      - RRB
+      - Banking
+      - NEET
+      - JEE
+      - Current Affairs
+      - General Knowledge
+      - Delhi Police
+      - NDA
+      - CDS
+      - RPSC
+      - CRPF
+      - REET
+      - Web Development"
     buttons:
     - title: Demo Class
       payload: /demo_class
@@ -704,7 +726,8 @@ responses:
 
       2. Registration: Participants must register for the quiz by providing their personal information, including name, contact details, and any other required information as specified during the registration process.
 
-      3. Quiz Format: The quiz will consist of a predetermined number of multiple-choice questions based on a predefined topic. A specified time limit will be provided for answering each question, and participants must submit their answers within the given time frame.
+      3. Quiz Format: The quiz will consist of a predetermined number of multiple-choice questions based on a predefined topic. A specified time limit will be provided for answering each question, 
+      and participants must submit their answers within the given time frame.
 
       4. Scoring: Each correctly answered question will carry a predetermined score, and incorrect answers will not incur any penalty.
 
@@ -742,7 +765,8 @@ responses:
       payload: /provide_support
 
   utter_min_participants_quiz:
-  - text: Even if there is a single particpant the quiz will be commeneced by the organizers. Participant will recieve back all the money he/she had put into the quiz.
+  - text: Even if there is a single particpant the quiz will be commeneced by the organizers.
+          Participant will recieve back all the money he/she had put into the quiz.
     buttons:
     - title: Main Menu
       payload: /greet
@@ -1002,8 +1026,50 @@ More the fee , higher the reward . Best of luck !!'
       payload: /room_queries
     - title: Issue Support
       payload: /provide_support
-
-
+  utter_public_rooms:
+  - text: >
+      - Anyone can join and compete.
+      - Open for all users to participate.
+      - Great for broad learning and competition.
+      - Suggest quiz topics and join events hosted by others.
+      - Connect with various hosts and participants to get insights and guidance for your exams.
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+  utter_private_rooms:
+  - text: >
+      - Access is restricted to selected participants.
+      - Ideal for focused learning with friends or study groups.
+      - Suggest and participate in quizzes with a select group.
+      - Receive tailored guidance from hosts in a more intimate setting.
+      - Perfect for organizing specific events or study sessions with peers.
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
 
   utter_subscription_cancellation:
   - text: Subscription cancellation details will be provided on our website as we add more classes to our platform.
@@ -1318,6 +1384,12 @@ More the fee , higher the reward . Best of luck !!'
 
   utter_ask_phone:
   - text: May I Know your mobile number please
+
+  utter_exam_upsc:
+  - text: >
+      **UPSC (Union Public Service Commission):**
+      - Conducts civil services examinations for recruitment to various civil services of the Government of India.
+      - Use BrainBucks to prepare effectively for the UPSC exams and increase your chances of success.
     buttons:
     - title: Main Menu
       payload: /greet
@@ -1333,6 +1405,348 @@ More the fee , higher the reward . Best of luck !!'
       payload: /room_queries
     - title: Issue Support
       payload: /provide_support
+
+  utter_exam_ssc:
+  - text: >
+      **SSC (Staff Selection Commission):**
+      - Conducts exams to recruit staff for various posts in the various Ministries and Departments of the Government of India and in Subordinate Offices.
+      - Choose BrainBucks to get the best preparation materials and strategies for SSC exams.
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_exam_rrb:
+  - text: >
+      **RRB (Railway Recruitment Board):**
+      - Conducts exams to recruit candidates for various positions in Indian Railways.
+      - Prepare with BrainBucks to ace the RRB exams and secure a position in Indian Railways.
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_exam_banking:
+  - text: >
+      **Banking Exams:**
+      - Includes exams like IBPS PO, IBPS Clerk, SBI PO, and SBI Clerk for recruitment in banking sector.
+      - BrainBucks offers comprehensive resources to help you excel in Banking exams.
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_exam_neet:
+  - text: >
+      **NEET (National Eligibility cum Entrance Test):**
+      - A medical entrance exam for students who wish to study undergraduate medical courses in government or private medical colleges in India.
+      - Use BrainBucks to boost your NEET preparation and achieve a high rank.
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_exam_jee:
+  - text: >
+      **JEE (Joint Entrance Examination):**
+      - An engineering entrance examination conducted for admission to various engineering colleges in India.
+      - BrainBucks provides the best study materials and practice tests for JEE preparation.
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_exam_current_affairs:
+  - text: >
+      **Current Affairs:**
+      - Covers significant political events, sports, national and international news, and other important happenings.
+      - Stay updated with BrainBucks to excel in Current Affairs sections of various exams.
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_exam_gk:
+  - text: >
+      **General Knowledge:**
+      - Encompasses a wide range of topics including history, geography, culture, science, and more.
+      - Enhance your General Knowledge with BrainBucks for better performance in competitive exams.
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_exam_delhi_police:
+  - text: >
+      **Delhi Police Exam:**
+      - Conducted for recruitment to various posts in the Delhi Police force.
+      - Prepare with BrainBucks to secure a position in the Delhi Police.
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_exam_nda:
+  - text: >
+      **NDA (National Defence Academy):**
+      - Conducts an entrance exam for candidates who wish to join the Indian Armed Forces.
+      - Use BrainBucks to prepare thoroughly for the NDA exam and pursue a career in defense.
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_exam_cds:
+  - text: >
+      **CDS (Combined Defence Services):**
+      - Conducts exams for recruitment into the Indian Military Academy, Officers Training Academy, Indian Naval Academy, and Indian Air Force Academy.
+      - Choose BrainBucks to excel in the CDS exams and join the defense services.
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_exam_rpsc:
+  - text: >
+      **RPSC (Rajasthan Public Service Commission):**
+      - Conducts exams for recruitment to various posts in the state of Rajasthan.
+      - BrainBucks provides excellent resources to help you succeed in RPSC exams.
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_exam_crpf:
+  - text: >
+      **CRPF (Central Reserve Police Force):**
+      - Conducts recruitment exams for various positions within the Central Reserve Police Force.
+      - Prepare with BrainBucks to excel in the CRPF exams and join the force.
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_exam_reet:
+  - text: >
+      **REET (Rajasthan Eligibility Examination for Teachers):**
+      - Conducts exams for recruitment of teachers in the state of Rajasthan.
+      - BrainBucks offers the best resources to help you prepare for the REET exam and secure a teaching position.
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_exam_web_dev:
+  - text: >
+      **Web Development:**
+      - Encompasses the creation and maintenance of websites and web applications.
+      - Use BrainBucks to learn Web Development, acquire new skills, and enhance your career prospects.
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+
+  utter_paid_quizzes:
+  - text: >
+      **Paid Quizzes:**
+      - Require participants to pay an entry fee to join.
+      - The entry fee may vary depending on the quiz, typically ranging from 5 to 50 bb_money.
+      - Higher entry fees usually mean higher rewards.
+      - Best of luck!!
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_free_quizzes:
+  - text: >
+      **Free Quizzes:**
+      - Do not require any entry fee to join.
+      - Available to all users without any cost.
+      - Participate and test your knowledge without spending bb_money.
+      - Enjoy and learn!
+    buttons:
+    - title: Main Menu
+      payload: /greet
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
 slots:
   user_name:
     type: text
