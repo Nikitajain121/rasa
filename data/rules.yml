@@ -46,23 +46,13 @@ rules:
   steps:
   - intent: deny
   - action: utter_deny
-- rule: User asks about safety and security
-  steps:
-  - intent: safety_and_security
-  - action: utter_safety_and_security
-- rule: Data protection measures
-  steps:
-  - intent: data_protection_measures
-  - action: utter_data_protection_measures
+
 
 - rule: User rights and control over data
   steps:
   - intent: user_data_control
   - action: utter_user_data_control
 
-- rule: Reporting security issues
-  steps:
-  - intent: security_reporting
 
 - rule: User asks about Brain_Bucks
   steps:
@@ -73,11 +63,6 @@ rules:
   steps:
   - intent: brainbucks_headquarters
   - action: utter_brainbucks_headquarters
-
-- rule: How to download and install
-  steps:
-    - intent: download_install
-    - action: utter_download_install
 
 - rule: Is the app free/paid?
   steps:
@@ -109,12 +94,6 @@ rules:
     - intent: laptop_browser_accessibility
     - action: utter_laptop_browser_accessibility
 
-
-- rule: Opening multiple brainbucks accounts
-  steps:
-    - intent: multiple_accounts_brainbucks
-    - action: utter_multiple_accounts_brainbucks
-
 # how to begin introductory
 
 - rule: Respond to Get_Started FAQ
@@ -126,7 +105,7 @@ rules:
 
 - rule: Respond to course queries
   steps:
-  - intent: Course_Queries
+  - intent: course_queries
   - action: utter_course_list
 
 - rule: interactive_story_1
@@ -161,11 +140,6 @@ rules:
   - intent: quiz_rules
   - action: utter_quiz_rules
 
-- rule: User asks about quiz time limit
-  steps:
-  - intent: quiz_time_limit
-  - action: utter_quiz_time_limit
-
 - rule: User asks about minimum participants for quiz
   steps:
   - intent: min_participants_quiz
@@ -180,11 +154,6 @@ rules:
   steps:
   - intent: quiz_eligibility
   - action: utter_quiz_eligibility
-
-- rule: User asks about quiz format
-  steps:
-  - intent: quiz_format
-  - action: utter_quiz_format
 
 - rule: User asks about paid vs. unpaid quizzes
   steps:
@@ -243,57 +212,19 @@ rules:
   - intent: compete_with_friends
   - action: utter_compete_with_friends
 
-- rule: User asks about quiz limit
-  steps:
-  - intent: quiz_limit
-  - action: utter_quiz_limit
-
-- rule: User asks about cost of joining
-  steps:
-  - intent: cost_of_joining
-  - action: utter_cost_of_joining
 
 # contact us
-
-- rule: User asks how to reach support
-  steps:
-  - intent: reach_support
-  - action: utter_reach_support
 
 - rule: User asks about response time
   steps:
   - intent: response_time
   - action: utter_response_time
 
-# - rule: User asks about contact methods
-#   steps:
-#   - intent: contact_methods
-#   - action: utter_contact_methods
-
-- rule: User asks for immediate assistance
-  steps:
-  - intent: immediate_assistance
-  - action: utter_immediate_assistance
-
-- rule: User asks about support availability
-  steps:
-  - intent: availability
-  - action: utter_availability
-
-- rule: User asks about expectations from support
-  steps:
-  - intent: expectations
-  - action: utter_expectations
 
 - rule: User asks if support is provided
   steps:
   - intent: provide_support
   - action: utter_provide_support
-
-- rule: User asks about technical support
-  steps:
-  - intent: technical_support
-  - action: utter_technical_support
 
 
 # common issues 
@@ -303,11 +234,6 @@ rules:
     - intent: troubleshoot_issues
     - action: utter_troubleshoot_issues
 
-
-- rule: Subscription availability and billing
-  steps:
-    - intent: subscription_billing
-    - action: utter_subscription_billing
 
 - rule: Subscription cancellation
   steps:
@@ -319,10 +245,6 @@ rules:
     - intent: subscription_cost
     - action: utter_subscription_cost
 
-- rule: User reports app not loading
-  steps:
-    - intent: app_not_loading
-    - action: utter_app_not_loading
 
 - rule: User reports verification code issue
   steps:
@@ -345,20 +267,13 @@ rules:
   - intent: use_bb_money  
   - action: utter_use_bb_money  
 
-- rule: User asks about bb_money withdrawal details
-  steps:
-  - intent: bb_money_withdrawal_details
-  - action: utter_bb_money_withdrawal_details
 
 - rule: User asks about the minimum withdrawal limit for bb_money  
   steps:
   - intent: minimum_withdrawal_limit
   - action: utter_minimum_withdrawal_limit
 
-- rule: User asks about the cost of playing a game
-  steps:
-  - intent: game_cost
-  - action: utter_game_cost
+
 
 
 - rule: User reports payment issue
@@ -371,45 +286,12 @@ rules:
   - intent: internet_connection_loss
   - action: utter_internet_connection_loss
 
-- rule: User joined the wrong quiz
-  steps:
-  - intent: wrong_quiz_joined
-  - action: utter_wrong_quiz_joined
-
-- rule: User asks about Free Plays
-  steps:
-  - intent: free_plays
-  - action: utter_free_plays
-
-- rule: Respond to inquiries about paid quizzes
-  steps:
-  - intent: inquire_paid_quiz
-  - action: utter_inquire_paid_quiz
-
-# - rule: User reports a mistake in a quiz question
-#   steps:
-#   - intent: question_mistake
-#   - action: utter_question_mistake
 
 - rule: User asks about earning bb_money
   steps:
   - intent: earn_bb_money 
   - action: utter_earn_bb_money  
 
-- rule: User asks about the withdrawal process
-  steps:
-  - intent: withdrawal_process
-  - action: utter_withdrawal_process
-
-- rule: User encounters a problem with withdrawing winnings
-  steps:
-  - intent: withdrawal_problem
-  - action: utter_withdrawal_problem
-
-- rule: User asks about the minimum amount for withdrawal
-  steps:
-  - intent: withdrawal_minimum_amount
-  - action: utter_withdrawal_minimum_amount
 
 - rule: User asks how to buy bb_money  
   steps:
@@ -417,17 +299,11 @@ rules:
   - action: utter_buy_bb_money  
 
 
-  - action: utter_security_reporting
 
 - rule: Account recovery process
   steps:
   - intent: account_recovery_process
   - action: utter_account_recovery
-
-- rule: Terms and Conditions
-  steps:
-  - intent: terms_and_conditions
-  - action: utter_terms_and_conditions
 
 - rule: Get Paid Instructions
   steps:

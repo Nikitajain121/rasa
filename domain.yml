@@ -1,15 +1,13 @@
 version: '3.1'
 intents:
-- Course_Queries
+- course_queries
 - Get_Started
 - about_company
 - account_recovery_process
 - affirm
 
 - ask_why
-- availability
 - available_quizzes
-- bb_money_withdrawal_details
 
 - buy_bb_money
 - compete_with_friends
@@ -21,17 +19,12 @@ intents:
 - downloadable_materials
 - earn_bb_money
 - earning_rewards
-- expectations
-- free_plays
-- game_cost
 - get_contact_number
 - get_paid_instructions
 - get_user_name
 - goodbye
 - greet
 - how_are_you
-- immediate_assistance
-- inquire_paid_quiz
 - internet_connection_loss
 - internet_requirement
 - joining_room
@@ -49,14 +42,11 @@ intents:
 
 - provide_support
 - quiz_eligibility
-- quiz_format
 - quiz_instructions
-- quiz_limit
+
 - quiz_queries
 - quiz_registration_process
 - quiz_rules
-- quiz_time_limit
-- reach_support
 - reporting_mistakes_quiz
 - response_time
 - room_queries
@@ -65,33 +55,24 @@ intents:
 - subscription_cancellation
 - subscription_cost
 - suggesting_quiz_topics
-- technical_support
 
-- terms_and_conditions
+
 - troubleshoot_issues
 
 - use_bb_money
 
 - verification_code_issue
-- withdrawal_minimum_amount
-- withdrawal_problem
-- withdrawal_process
-- wrong_quiz_joined
 
 - update_app
-- safety_and_security
+
 - profiles_limit
-- multiple_accounts_brainbucks
 - laptop_browser_accessibility
-- download_install
-- cost_of_joining
+
 - countries_availability
-- data_protection_measures
+
+
 - brainbucks_headquarters
-- app_not_loading
 - app_pricing
-- security_reporting
-- subscription_billing
 - user_data_control
 responses:
   utter_greet:
@@ -100,7 +81,7 @@ responses:
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
-      payload: /Course_Queries
+      payload: /course_queries
     - title: Quiz Queries
       payload: /quiz_queries
     - title: BBCoins
@@ -255,33 +236,21 @@ responses:
     buttons:
     - title: Update App
       payload: /update_app
-    - title: Safety and Security
-      payload: /safety_and_security
     - title: Profiles Limit
       payload: /profiles_limit
-    - title: Multiple Accounts BrainBucks
-      payload: /multiple_accounts_brainbucks
     - title: Laptop Browser Accessibility
       payload: /laptop_browser_accessibility
     - title: Download Install
       payload: /download_install
-    - title: Cost of Joining
-      payload: /cost_of_joining
     - title: Countries Availability
       payload: /countries_availability
-    - title: Data Protection Measures
-      payload: /data_protection_measures
     - title: BrainBucks Headquarters
       payload: /brainbucks_headquarters
     - title: App Not Loading
       payload: /app_not_loading
     - title: App Pricing
       payload: /app_pricing
-    - title: Security Reporting
-      payload: /security_reporting
-    - title: Subscription Billing
-      payload: /subscription_billing
-    - title: User Data Control
+    - title: Data Protection, privacy and security
       payload: /user_data_control
     - title: Main Menu
       payload: /greet
@@ -316,44 +285,19 @@ responses:
 
 
 
-  utter_safety_and_security:
-  - text: BrainBucks takes user security and privacy seriously. We have measures in place to protect your personal information and adhere to strict privacy policies.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
 
-  utter_data_protection_measures:
-  - text: We have implemented various data protection measures to ensure the security and privacy of your information.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
+
+ 
+
 
   utter_user_data_control:
-  - text: You have full control over your data. You can manage and update your personal information through your account settings.
+  - text: |
+      At BrainBucks, you have full control over your data. Manage and update your personal information through your account settings.
+
+      Report any security issues to our security team via our toll-free number or email for immediate investigation.
+
+      We prioritize your security and privacy with strict policies and robust data protection measures.
+
     buttons:
     - title: Main Menu
       payload: /greet
@@ -370,23 +314,7 @@ responses:
     - title: Issue Support
       payload: /provide_support
 
-  utter_security_reporting:
-  - text: If you encounter any security issues, please report them to our security team at our toll-free number and mail us immediately so that we can investigate and address them.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
+
 
   utter_how_are_you:
   - text: I'm just a bot, so I don't have feelings, but thanks for asking!
@@ -463,24 +391,6 @@ responses:
     - title: Issue Support
       payload: /provide_support
 
-  utter_terms_and_conditions:
-  - text: Participants must agree to the terms and conditions set forth by the organizers before participating in the quiz. These terms and conditions may include rules regarding privacy, data usage, and any other relevant aspects of the quiz.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
-
   utter_available_quizzes:
   - text: BrainBucks has a wide selection of quizzes on a variety of topics including history, pop culture, science, and more. Whether you're a trivia buff or just looking to learn something new, BrainBucks has something for everyone.
     buttons:
@@ -534,23 +444,6 @@ responses:
     - title: Issue Support
       payload: /provide_support
 
-  utter_download_install:
-  - text: To download and install the app, visit our website and follow the instructions provided there.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
 
   utter_app_pricing:
   - text: The app is free to download. However, certain features may require a subscription or in-app purchases.
@@ -703,23 +596,7 @@ responses:
     - title: Issue Support
       payload: /provide_support
 
-  utter_multiple_accounts_brainbucks:
-  - text: No, you cannot open more than one BrainBucks account. Operating multiple accounts is against our policy to maintain fairness.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support 
+
   utter_course_list:
   - text: |-
       "There are list of exams you can choose from–
@@ -743,8 +620,6 @@ responses:
       payload: /demo_class
     - title: Downloadable Materials
       payload: /downloadable_materials
-    - title: Laptop Browser Accessibility
-      payload: /laptop_browser_accessibility
     - title: Learning Programs & Languages
       payload: /learning_programs_languages
     - title: Live Class
@@ -790,34 +665,20 @@ responses:
     buttons:
     - title: Available Quizzes
       payload: /available_quizzes
-    - title: Free Plays
-      payload: /free_plays
-    - title: Game Cost
-      payload: /game_cost
     - title: Internet Connection Loss
       payload: /internet_connection_loss
-    - title: Inquire Paid Quiz
-      payload: /inquire_paid_quiz
     - title: Suggesting Quiz Topics
       payload: /suggesting_quiz_topics
     - title: Quiz Eligibility
       payload: /quiz_eligibility
-    - title: Quiz Format
-      payload: /quiz_format
     - title: Quiz Instructions
       payload: /quiz_instructions
-    - title: Quiz Limit
-      payload: /quiz_limit
     - title: Quiz Registration Process
       payload: /quiz_registration_process
     - title: Quiz Rules
       payload: /quiz_rules
-    - title: Quiz Time Limit
-      payload: /quiz_time_limit
-    - title: Wrong Quiz Joined
-      payload: /wrong_quiz_joined
-    - title: Terms and Conditions
-      payload: /terms_and_conditions
+    - title: Reporting mistake in quiz
+      payload: /reporting_mistakes_quiz
     - title: Minimum Participants in Quiz
       payload: /min_participants_quiz
     - title: Paid vs Unpaid Quizzes
@@ -855,7 +716,15 @@ responses:
 
       8. Prize Distribution: The monetary rewards will be distributed to the winners via a specified payment method or bank transfer.
 
-      9. Terms and Conditions: Participants must agree to the terms and conditions set forth by the organizers before participating in the quiz, including rules regarding privacy, data usage, and any other relevant aspects of the quiz."
+      9. Terms and Conditions: Participants must agree to the terms and conditions set forth by the organizers before participating in the quiz, including rules regarding privacy, data usage, and any other relevant aspects of the quiz.
+    
+      10. Wrong quiz joined: If you join a quiz by mistake, we are unable to refund your bb_money .
+                          We recommend playing the quiz anyway, as you still have a chance to win!
+
+      11. Quiz time limit : The time limit for each question in the quiz will be specified before the quiz begins. 
+                          Participants must submit their answers within the given time frame for each question. 
+                          Late submissions will not be accepted."
+ 
     buttons:
     - title: Main Menu
       payload: /greet
@@ -871,23 +740,7 @@ responses:
       payload: /room_queries
     - title: Issue Support
       payload: /provide_support
-  utter_quiz_time_limit:
-  - text: The time limit for each question in the quiz will be specified before the quiz begins. Participants must submit their answers within the given time frame for each question. Late submissions will not be accepted.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
+
   utter_min_participants_quiz:
   - text: Even if there is a single particpant the quiz will be commeneced by the organizers. Participant will recieve back all the money he/she had put into the quiz.
     buttons:
@@ -923,7 +776,10 @@ responses:
     - title: Issue Support
       payload: /provide_support
   utter_quiz_eligibility:
-  - text: The quiz is open to individuals who meet the minimum age requirement (i.e., 18 years or older) and comply with any additional eligibility criteria specified by the organizers. Participants must fulfill all eligibility criteria to participate in the quiz.
+  - text: "The quiz is open to individuals who meet the minimum age requirement (i.e., 18 years or older) and comply with any additional eligibility criteria specified by the organizers. 
+      Participants must fulfill all eligibility criteria to participate in the quiz.
+      However, There is no limit to the number of quizzes you can participate in on BrainBucks!
+      Feel free to join as many quizzes as you'd like and test your knowledge to the fullest."
     buttons:
     - title: Main Menu
       payload: /greet
@@ -939,25 +795,10 @@ responses:
       payload: /room_queries
     - title: Issue Support
       payload: /provide_support
-  utter_quiz_format:
-  - text: The quiz will consist of a predetermined number of multiple-choice questions based on a predefined topic. Each question will be presented to participants, who must select the correct answer from the options provided.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
+
   utter_paid_vs_unpaid_quizzes:
-  - text: 'There are two types of quizzes: free to join and paid. Free quizzes do not require any entry fee, while paid quizzes require participants to pay an entry fee to join. The entry fee for paid quizzes may vary depending on the quiz.'
+  - text: 'There are two types of quizzes: free to join and paid. Free quizzes do not require any entry fee, while paid quizzes require participants to pay an entry fee to join. The entry fee for paid quizzes may vary depending on the quiz. Each game requires a different amount of bb_money , typically ranging from 5 to 50 bb_money .
+More the fee , higher the reward . Best of luck !!'
     buttons:
     - title: Main Menu
       payload: /greet
@@ -992,23 +833,6 @@ responses:
     - title: Issue Support
       payload: /provide_support
 
-  utter_quiz_limit:
-  - text: There is no limit to the number of quizzes you can participate in on BrainBucks! Feel free to join as many quizzes as you'd like and test your knowledge to the fullest.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
 
   utter_quiz_instructions:
   - text: |-
@@ -1020,9 +844,11 @@ responses:
 
       3. Choose a category from the options: Hard, Medium, or Easy.
 
-      4. Each category has a corresponding difficulty level and marks assigned to it.
+      4. Select any category to start the quiz.
 
-      5. Select any category to start the quiz.
+      5. The quiz will consist of a predetermined number of multiple-choice questions based on a predefined topic.
+       
+  
     buttons:
     - title: Main Menu
       payload: /greet
@@ -1039,26 +865,11 @@ responses:
     - title: Issue Support
       payload: /provide_support
 
-  utter_free_plays:
-  - text: Free Plays/quizzes allow you to participate in certain games without using your BrainBucks. Enjoy the fun and challenge without any cost!
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
 
   utter_reporting_mistakes_quiz:
-  - text: If participants notice any mistakes or discrepancies in the quiz questions or answers, they should report them to the organizers immediately. The organizers will review the reported issues and take appropriate action to rectify them. You can also contact at +917887940832 or mail us at info@brainbucks.in .
+  - text: If participants notice any mistakes or discrepancies in the quiz questions or answers, they should report them to the organizers immediately. 
+          The organizers will review the reported issues and take appropriate action to rectify them.
+          You can also contact at +917887940832 or mail us at info@brainbucks.in .
     buttons:
     - title: Main Menu
       payload: /greet
@@ -1075,41 +886,7 @@ responses:
     - title: Issue Support
       payload: /provide_support
 
-  utter_inquire_paid_quiz:
-  - text: Paid quizzes offer additional features and rewards compared to free quizzes. To join a paid quiz, you need to pay an entry fee, which may vary depending on the quiz. However, they often come with higher stakes and greater rewards.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
 
-  utter_wrong_quiz_joined:
-  - text: Unfortunately, if you join a quiz by mistake, we are unable to refund your bb_money . We recommend playing the quiz anyway, as you still have a chance to win!
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
 
   utter_joining_room:
   - text: To join a room, simply navigate to the rooms section and select the room you'd like to join. Follow the prompts to enter the room and start participating.
@@ -1200,6 +977,7 @@ responses:
     - title: Issue Support
       payload: /provide_support
 
+
   utter_get_paid_instructions:
   - text: |-
       To get paid, follow these steps:
@@ -1225,23 +1003,7 @@ responses:
     - title: Issue Support
       payload: /provide_support
 
-  utter_subscription_billing:
-  - text: The app is free to download. However, charges may apply for registering for paid events and subscribing to classes.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
+
 
   utter_subscription_cancellation:
   - text: Subscription cancellation details will be provided on our website as we add more classes to our platform.
@@ -1279,23 +1041,6 @@ responses:
     - title: Issue Support
       payload: /provide_support
 
-  utter_cost_of_joining:
-  - text: No. Brain_Bucks is free to join and use. You can earn rewards for participating in quizzes without any upfront costs.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
 
   utter_payment_issue:
   - text: If you're facing problems with making a payment in the app, ensure that your payment method is valid and try again. If the issue persists, contact our support team for assistance at +917887940832 or mail us at info@brainbucks.in.
@@ -1317,8 +1062,6 @@ responses:
   utter_earn_bb_money:
   - text: You can earn bb_money by participating in quizzes, completing challenges, inviting friends to the platform, and engaging in other activities specified on the platform.
     buttons:
-    - title: BBMoney Withdrawal Details
-      payload: /bb_money_withdrawal_details
     - title: Buy BBMoney
       payload: /buy_bb_money
     - title: Get Paid Instructions
@@ -1331,20 +1074,18 @@ responses:
       payload: /payment_issue
     - title: Prizes Distribution
       payload: /prizes_distribution
-    - title: Subscription Billing
-      payload: /subscription_billing
+ 
     - title: Subscription Cancellation
       payload: /subscription_cancellation
     - title: Subscription Cost
       payload: /subscription_cost
     - title: Use BBMoney
       payload: /use_bb_money
-    - title: Withdrawal Minimum Amount
-      payload: /withdrawal_minimum_amount
+    
+      
     - title: Withdrawal Problem
       payload: /withdrawal_problem
-    - title: Withdrawal Process
-      payload: /withdrawal_process
+   
     - title: Main Menu
       payload: /greet
     - title: BrainBucks App
@@ -1374,25 +1115,9 @@ responses:
       payload: /room_queries
     - title: Issue Support
       payload: /provide_support 
-  utter_bb_money_withdrawal_details:
-  - text: To withdraw bb_money , you can use the withdrawal feature available on the platform. Follow the instructions provided to complete the withdrawal process.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support 
+
   utter_minimum_withdrawal_limit:
-  - text: The minimum withdrawal limit for bb_money  is 50 Rs. Please note that there is an administration fee of Rs 10 on all withdrawals, and additional bank charges may apply.
+  - text: The minimum withdrawal limit for bb_money is 50 Rs. Please note that there is an administration fee of Rs 10 on all withdrawals, and additional bank charges may apply.
     buttons:
     - title: Main Menu
       payload: /greet
@@ -1408,23 +1133,7 @@ responses:
       payload: /room_queries
     - title: Issue Support
       payload: /provide_support
-  utter_game_cost:
-  - text: The cost of playing games varies depending on the game. Each game requires a different amount of bb_money , typically ranging from 5 to 50 bb_money .
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support 
+
   utter_prizes_distribution:
   - text: 'The distribution of prizes in the quiz is as follows: The cash prize pool will be distributed among the winners based on their rankings.The distribution formula takes into account factors such as accuracy and time taken to complete the quiz.'
     buttons:
@@ -1459,78 +1168,12 @@ responses:
       payload: /room_queries
     - title: Issue Support
       payload: /provide_support 
-  utter_withdrawal_process:
-  - text: To withdraw your winnings, you first need to submit ID verification for approval by our administration team. Once validated, you can withdraw all or part of your winnings. Withdrawals may take up to 15 working days to process.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
-  utter_withdrawal_problem:
-  - text: If you encounter any problems with withdrawing your winnings, please contact our customer support team for assistance at +917887940832 or mail us at info@brainbucks.in . They'll help you resolve the issue and ensure you receive your winnings.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
-  utter_withdrawal_minimum_amount:
-  - text: The minimum amount you can withdraw is 50 Rs. Please note that there is an administration fee of Rs 10 on all withdrawals, and additional bank charges may apply. It's more cost-effective to withdraw larger amounts to minimize fees.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
-  utter_reach_support:
-  - text: You can reach Brain_Bucks Customer Support through various channels - Chat with our chatbot - Call our toll-free number at +917887940832 or mail us at info@brainbucks.in .
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support  
+
+
+
   utter_response_time:
   - text: Our goal is to respond to inquiries within 24 hours. However, response times may vary depending on the volume of queries received.
-  utter_immediate_assistance:
-  - text: For immediate assistance, please call our toll-free number during operating hours. Alternatively, you can use our chatbot for instant support.
+          For immediate assistance, please call our toll-free number during  10am to 6pm, Monday to Saturday. Alternatively, you can use our chatbot for instant support.
     buttons:
     - title: Main Menu
       payload: /greet
@@ -1546,63 +1189,16 @@ responses:
       payload: /room_queries
     - title: Issue Support
       payload: /provide_support
-  utter_availability:
-  - text: Brain_Bucks Customer Support is available from 10am to 6pm, Monday to Saturday. Chatbot and email support are available round the clock.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
-  utter_expectations:
-  - text: 'From Brain_Bucks Customer Support, you can expect: - Prompt and helpful responses - Assistance in resolving issues and providing guidance - Professional and courteous service'
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
+
   utter_provide_support:
   - text: Yes, we provide customer support to all our users. You can reach us via call at +917887940832 or mail us at info@brainbucks.in .
     buttons:
-    - title: Availability
-      payload: /availability
     - title: Account Recovery Process
       payload: /account_recovery_process
-    - title: Expectations
-      payload: /expectations
-    - title: Immediate Assistance
-      payload: /immediate_assistance
     - title: Verification Code Issue
       payload: /verification_code_issue
     - title: Troubleshoot Issues
       payload: /troubleshoot_issues
-    - title: Technical Support
-      payload: /technical_support
-    - title: Security Reporting
-      payload: /security_reporting
-    - title: Reach Support
-      payload: /reach_support
-    - title: Reporting Mistakes in Quiz
-      payload: /reporting_mistakes_quiz
     - title: Response Time
       payload: /response_time
     - title: Main Menu
@@ -1618,38 +1214,20 @@ responses:
     - title: Rooms
       payload: /room_queries
  
-  utter_technical_support:
-  - text: For technical support, please contact our technical team through our chatbot or by calling our toll-free number at +917887940832 or mail us at info@brainbucks.in .
   utter_troubleshoot_issues:
   - text: |-
-      If you're experiencing any issues with the app, here are some common troubleshooting steps you can try-
+            "If you're experiencing any issues with the app, here are some common troubleshooting steps you can try-
 
-      1. Restart the app: Close the app completely and then reopen it.
+            1. Restart the app: Close the app completely and then reopen it.
 
-      2. Check your internet connection: Ensure you have a stable internet connection.
+            2. Check your internet connection: Ensure you have a stable internet connection.
 
-      3. Update the app: Make sure you have the latest version of the app installed.
+            3. Update the app: Make sure you have the latest version of the app installed.
 
-      4. Clear app cache: Clearing the app cache can resolve certain issues.
+            4. Clear app cache: Clearing the app cache can resolve certain issues.
 
-      5. Contact support: If the problem persists, feel free to contact our support team for assistance at +917887940832 or mail us at info@brainbucks.in.
-    buttons:
-    - title: Main Menu
-      payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
-  utter_app_not_loading:
-  - text: If the app is not loading, please try uninstalling and reinstalling it. If the issue persists, contact our technical support team for assistance at +917887940832 or mail us at info@brainbucks.in .
+            5. Contact support: If the problem persists, feel free to contact our support team for assistance at +917887940832 or
+            mail us at info@brainbucks.in."
     buttons:
     - title: Main Menu
       payload: /greet

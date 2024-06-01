@@ -222,18 +222,7 @@ nlu:
     - Can you provide statistics about your impact, Brainbucks?
     - How do you empower your users, Brainbucks?
     - What are your objectives, Brainbucks?
-- intent: download_install
-  examples: |
-    - How can I download and install the app?
-    - Steps to download and install the application?
-    - Download and installation process?
-    - Where can I find the download link for the app?
-    - Is there a step-by-step guide for app installation?
-    - Can I download the app from multiple platforms?
-    - What are the system requirements for app installation?
-    - Are there any prerequisites for installing the app?
-    - How long does the app installation take?
-    - Is the app installation straightforward?
+
 - intent: app_pricing
   examples: |
     - Is the app free or paid?
@@ -245,7 +234,26 @@ nlu:
     - Are there any hidden costs associated with the app?
     - How does the app pricing model work?
     - Are discounts available for long-term subscriptions?
+    - Is the app available for free?
+    - When do I start getting charged for using the app?
+    - Subscription and billing details?
+    - What payment methods are accepted for subscriptions?
+    - Are there any hidden fees associated with the subscription?
+    - Can I preview the app before subscribing?
+    - Is there a trial period for the subscription?
+    - How often is the subscription billed?
+    - Are there different subscription plans available?
+    - Can I change my subscription plan later?
     - Can I switch between different pricing tiers?
+    - Is there a cost to joining Brainbucks?
+    - Do I need to pay to join Brainbucks?
+    - How much does it cost to become a member of Brainbucks?
+    - Are there different membership tiers with varying costs on Brainbucks?
+    - Do I have to subscribe to a plan to access all features of Brainbucks?
+    - Are there any hidden fees associated with joining Brainbucks?
+    - Can I access certain features of Brainbucks for free without joining?
+    - Are there discounts or promotions available for new members joining Brainbucks?
+    - Is there a trial period or free membership option available for Brainbucks?
 - intent: update_app
   examples: |
     - How do I update the app?
@@ -258,7 +266,7 @@ nlu:
     - Is there a changelog available for app updates?
     - What should I do if the app update fails?
     - Are there any precautions I need to take before updating the app?
-- intent: Course_Queries
+- intent: course_queries
   examples: |
     - What courses are currently available?
     - Tell me more about the courses offered.
@@ -480,8 +488,6 @@ nlu:
     - Can you provide an overview of the quiz guidelines?
     - I'm unsure about the rules of the quiz, can you clarify?
     - Are there specific instructions I should know before participating in the quiz?
-- intent: quiz_time_limit
-  examples: |
     - How much time do I have to answer each question in the quiz?
     - Is there a time limit for completing the quiz?
     - What is the duration of the quiz?
@@ -501,6 +507,27 @@ nlu:
     - Are there penalties for not completing the quiz within the time limit?
     - Can I request additional time for the quiz due to unforeseen circumstances?
     - Does the quiz time limit vary based on the difficulty of questions?
+    - What are the terms and conditions for participating?
+    - Are there any rules I need to agree to before participating?
+    - Can you provide information on the terms and conditions?
+    - Where can I find the terms and conditions?
+    - Do I need to accept the terms and conditions to use the platform?
+    - Are there specific age or eligibility requirements in the terms and conditions?
+    - How often are the terms and conditions updated?
+    - Can I access a copy of the terms and conditions before agreeing to them?
+    - What happens if I violate the terms and conditions?
+    - Are there any restrictions or limitations outlined in the terms and conditions?
+    - I joined the wrong quiz by mistake, what should I do?
+    - Can I exit a quiz if I joined the wrong one?
+    - How do I leave a quiz I didn't mean to join?
+    - Is there a way to switch quizzes once I've joined one?
+    - Can I cancel my participation in a quiz before it starts?
+    - What are the consequences of leaving a quiz midway?
+    - Are there penalties for joining the wrong quiz?
+    - Can I get a refund if I accidentally join the wrong quiz?
+    - How do I ensure I'm joining the correct quiz next time?
+    - Is there a confirmation step before joining a quiz to prevent mistakes?
+
 - intent: min_participants_quiz
   examples: |
     - What is the minimum phone of participants required for the quiz?
@@ -561,27 +588,16 @@ nlu:
     - Can individuals with disabilities participate in the quiz?
     - Is there a maximum age limit for quiz participation?
     - Are there any prerequisites for eligibility verification?
-- intent: quiz_format
-  examples: |
-    - What is the format of the quiz questions?
-    - How are the quiz questions structured?
-    - Can you describe the format of the quiz?
-    - Are the quiz questions multiple choice or open-ended?
-    - Is there a specific order for answering quiz questions?
-    - Are there different rounds or sections in the quiz?
-    - Are all quiz questions mandatory to answer?
-    - Is there a time limit for each quiz question?
-    - Are there any penalties for incorrect answers in the quiz?
-    - Can participants skip questions in the quiz?
-    - How are quiz scores calculated?
-    - Is there negative marking in the quiz?
-    - Are quiz questions randomized for each participant?
-    - Can participants review their answers before submitting the quiz?
-    - Are there any multimedia elements included in the quiz questions?
-    - Can participants request hints for quiz questions?
-    - Are there different difficulty levels for quiz questions?
-    - Is there a limit on the phone of attempts for quiz questions?
-    - How are tiebreakers handled in the quiz?
+    - Is there a limit to the phone of quizzes I can take on Brainbucks?
+    - Can I take unlimited quizzes on Brainbucks?
+    - How many quizzes can I participate in on Brainbucks?
+    - Are there any restrictions on the frequency of quizzes I can participate in on Brainbucks?
+    - Is there a daily, weekly, or monthly quiz limit on Brainbucks?
+    - Do different membership levels have different quiz limits on Brainbucks?
+    - Are there penalties for exceeding the quiz limit on Brainbucks?
+    - Can I request additional quizzes beyond the limit on Brainbucks?
+    - How is the quiz limit enforced on Brainbucks?
+  
 - intent: suggesting_quiz_topics
   examples: |
     - How can I suggest topics for future quizzes?
@@ -751,23 +767,8 @@ nlu:
     - How do I earn rewards on Brainbucks?
     - What are the ways to earn rewards on Brainbucks?
     - Can you explain the reward system on Brainbucks?
-- intent: safety_and_security
-  examples: |
-    - Is Brainbucks safe and secure?
-    - How secure is my information on Brainbucks?
-    - Can I trust the security of Brainbucks?
-    - What measures does Brainbucks take to ensure data security?
-    - Is my privacy protected on Brainbucks?
-    - How does Brainbucks handle user data privacy?
-    - Can I rely on Brainbucks to keep my information confidential?
-    - What is Brainbucks' approach to safeguarding user privacy?
-    - Are there any privacy concerns I should be aware of with Brainbucks?
-    - Does Brainbucks comply with privacy regulations?
-    - Where can I find information about Brainbucks' privacy policy?
-    - What are the terms of Brainbucks' privacy agreement?
-    - How does Brainbucks use and protect my personal information?
-    - Is there a dedicated privacy policy page on Brainbucks' website?
-    - What steps does Brainbucks take to prevent unauthorized access to user data?
+
+  
 - intent: compete_with_friends
   examples: |
     - Can I compete with my friends on Brainbucks?
@@ -780,28 +781,10 @@ nlu:
     - Is there a feature to share quiz results with friends on Brainbucks?
     - How can I view my friends' activity or achievements on Brainbucks?
     - Are there social features for interacting with friends on Brainbucks?
-- intent: quiz_limit
-  examples: |
-    - Is there a limit to the phone of quizzes I can take on Brainbucks?
-    - Can I take unlimited quizzes on Brainbucks?
-    - How many quizzes can I participate in on Brainbucks?
-    - Are there any restrictions on the frequency of quizzes I can participate in on Brainbucks?
-    - Is there a daily, weekly, or monthly quiz limit on Brainbucks?
-    - Do different membership levels have different quiz limits on Brainbucks?
-    - Are there penalties for exceeding the quiz limit on Brainbucks?
-    - Can I request additional quizzes beyond the limit on Brainbucks?
-    - How is the quiz limit enforced on Brainbucks?
-- intent: cost_of_joining
-  examples: |
-    - Is there a cost to joining Brainbucks?
-    - Do I need to pay to join Brainbucks?
-    - How much does it cost to become a member of Brainbucks?
-    - Are there different membership tiers with varying costs on Brainbucks?
-    - Do I have to subscribe to a plan to access all features of Brainbucks?
-    - Are there any hidden fees associated with joining Brainbucks?
-    - Can I access certain features of Brainbucks for free without joining?
-    - Are there discounts or promotions available for new members joining Brainbucks?
-    - Is there a trial period or free membership option available for Brainbucks?
+
+  
+
+
 - intent: countries_availability
   examples: |
     - In how many countries is Brainbucks available?
@@ -816,20 +799,7 @@ nlu:
     - Is there customer support available for users from all countries on Brainbucks?
     - Is Brainbucks avaiable in [USA](country)?
     - Is Brainbucks avaiable in [Pakistan](country)
-- intent: reach_support
-  examples: |
-    - How to reach support
-    - How can I contact Brain_Bucks Customer Support?
-    - What are the contact methods for support?
-    - How do I get in touch with support?
-    - Where can I find support?
-    - Is there a support email address?
-    - Can I call Brain_Bucks Customer Support?
-    - Are there any online chat options for support?
-    - How do I access the support portal?
-    - How can I reach you ?
-    - How to contact them?
-    - any contact number
+
 - intent: response_time
   examples: |
     - How long does it take to receive a response from Brain_Bucks Customer Support?
@@ -839,8 +809,6 @@ nlu:
     - Can I expect a prompt response from support?
     - Is there a guaranteed response time for support requests?
     - How soon can I expect assistance from support?
-- intent: immediate_assistance
-  examples: |
     - Can I get immediate assistance from Brain_Bucks Customer Support?
     - How do I get immediate help from support?
     - Is immediate assistance available from support?
@@ -848,8 +816,6 @@ nlu:
     - Is there an emergency support option for immediate help?
     - What should I do if I need urgent assistance from support?
     - Are there priority channels for immediate support requests?
-- intent: availability
-  examples: |
     - Is Brain_Bucks Customer Support available round the clock?
     - What are the support hours?
     - When can I contact support?
@@ -857,16 +823,7 @@ nlu:
     - Are there any scheduled maintenance times when support may be unavailable?
     - Can I expect support assistance outside of regular business hours?
     - Are there any limitations to support availability?
-- intent: expectations
-  examples: |
-    - What can I expect from Brain_Bucks's customer helpline phone?
-    - What should I expect from support?
-    - What assistance is provided by support?
-    - Are there any service level agreements for support assistance?
-    - Can I expect resolution of issues within a certain timeframe?
-    - What level of support quality should I anticipate?
-    - Are there any support performance metrics available?
-    - How does Brain_Bucks ensure customer satisfaction with support?
+
 - intent: provide_support
   examples: |
     - Do you provide customer support?
@@ -927,8 +884,18 @@ nlu:
     - How do I resolve account suspension issues with support?
     - Can I find troubleshooting guides from support?
     - How do I get help with app updates from support?
-- intent: technical_support
-  examples: |
+    - How to reach support
+    - How can I contact Brain_Bucks Customer Support?
+    - What are the contact methods for support?
+    - How do I get in touch with support?
+    - Where can I find support?
+    - Is there a support email address?
+    - Can I call Brain_Bucks Customer Support?
+    - Are there any online chat options for support?
+    - How do I access the support portal?
+    - How can I reach you ?
+    - How to contact them?
+    - any contact number
     - How do I get technical support?
     - What do I do for technical issues?
     - Is technical support available?
@@ -939,6 +906,7 @@ nlu:
     - Can I expect timely resolution of technical issues?
     - Are there specific channels for technical support requests?
     - What expertise does the technical support team have?
+
 - intent: troubleshoot_issues
   examples: |
     - Common troubleshooting steps?
@@ -951,6 +919,24 @@ nlu:
     - What should I do if the app crashes?
     - Are there known issues with the app?
     - How do I report technical problems with the app?
+    - The app is not loading, what should I do?
+    - Why is the app not loading on my device?
+    - How do I fix the app if it's not loading?
+    - The loading screen stays forever and the app doesn't open. How to solve this?
+    - I've tried restarting my phone, but the app still won't load. What's the next step?
+    - I keep getting a blank screen when trying to open the app. How can I resolve this issue?
+    - The app crashes every time I try to open it. Is there a fix for this?
+    - I've updated the app, but it still won't load. What could be causing this problem?
+    - I'm facing issues with withdrawing my winnings, what should I do?
+    - What can I do if I encounter problems with withdrawals?
+    - How do I resolve withdrawal-related problems?
+    - Who should I contact if I have trouble withdrawing my winnings?
+    - What are the common reasons for withdrawal failures?
+    - Is there a support team available to assist with withdrawal issues?
+    - Can I cancel a withdrawal request if there's an error?
+    - Are there any troubleshooting steps for withdrawal problems?
+    - How can I ensure smooth withdrawals in the future?
+    - Is there a timeframe within which withdrawal issues are typically resolved?
 - intent: learning_programs_languages
   examples: |
     - In which languages are the learning programs available?
@@ -999,18 +985,8 @@ nlu:
     - Can I switch between mobile and desktop versions seamlessly?
     - Are all features available on the web version?
     - Can I sync progress between the mobile app and web version?
-- intent: subscription_billing
-  examples: |
-    - Is the app available for free?
-    - When do I start getting charged for using the app?
-    - Subscription and billing details?
-    - What payment methods are accepted for subscriptions?
-    - Are there any hidden fees associated with the subscription?
-    - Can I preview the app before subscribing?
-    - Is there a trial period for the subscription?
-    - How often is the subscription billed?
-    - Are there different subscription plans available?
-    - Can I change my subscription plan later?
+
+
 - intent: subscription_cancellation
   examples: |
     - Can I cancel my subscription?
@@ -1046,8 +1022,6 @@ nlu:
     - Can I delete profiles that I no longer need?
     - What information is associated with each profile?
     - Can I create profiles for family members or friends?
-- intent: multiple_accounts_brainbucks
-  examples: |
     - Can I open more than one BrainBucks account?
     - Policy on having multiple accounts?
     - Handling multiple accounts on BrainBucks?
@@ -1058,16 +1032,10 @@ nlu:
     - Can I transfer data between different BrainBucks accounts?
     - Are there any restrictions on using multiple accounts simultaneously?
     - How do I manage multiple accounts efficiently?
-- intent: app_not_loading
-  examples: |
-    - The app is not loading, what should I do?
-    - Why is the app not loading on my device?
-    - How do I fix the app if it's not loading?
-    - The loading screen stays forever and the app doesn't open. How to solve this?
-    - I've tried restarting my phone, but the app still won't load. What's the next step?
-    - I keep getting a blank screen when trying to open the app. How can I resolve this issue?
-    - The app crashes every time I try to open it. Is there a fix for this?
-    - I've updated the app, but it still won't load. What could be causing this problem?
+
+
+
+ 
 - intent: verification_code_issue
   examples: |
     - My verification code is not getting verified, what should I do?
@@ -1178,18 +1146,7 @@ nlu:
     - Are there discounts or offers available when using BB money?
     - Can I convert BB money to real currency?
     - Are there restrictions on using BB money?
-- intent: bb_money_withdrawal_details
-  examples: |
-    - How do I withdraw BB money?
-    - What are the details for withdrawing BB money?
-    - Can I cash out my BB money?
-    - What is the process for withdrawing BB money?
-    - Are there fees associated with withdrawing BB money?
-    - How long does it take to receive withdrawn BB money?
-    - Is there a minimum amount required for BB money withdrawal?
-    - Are there maximum limits for BB money withdrawal?
-    - Can I withdraw BB money to any payment method?
-    - Are there any restrictions on BB money withdrawal?
+
 - intent: minimum_withdrawal_limit
   examples: |
     - What is the minimum withdrawal limit for BB money?
@@ -1202,18 +1159,17 @@ nlu:
     - What happens if I don't meet the minimum withdrawal requirement?
     - Is the minimum withdrawal limit subject to change?
     - How often is the minimum withdrawal limit updated?
-- intent: game_cost
-  examples: |
-    - How much does it cost to play a game?
-    - What is the BB money cost for playing games?
-    - How many BB money do I need to play a game?
-    - Can you tell me the cost of playing games?
-    - Are there free games available, or do they all require BB money?
-    - Do game costs vary based on the type or difficulty of the game?
-    - Are there any discounts or promotions for playing games?
-    - Can I earn back BB money by playing games?
-    - Is there a way to test games before spending BB money?
-    - Are there subscription options that include access to games?
+    - What is the minimum amount I can withdraw?
+    - Is there a minimum withdrawal limit for winnings?
+    - How much do I need to have before I can withdraw my winnings?
+    - Are there any conditions for withdrawing below the minimum amount?
+    - Can I combine winnings from multiple games to meet the withdrawal minimum?
+    - Is the withdrawal minimum amount subject to change?
+    - Are there any penalties for withdrawing below the minimum amount?
+    - How often can I withdraw winnings below the minimum amount?
+    - Can I request partial withdrawals if I haven't reached the minimum amount?
+    - Are there any exceptions to the withdrawal minimum amount policy?
+
 - intent: internet_connection_loss
   examples: |
     - What happens if I lose my internet connection during a game?
@@ -1226,30 +1182,7 @@ nlu:
     - Can I continue playing from where I left off if I reconnect to the internet?
     - Does the game pause automatically when the internet connection is lost?
     - Are there any troubleshooting steps recommended for internet connection problems?
-- intent: wrong_quiz_joined
-  examples: |
-    - I joined the wrong quiz by mistake, what should I do?
-    - Can I exit a quiz if I joined the wrong one?
-    - How do I leave a quiz I didn't mean to join?
-    - Is there a way to switch quizzes once I've joined one?
-    - Can I cancel my participation in a quiz before it starts?
-    - What are the consequences of leaving a quiz midway?
-    - Are there penalties for joining the wrong quiz?
-    - Can I get a refund if I accidentally join the wrong quiz?
-    - How do I ensure I'm joining the correct quiz next time?
-    - Is there a confirmation step before joining a quiz to prevent mistakes?
-- intent: free_plays
-  examples: |
-    - What are Free Plays?
-    - Can I play games for free?
-    - Do I get any free attempts in quizzes?
-    - How do Free Plays work?
-    - Are there any limitations on the phone of Free Plays I can use?
-    - How often are Free Plays replenished?
-    - Can I earn additional Free Plays by completing certain actions?
-    - Are Free Plays restricted to specific games or quizzes?
-    - Is there a time limit for using Free Plays?
-    - Can I accumulate unused Free Plays for later use?
+
 - intent: paid_vs_unpaid_quizzes
   examples: |
     - Are there any paid quizzes available?
@@ -1262,8 +1195,16 @@ nlu:
     - What features do paid quizzes offer that unpaid ones don't?
     - Can I access all quizzes for free or are some of them paid?
     - Do paid quizzes have better prizes than the free ones?
-- intent: inquire_paid_quiz
-  examples: |
+    - How much does it cost to play a game?
+    - What is the BB money cost for playing games?
+    - How many BB money do I need to play a game?
+    - Can you tell me the cost of playing games?
+    - Are there free games available, or do they all require BB money?
+    - Do game costs vary based on the type or difficulty of the game?
+    - Are there any discounts or promotions for playing games?
+    - Can I earn back BB money by playing games?
+    - Is there a way to test games before spending BB money?
+    - Are there subscription options that include access to games?
     - Can you provide information about paid quizzes?
     - What are the benefits of joining paid quizzes?
     - How much does it cost to join a paid quiz?
@@ -1282,54 +1223,31 @@ nlu:
     - Are there any transaction fees associated with buying BB money?
     - How quickly are BB money credited to my account after purchase?
     - Can I cancel a BB money purchase if I change my mind?
-- intent: withdrawal_process
+
+- intent: brainbucks_headquarters
   examples: |
-    - How does the withdrawal process work?
-    - What are the steps for withdrawing winnings?
-    - Can you guide me through the withdrawal process?
-    - What should I do to withdraw my winnings?
-    - Is there a specific withdrawal method I need to use?
-    - How long does it take for withdrawals to be processed?
-    - Are there any withdrawal limits or restrictions?
-    - Can I track the status of my withdrawal request?
-    - What information do I need to provide for a withdrawal?
-    - Are there any fees associated with withdrawals?
-- intent: withdrawal_problem
-  examples: |
-    - I'm facing issues with withdrawing my winnings, what should I do?
-    - What can I do if I encounter problems with withdrawals?
-    - How do I resolve withdrawal-related problems?
-    - Who should I contact if I have trouble withdrawing my winnings?
-    - What are the common reasons for withdrawal failures?
-    - Is there a support team available to assist with withdrawal issues?
-    - Can I cancel a withdrawal request if there's an error?
-    - Are there any troubleshooting steps for withdrawal problems?
-    - How can I ensure smooth withdrawals in the future?
-    - Is there a timeframe within which withdrawal issues are typically resolved?
-- intent: withdrawal_minimum_amount
-  examples: |
-    - What is the minimum amount I can withdraw?
-    - Is there a minimum withdrawal limit for winnings?
-    - How much do I need to have before I can withdraw my winnings?
-    - Are there any conditions for withdrawing below the minimum amount?
-    - Can I combine winnings from multiple games to meet the withdrawal minimum?
-    - Is the withdrawal minimum amount subject to change?
-    - Are there any penalties for withdrawing below the minimum amount?
-    - How often can I withdraw winnings below the minimum amount?
-    - Can I request partial withdrawals if I haven't reached the minimum amount?
-    - Are there any exceptions to the withdrawal minimum amount policy?
-- intent: data_protection_measures
-  examples: |
-    - What data protection measures are in place?
-    - How is my data protected?
-    - Can you tell me about the security measures?
-    - What security measures do you have in place?
-    - Is my personal information kept confidential?
-    - How do you ensure the security of user data?
-    - Are there any encryption protocols used to safeguard data?
-    - Do you comply with data protection regulations?
-    - Are there regular security audits conducted?
-    - How transparent are you about data handling practices?
+    - Where is the Brainbucks headquarters located?
+    - What is the address of Brainbucks headquarters?
+    - Tell me the location of Brainbucks main office.
+    - Where can I find the Brainbucks headquarters?
+    - Where are the Brainbucks corporate offices?
+    - Headquarters of Brainbucks
+    - Where is Brainbucks based?
+    - Brainbucks main office location
+    - What city is the Brainbucks headquarters in?
+    - Where is the Brainbucks HQ?
+    - Brainbucks corporate headquarters address
+    - Location of Brainbucks HQ
+    - Can you tell me the headquarters of Brainbucks?
+    - Where is the headquarters of Brainbucks located?
+    - Address of Brainbucks main office
+    - Brainbucks headquarters location
+    - Where is Brainbucks head office?
+    - Brainbucks head office address
+    - Brainbucks HQ address
+
+
+ 
 - intent: user_data_control
   examples: |
     - How can I control my data?
@@ -1342,8 +1260,6 @@ nlu:
     - Is there a privacy settings section in my account?
     - What are my rights regarding data privacy and protection?
     - How can I export or download my data from the platform?
-- intent: security_reporting
-  examples: |
     - How do I report security issues?
     - What should I do if I encounter a security problem?
     - Is there a way to report security vulnerabilities?
@@ -1354,6 +1270,31 @@ nlu:
     - What information should I include when reporting a security issue?
     - Is there a reward or bug bounty program for security reports?
     - How quickly are security issues addressed after reporting?
+    - What data protection measures are in place?
+    - How is my data protected?
+    - Can you tell me about the security measures?
+    - What security measures do you have in place?
+    - Is my personal information kept confidential?
+    - How do you ensure the security of user data?
+    - Are there any encryption protocols used to safeguard data?
+    - Do you comply with data protection regulations?
+    - Are there regular security audits conducted?
+    - How transparent are you about data handling practices?
+    - Is Brainbucks safe and secure?
+    - How secure is my information on Brainbucks?
+    - Can I trust the security of Brainbucks?
+    - What measures does Brainbucks take to ensure data security?
+    - Is my privacy protected on Brainbucks?
+    - How does Brainbucks handle user data privacy?
+    - Can I rely on Brainbucks to keep my information confidential?
+    - What is Brainbucks' approach to safeguarding user privacy?
+    - Are there any privacy concerns I should be aware of with Brainbucks?
+    - Does Brainbucks comply with privacy regulations?
+    - Where can I find information about Brainbucks' privacy policy?
+    - What are the terms of Brainbucks' privacy agreement?
+    - How does Brainbucks use and protect my personal information?
+    - Is there a dedicated privacy policy page on Brainbucks' website?
+    - What steps does Brainbucks take to prevent unauthorized access to user data?
 - intent: account_recovery_process
   examples: |
     - How can I recover my account?
@@ -1367,18 +1308,7 @@ nlu:
     - My account is locked, what are my options?
     - Where can I find information on account recovery?
     - What should I do if I'm unable to log in to my account?
-- intent: terms_and_conditions
-  examples: |
-    - What are the terms and conditions for participating?
-    - Are there any rules I need to agree to before participating?
-    - Can you provide information on the terms and conditions?
-    - Where can I find the terms and conditions?
-    - Do I need to accept the terms and conditions to use the platform?
-    - Are there specific age or eligibility requirements in the terms and conditions?
-    - How often are the terms and conditions updated?
-    - Can I access a copy of the terms and conditions before agreeing to them?
-    - What happens if I violate the terms and conditions?
-    - Are there any restrictions or limitations outlined in the terms and conditions?
+
 - intent: get_paid_instructions
   examples: |
     - How can I get paid?
@@ -1391,6 +1321,26 @@ nlu:
     - Where can I find information on payment withdrawals?
     - How does the payment system work on this platform?
     - I'm confused about how to receive payments, can you help?
+    - How does the withdrawal process work?
+    - What are the steps for withdrawing winnings?
+    - Can you guide me through the withdrawal process?
+    - What should I do to withdraw my winnings?
+    - Is there a specific withdrawal method I need to use?
+    - How long does it take for withdrawals to be processed?
+    - Are there any withdrawal limits or restrictions?
+    - Can I track the status of my withdrawal request?
+    - What information do I need to provide for a withdrawal?
+    - Are there any fees associated with withdrawals?
+    - How do I withdraw BB money?
+    - What are the details for withdrawing BB money?
+    - Can I cash out my BB money?
+    - What is the process for withdrawing BB money?
+    - Are there fees associated with withdrawing BB money?
+    - How long does it take to receive withdrawn BB money?
+    - Is there a minimum amount required for BB money withdrawal?
+    - Are there maximum limits for BB money withdrawal?
+    - Can I withdraw BB money to any payment method?
+    - Are there any restrictions on BB money withdrawal?
 - intent: quiz_instructions
   examples: |
     - How do I take a quiz?
@@ -1404,6 +1354,26 @@ nlu:
     - Do I need to register for quizzes in advance?
     - Are there different types of quizzes available?
     - how to take a quiz and earn money
+    - What is the format of the quiz questions?
+    - How are the quiz questions structured?
+    - Can you describe the format of the quiz?
+    - Are the quiz questions multiple choice or open-ended?
+    - Is there a specific order for answering quiz questions?
+    - Are there different rounds or sections in the quiz?
+    - Are all quiz questions mandatory to answer?
+    - Is there a time limit for each quiz question?
+    - Are there any penalties for incorrect answers in the quiz?
+    - Can participants skip questions in the quiz?
+    - How are quiz scores calculated?
+    - Is there negative marking in the quiz?
+    - Are quiz questions randomized for each participant?
+    - Can participants review their answers before submitting the quiz?
+    - Are there any multimedia elements included in the quiz questions?
+    - Can participants request hints for quiz questions?
+    - Are there different difficulty levels for quiz questions?
+    - Is there a limit on the phone of attempts for quiz questions?
+    - How are tiebreakers handled in the quiz?
+
 - intent: get_user_name
   examples: |
     - my name is [Rahul](user_name)
