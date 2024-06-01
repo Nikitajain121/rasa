@@ -15,9 +15,9 @@ pipeline:
     max_ngram: 4
   - name: LexicalSyntacticFeaturizer
   - name: ResponseSelector
-    epochs: 100
+    epochs: 150
   - name: DIETClassifier
-    epochs: 100
+    epochs: 150
     # it extract entity
   - name: SpacyNLP
     model: "en_core_web_lg"
