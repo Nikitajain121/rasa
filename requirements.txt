@@ -37,7 +37,7 @@ cymem==2.0.8
 dask==2022.10.2
 dnspython==2.3.0
 docopt==0.6.2
-#en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.7.1/en_core_web_lg-3.7.1-py3-none-any.whl#sha256=ab70aeb6172cde82508f7739f35ebc9918a3d07debeed637403c8f794ba3d3dc
+#cen-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.7.1/en_core_web_lg-3.7.1-py3-none-any.whl#sha256=ab70aeb6172cde82508f7739f35ebc9918a3d07debeed637403c8f794ba3d3dc
 fbmessenger==6.0.0
 fire==0.6.0
 flatbuffers==24.3.25
