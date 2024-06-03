@@ -24,14 +24,17 @@ pipeline:
     case_sensitive: False
   - name: SpacyEntityExtractor
     dimensions: ["PERSON"]
- 
+  - name: FallbackClassifier
+    threshold: 0.5
 
 policies:
   - name: RulePolicy
-    core_fallback_threshold: 0.4
+    core_fallback_threshold: 0.5
     core_fallback_action_name: "action_default_fallback"
     enable_fallback_prediction: True
   - name: MemoizationPolicy
+
+
  
   #extract features from the user's input based
   # on lexical and syntactic patterns.

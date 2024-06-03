@@ -7,13 +7,27 @@ from rasa_sdk.executor import CollectingDispatcher
 import os
 import yaml
 from rasa_sdk.events import UserUtteranceReverted
-#from openai import OpenAI
 
-from config import settings
+from .config import settings
+
+import os
+#from dotenv import load_dotenv
 import openai
-api_key = settings.openai_api_key
-# Get the API key and model from pydantic settings
+
+
+# Load environment variables from .env file
+print("))))))))))")
+#load_dotenv()
+print("##############")
+
+print("Ok lets get API KEY")
+api_key = os.getenv("OPENAI_API_KEY")
+
+# Initialize the OpenAI client with the API key
 openai.api_key = api_key
+
+print("Hey i got the key!")
+
 client = openai
 class ActionGetUserName(Action):
   def name(self) -> Text:
@@ -47,7 +61,7 @@ class ActionGetUserName(Action):
 # Initialize OpenAI client with your API key
 
 #client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-GPT_MODEL = "gpt-3.5-turbo-1106"
+GPT_MODEL = "gpt-3.5-turbo-0125"
 
 class ActionHandleOutOfContext(Action):
     def name(self) -> Text:
