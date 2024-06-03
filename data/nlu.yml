@@ -140,6 +140,9 @@ nlu:
     - how to cook
 - intent: about_company
   examples: |
+    - bb
+    - what is bb
+    - what is that bb
     - Tell me about Brainbucks
     - What is the history of Brainbucks?
     - Can you provide information about Brainbucks?
@@ -1485,6 +1488,7 @@ nlu:
     - how's everything?
     - are you well?
     - how are you
+    - yoo how are you 
 - intent: query_exam_upsc
   examples: |
     - Tell me about UPSC
@@ -1729,6 +1733,7 @@ nlu:
     - BRAIN_BUCKS
     - bbucks
     - BB
+    - bb
     - brain bucks
 - synonym: phone
   examples: |
@@ -1744,3 +1749,8 @@ nlu:
   examples: |
     - net
     - network
+- synonym: mail
+  examples: |
+    - E-mail
+    - email
+    - mail address

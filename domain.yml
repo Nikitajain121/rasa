@@ -115,8 +115,6 @@ responses:
   utter_ask_why:
   - text: I'd be happy to help you understand. Can you please provide more context or details about what you're asking?
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -133,8 +131,6 @@ responses:
   utter_affirm:
   - text: Great! Let's continue.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -149,8 +145,6 @@ responses:
       payload: /provide_support
   - text: Awesome!
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -165,8 +159,6 @@ responses:
       payload: /provide_support
   - text: Perfect!
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -181,8 +173,6 @@ responses:
       payload: /provide_support
   - text: That's what I like to hear!
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -199,8 +189,6 @@ responses:
   utter_goodbye:
   - text: Goodbye! It was nice chatting with you. Have a great day!
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -217,8 +205,6 @@ responses:
   utter_deny:
   - text: Okay, no problem. If you change your mind or need assistance later, feel free to ask!
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -235,8 +221,6 @@ responses:
   utter_default:
   - text: I'm sorry, I can't help you.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -274,21 +258,10 @@ responses:
       payload: /user_data_control
     - title: Main Menu
       payload: /greet
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
+
   utter_please_rephrase:
   - text: Sorry, either this is a request I can't handle or I didn't understand. Can you rephrase?
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -319,8 +292,6 @@ responses:
       We prioritize your security and privacy with strict policies and robust data protection measures.
 
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -339,8 +310,6 @@ responses:
   utter_how_are_you:
   - text: I'm Niki, just a bot, so I don't have feelings, but thanks for asking!
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -378,8 +347,6 @@ responses:
       - WEB DEVELOPMENT
       Select "Start Preparing" to move ahead."
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -396,8 +363,6 @@ responses:
   utter_account_recovery:
   - text: If you need to recover your account, please follow the account recovery process provided on our platform.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -414,8 +379,6 @@ responses:
   utter_available_quizzes:
   - text: BrainBucks has a wide selection of quizzes on a variety of topics including history, pop culture, science, and more. Whether you're a trivia buff or just looking to learn something new, BrainBucks has something for everyone.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -432,8 +395,6 @@ responses:
   utter_countries_availability:
   - text: Right now, BrainBucks is available only in India. But in the coming months, we are planning to make it globally accessible.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -449,8 +410,6 @@ responses:
   utter_brainbucks_headquarters:
   - text: The headquarters of Brainbucks is located at Chandatower, Vaishali Nagar, Jaipur.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -468,8 +427,6 @@ responses:
   utter_app_pricing:
   - text: The app is free to download. However, certain features may require a subscription or in-app purchases.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -492,8 +449,6 @@ responses:
       4. Tap on the 'Update' button to download and install the latest version of the app.
       5. Once the update is complete, you can open the app and enjoy the latest features and improvements!
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -510,8 +465,6 @@ responses:
   utter_internet_requirement:
   - text: Yes, internet connectivity is mandatory for using Brain_Bucks learning programs.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -528,8 +481,6 @@ responses:
   utter_laptop_browser_accessibility:
   - text: Currently, the app is only available on Android phones and tablets. We're working on making it more device-friendly in the future.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -546,8 +497,6 @@ responses:
   utter_profiles_limit:
   - text: You can add only one profile per device on the Brain_Bucks App. However, you can log in from multiple devices with the same profile.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -565,8 +514,6 @@ responses:
   utter_live_class_response:
   - text: Currently, we do not offer live classes. However, we are working on integrating live class features into our programs. Stay tuned for updates!
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -583,8 +530,6 @@ responses:
   utter_demo_class_response:
   - text: Demo classes are completely free of charge. To register for a demo class, choose the course you want to attend and complete the registration process. Once registered, you will gain access to the initial some lectures. Additional lectures can be unlocked by subscribing to the course.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -601,8 +546,6 @@ responses:
   utter_learning_programs_languages:
   - text: Our learning programs are available in Hindi and English.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -648,16 +591,7 @@ responses:
       payload: /internet_requirement
     - title: Main Menu
       payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
+
  
 
 
@@ -666,8 +600,6 @@ responses:
   utter_downloadable_materials:
   - text: Yes, downloadable materials are provided for current affairs and connect topics. You can access them from the app.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -705,16 +637,7 @@ responses:
       payload: /paid_vs_unpaid_quizzes
     - title: Main Menu
       payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
+  
   utter_quiz_rules:
   - text: |
 
@@ -747,8 +670,6 @@ responses:
                           Late submissions will not be accepted."
  
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -766,8 +687,6 @@ responses:
   - text: Even if there is a single particpant the quiz will be commeneced by the organizers.
           Participant will recieve back all the money he/she had put into the quiz.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -783,8 +702,6 @@ responses:
   utter_quiz_registration_process:
   - text: To register for the quiz, participants must provide their personal information, including name, contact details, and any other required information specified during the registration process. Registration details will be provided closer to the quiz date.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -803,8 +720,6 @@ responses:
       However, There is no limit to the number of quizzes you can participate in on BrainBucks!
       Feel free to join as many quizzes as you'd like and test your knowledge to the fullest."
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -822,8 +737,6 @@ responses:
   - text: 'There are two types of quizzes: free to join and paid. Free quizzes do not require any entry fee, while paid quizzes require participants to pay an entry fee to join. The entry fee for paid quizzes may vary depending on the quiz. Each game requires a different amount of bb_money , typically ranging from 5 to 50 bb_money .
 More the fee , higher the reward . Best of luck !!'
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -840,8 +753,6 @@ More the fee , higher the reward . Best of luck !!'
   utter_suggesting_quiz_topics:
   - text: Participants are welcome to suggest topics for future quizzes. They can submit their suggestions to the organizers, who will consider them for upcoming quiz events.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -872,8 +783,6 @@ More the fee , higher the reward . Best of luck !!'
        
   
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -893,8 +802,6 @@ More the fee , higher the reward . Best of luck !!'
           The organizers will review the reported issues and take appropriate action to rectify them.
           You can also contact at +917887940832 or mail us at info@brainbucks.in .
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -913,8 +820,6 @@ More the fee , higher the reward . Best of luck !!'
   utter_joining_room:
   - text: To join a room, simply navigate to the rooms section and select the room you'd like to join. Follow the prompts to enter the room and start participating.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -939,13 +844,12 @@ More the fee , higher the reward . Best of luck !!'
       payload: /course_queries
     - title: Quiz Queries
       payload: /quiz_queries
-   
+    - title: BBCoins
+      payload: /earn_bb_money  
 
   utter_room_types:
   - text: 'We offer two types of rooms: public and private. Public rooms are open to anyone and allow for competition and collaboration. Private rooms are exclusive spaces where you can learn and earn with a select group of individuals. Each type of room has its own unique features and benefits.'
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -971,21 +875,10 @@ More the fee , higher the reward . Best of luck !!'
       payload: /joining_room
     - title: Main Menu
       payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Issue Support
-      payload: /provide_support
+  
   utter_earning_rewards:
   - text: To earn rewards on Brain_Bucks, simply participate in quizzes and other activities and achieve high scores. The more questions you get right, the more rewards you can earn. Rewards may include cash, prizes, or other incentives.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1010,8 +903,6 @@ More the fee , higher the reward . Best of luck !!'
       5. Provide your contact number.
       Please note: There is a transaction fee of Rs 10 per transaction.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1032,8 +923,6 @@ More the fee , higher the reward . Best of luck !!'
       - Suggest quiz topics and join events hosted by others.
       - Connect with various hosts and participants to get insights and guidance for your exams.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1054,8 +943,6 @@ More the fee , higher the reward . Best of luck !!'
       - Receive tailored guidance from hosts in a more intimate setting.
       - Perfect for organizing specific events or study sessions with peers.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1072,8 +959,6 @@ More the fee , higher the reward . Best of luck !!'
   utter_subscription_cancellation:
   - text: Subscription cancellation details will be provided on our website as we add more classes to our platform.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1090,8 +975,6 @@ More the fee , higher the reward . Best of luck !!'
   utter_subscription_cost:
   - text: The cost of subscribing to Brain_Bucks programs varies depending on the personalized package. Please consult our counselor for more details.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1109,8 +992,6 @@ More the fee , higher the reward . Best of luck !!'
   utter_payment_issue:
   - text: If you're facing problems with making a payment in the app, ensure that your payment method is valid and try again. If the issue persists, contact our support team for assistance at +917887940832 or mail us at info@brainbucks.in.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1152,21 +1033,10 @@ More the fee , higher the reward . Best of luck !!'
    
     - title: Main Menu
       payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: Rooms
-      payload: /room_queries
-    - title: Issue Support
-      payload: /provide_support
+ 
   utter_use_bb_money:
   - text: bb_money  can be used to play games, participate in quizzes, unlock premium features, and access exclusive content on the platform.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1183,8 +1053,6 @@ More the fee , higher the reward . Best of luck !!'
   utter_minimum_withdrawal_limit:
   - text: The minimum withdrawal limit for bb_money is 50 Rs. Please note that there is an administration fee of Rs 10 on all withdrawals, and additional bank charges may apply.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1201,8 +1069,6 @@ More the fee , higher the reward . Best of luck !!'
   utter_prizes_distribution:
   - text: 'The distribution of prizes in the quiz is as follows: The cash prize pool will be distributed among the winners based on their rankings.The distribution formula takes into account factors such as accuracy and time taken to complete the quiz.'
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1218,8 +1084,6 @@ More the fee , higher the reward . Best of luck !!'
   utter_buy_bb_money:
   - text: To buy bb_money , you need to open an account on our platform. Once you have an active account, you can purchase bb_money  by clicking on the 'Buy bb_money ' link. Follow the instructions provided to complete the purchase.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1239,8 +1103,6 @@ More the fee , higher the reward . Best of luck !!'
   - text: Our goal is to respond to inquiries within 24 hours. However, response times may vary depending on the volume of queries received.
           For immediate assistance, please call our toll-free number during  10am to 6pm, Monday to Saturday. Alternatively, you can use our chatbot for instant support.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1267,16 +1129,7 @@ More the fee , higher the reward . Best of luck !!'
       payload: /response_time
     - title: Main Menu
       payload: /greet
-    - title: BrainBucks App
-      payload: /about_company
-    - title: Course Queries
-      payload: /course_queries
-    - title: Quiz Queries
-      payload: /quiz_queries
-    - title: BBCoins
-      payload: /earn_bb_money
-    - title: Rooms
-      payload: /room_queries
+ 
  
   utter_troubleshoot_issues:
   - text: |-
@@ -1293,8 +1146,6 @@ More the fee , higher the reward . Best of luck !!'
             5. Contact support: If the problem persists, feel free to contact our support team for assistance at +917887940832 or
             mail us at info@brainbucks.in."
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1311,8 +1162,6 @@ More the fee , higher the reward . Best of luck !!'
   utter_verification_code_issue:
   - text: If you're experiencing issues with the verification code, please check if you entered it correctly. If the problem continues, contact our support team at +917887940832 or mail us at info@brainbucks.in for further assistance.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1329,8 +1178,6 @@ More the fee , higher the reward . Best of luck !!'
   utter_login_problem:
   - text: If you're having trouble logging into the app, ensure that you're using the correct credentials. If you're still unable to log in, contact our technical support team at +917887940832 or mail us at info@brainbucks.in for help.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1347,8 +1194,6 @@ More the fee , higher the reward . Best of luck !!'
   utter_internet_connection_loss:
   - text: If you lose your internet connection during a game, our system will attempt to reconnect multiple times. However, if the connection cannot be established, your game will end, and bb_money  will not be refunded.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1365,8 +1210,6 @@ More the fee , higher the reward . Best of luck !!'
   utter_compete_with_friends:
   - text: Yes. Brain_Bucks has a social component where you can challenge friends to quizzes and compare scores using the ROOMS platform and other quiz events.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1389,8 +1232,6 @@ More the fee , higher the reward . Best of luck !!'
       - Conducts civil services examinations for recruitment to various civil services of the Government of India.
       - Use BrainBucks to prepare effectively for the UPSC exams and increase your chances of success.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1410,8 +1251,6 @@ More the fee , higher the reward . Best of luck !!'
       - Conducts exams to recruit staff for various posts in the various Ministries and Departments of the Government of India and in Subordinate Offices.
       - Choose BrainBucks to get the best preparation materials and strategies for SSC exams.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1431,8 +1270,6 @@ More the fee , higher the reward . Best of luck !!'
       - Conducts exams to recruit candidates for various positions in Indian Railways.
       - Prepare with BrainBucks to ace the RRB exams and secure a position in Indian Railways.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1452,8 +1289,6 @@ More the fee , higher the reward . Best of luck !!'
       - Includes exams like IBPS PO, IBPS Clerk, SBI PO, and SBI Clerk for recruitment in banking sector.
       - BrainBucks offers comprehensive resources to help you excel in Banking exams.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1473,8 +1308,6 @@ More the fee , higher the reward . Best of luck !!'
       - A medical entrance exam for students who wish to study undergraduate medical courses in government or private medical colleges in India.
       - Use BrainBucks to boost your NEET preparation and achieve a high rank.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1494,8 +1327,6 @@ More the fee , higher the reward . Best of luck !!'
       - An engineering entrance examination conducted for admission to various engineering colleges in India.
       - BrainBucks provides the best study materials and practice tests for JEE preparation.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1515,8 +1346,6 @@ More the fee , higher the reward . Best of luck !!'
       - Covers significant political events, sports, national and international news, and other important happenings.
       - Stay updated with BrainBucks to excel in Current Affairs sections of various exams.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1536,8 +1365,6 @@ More the fee , higher the reward . Best of luck !!'
       - Encompasses a wide range of topics including history, geography, culture, science, and more.
       - Enhance your General Knowledge with BrainBucks for better performance in competitive exams.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1557,8 +1384,6 @@ More the fee , higher the reward . Best of luck !!'
       - Conducted for recruitment to various posts in the Delhi Police force.
       - Prepare with BrainBucks to secure a position in the Delhi Police.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1578,8 +1403,6 @@ More the fee , higher the reward . Best of luck !!'
       - Conducts an entrance exam for candidates who wish to join the Indian Armed Forces.
       - Use BrainBucks to prepare thoroughly for the NDA exam and pursue a career in defense.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1599,8 +1422,6 @@ More the fee , higher the reward . Best of luck !!'
       - Conducts exams for recruitment into the Indian Military Academy, Officers Training Academy, Indian Naval Academy, and Indian Air Force Academy.
       - Choose BrainBucks to excel in the CDS exams and join the defense services.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1620,8 +1441,6 @@ More the fee , higher the reward . Best of luck !!'
       - Conducts exams for recruitment to various posts in the state of Rajasthan.
       - BrainBucks provides excellent resources to help you succeed in RPSC exams.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1641,8 +1460,6 @@ More the fee , higher the reward . Best of luck !!'
       - Conducts recruitment exams for various positions within the Central Reserve Police Force.
       - Prepare with BrainBucks to excel in the CRPF exams and join the force.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1662,8 +1479,6 @@ More the fee , higher the reward . Best of luck !!'
       - Conducts exams for recruitment of teachers in the state of Rajasthan.
       - BrainBucks offers the best resources to help you prepare for the REET exam and secure a teaching position.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1683,8 +1498,6 @@ More the fee , higher the reward . Best of luck !!'
       - Encompasses the creation and maintenance of websites and web applications.
       - Use BrainBucks to learn Web Development, acquire new skills, and enhance your career prospects.
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1707,8 +1520,6 @@ More the fee , higher the reward . Best of luck !!'
       - Higher entry fees usually mean higher rewards.
       - Best of luck!!
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
@@ -1730,8 +1541,6 @@ More the fee , higher the reward . Best of luck !!'
       - Participate and test your knowledge without spending bb_money.
       - Enjoy and learn!
     buttons:
-    - title: Main Menu
-      payload: /greet
     - title: BrainBucks App
       payload: /about_company
     - title: Course Queries
