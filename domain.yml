@@ -262,8 +262,6 @@ responses:
       payload: /profiles_limit
     - title: Laptop Browser Accessibility
       payload: /laptop_browser_accessibility
-    - title: Download Install
-      payload: /download_install
     - title: Countries Availability
       payload: /countries_availability
     - title: BrainBucks Headquarters
