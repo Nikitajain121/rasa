@@ -407,3 +407,59 @@ rules:
   steps:
   - intent: query_free_quizzes
   - action: utter_free_quizzes
+
+
+- rule: Respond to quiz format
+  steps:
+  - intent: quiz_format
+  - action: utter_quiz_format
+
+- rule: Respond to scoring rules
+  steps:
+  - intent: scoring_rules
+  - action: utter_scoring_rules
+
+- rule: Respond to ranking criteria
+  steps:
+  - intent: ranking_criteria
+  - action: utter_ranking_criteria
+
+- rule: Respond to monetary rewards
+  steps:
+  - intent: monetary_rewards
+  - action: utter_monetary_rewards
+
+- rule: Respond to tiebreaker rules
+  steps:
+  - intent: tiebreaker_rules
+  - action: utter_tiebreaker_rules
+
+- rule: Respond to prize distribution
+  steps:
+  - intent: prize_distribution
+  - action: utter_prize_distribution
+
+- rule: Respond to terms and conditions
+  steps:
+  - intent: terms_and_conditions
+  - action: utter_terms_and_conditions
+
+- rule: Respond to accidental participation
+  steps:
+  - intent: accidental_participation
+  - action: utter_accidental_participation
+
+- rule: Respond to quiz time limit
+  steps:
+  - intent: quiz_time_limit
+  - action: utter_quiz_time_limit
+
+- rule: Respond to promotion query about Brain_Bucks for students
+  steps:
+  - intent: promote_brain_bucks_for_students
+  - action: utter_promote_brain_bucks_for_students
+
+- rule: Respond to query about logging out
+  steps:
+  - intent: logout_instructions
+  - action: utter_logout_instructions

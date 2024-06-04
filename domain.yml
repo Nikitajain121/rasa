@@ -41,7 +41,7 @@ intents:
 - prizes_distribution
 
 - provide_support
-- quiz_eligibility
+
 - quiz_instructions
 
 - quiz_queries
@@ -91,11 +91,23 @@ intents:
 - query_exam_reet
 - query_exam_web_dev
 
-- query_paid_quizzes
-- query_free_quizzes
-
 - query_private_rooms
 - query_public_rooms
+
+- query_free_quizzes
+- query_paid_quizzes
+
+- quiz_eligibility
+
+- quiz_format
+- scoring_rules
+- ranking_criteria
+- monetary_rewards
+- tiebreaker_rules
+- prize_distribution
+- terms_and_conditions
+- accidental_participation
+- quiz_time_limit
 responses:
   utter_greet:
   - text: Hey! I'm Niki bot..I'm here to assist you. You can ask me any question related with Brainbucks.
@@ -328,6 +340,7 @@ responses:
       "Select the language -
       Confirm your age
       Add your phone number and fill in the OTP
+      Congrats you have successfully signed up. 
       Enter your name, gender, and the exam you're preparing for
       There are a list of exams you can choose from:
       - UPSC
@@ -479,7 +492,7 @@ responses:
       payload: /provide_support
 
   utter_laptop_browser_accessibility:
-  - text: Currently, the app is only available on Android phones and tablets. We're working on making it more device-friendly in the future.
+  - text: Yes this is accesible through web browser, android phones and tablets. We're working on making it more device-friendly in the future.
     buttons:
     - title: BrainBucks App
       payload: /about_company
@@ -901,7 +914,7 @@ More the fee , higher the reward . Best of luck !!'
       3. Provide your account number.
       4. Enter the IFSC code of your bank.
       5. Provide your contact number.
-      Please note: There is a transaction fee of Rs 10 per transaction.
+     
     buttons:
     - title: BrainBucks App
       payload: /about_company
@@ -1051,7 +1064,7 @@ More the fee , higher the reward . Best of luck !!'
       payload: /provide_support 
 
   utter_minimum_withdrawal_limit:
-  - text: The minimum withdrawal limit for bb_money is 50 Rs. Please note that there is an administration fee of Rs 10 on all withdrawals, and additional bank charges may apply.
+  - text: The minimum withdrawal limit for bb_money is 50 Rs.At present there is no max cap on money you can withdraw. 
     buttons:
     - title: BrainBucks App
       payload: /about_company
@@ -1510,8 +1523,6 @@ More the fee , higher the reward . Best of luck !!'
       payload: /room_queries
     - title: Issue Support
       payload: /provide_support
-
-
   utter_paid_quizzes:
   - text: >
       **Paid Quizzes:**
@@ -1554,6 +1565,196 @@ More the fee , higher the reward . Best of luck !!'
     - title: Issue Support
       payload: /provide_support
 
+  utter_quiz_format:
+  - text: "The quiz will consist of a predetermined number of multiple-choice questions based on a predefined topic. A specified time limit will be provided for answering each question, and participants must submit their answers within the given time frame."
+    buttons:
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_scoring_rules:
+  - text: "Each correctly answered question will carry a predetermined score, and incorrect answers will not incur any penalty."
+    buttons:
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_ranking_criteria:
+  - text: "The ranking of participants will be based on their cumulative scores achieved by correctly answering the questions."
+    buttons:
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_monetary_rewards:
+  - text: "The monetary rewards will be distributed to the top 20% rank holders based on the final rankings."
+    buttons:
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_tiebreaker_rules:
+  - text: "In case of a tie in the final scores, the time taken to attempt questions will be used to determine the higher rank among the tied participants."
+    buttons:
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_prize_distribution:
+  - text: "The monetary rewards will be distributed to the winners via a specified payment method or bank transfer."
+    buttons:
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_terms_and_conditions:
+  - text: "Participants must agree to the terms and conditions set forth by the organizers before participating in the quiz, including rules regarding privacy, data usage, and any other relevant aspects of the quiz."
+    buttons:
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_accidental_participation:
+  - text: "If you join a quiz by mistake, we are unable to refund your bb_money. We recommend playing the quiz anyway, as you still have a chance to win!"
+    buttons:
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+
+  utter_quiz_time_limit:
+  - text: "The time limit for each question in the quiz will be specified before the quiz begins. Participants must submit their answers within the given time frame for each question. Late submissions will not be accepted."
+    buttons:
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+  
+  utter_promote_brain_bucks_for_students:
+  - text: "Brain_Bucks provides comprehensive exam preparation resources for various exams including
+      - UPSC
+      - SSC
+      - RRB
+      - Banking
+      - NEET
+      - JEE
+      - Current Affairs
+      - General Knowledge
+      - Delhi Police
+      - NDA
+      - CDS
+      - RPSC
+      - CRPF
+      - REET
+      - Web Development and other competitive exams. It is just an awesome platform to learn and practice. Get started now!"
+    buttons:
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+  utter_logout_instructions:
+  - text: "To log out, simply go to the settings menu and select the 'Log Out' option. You will be successfully logged out of the app."
+    buttons:
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+      
 slots:
   user_name:
     type: text
