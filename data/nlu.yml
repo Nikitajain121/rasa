@@ -466,7 +466,6 @@ nlu:
     - How do I know if a quiz is suitable for my knowledge level?
     - Are there any rewards for consistent quiz participation?
     - Can I see how I rank compared to other quiz participants?
-    - What are the rules for quiz tie-breakers?
     - Are there any seasonal or holiday-themed quizzes?
     - Can I create my own quiz and share it with others?
     - How often can I participate in the same quiz?
@@ -496,6 +495,7 @@ nlu:
     - Is there a code of conduct for the quiz?
     - What are the key principles of the quiz?
     - Could you summarize the rules of the quiz?
+    - how can I play with Quizzes
     - Can you provide an overview of the quiz guidelines?
     - I'm unsure about the rules of the quiz, can you clarify?
     - Are there specific instructions I should know before participating in the quiz?
@@ -620,7 +620,7 @@ nlu:
     - Is there a feedback mechanism for rejected quiz topic suggestions?
     - can I get suggest Quizzes related to my course
     - Are there any specific channels for communicating quiz topic suggestions?
-    
+
 - intent: room_queries
   examples: |
     - what is a room
@@ -894,6 +894,7 @@ nlu:
     - Could you provide your email for support?
     - Do you provide customer support?
     - Is customer support available?
+    - how you can resolve my issues, if I have any doubts
     - My app is not working, can you help?
     - I'm having trouble with the app, what should I do?
     - The app isn't functioning properly, can you assist?
@@ -1131,6 +1132,7 @@ nlu:
     - Are there any penalties for canceling the subscription?
     - How do I cancel auto-renewal of my subscription?
     - Can I get a refund if I cancel my subscription?
+
 - intent: subscription_cost
   examples: |
     - What is the cost of subscribing to Brain_Bucks programs?
@@ -1271,16 +1273,26 @@ nlu:
 
 - intent: use_bb_money
   examples: |
-    - How do I use BB money?
-    - What can I do with my BB money?
-    - Can you explain how to spend BB money?
-    - How are BB money used in games and quizzes?
-    - Can I redeem BB money for rewards?
-    - Are there exclusive features or content that require BB money?
-    - Can I gift BB money to other users?
-    - Are there discounts or offers available when using BB money?
-    - Can I convert BB money to real currency?
-    - Are there restrictions on using BB money?
+    - How do I use BB coin?
+    - What can I do with my BB coin?
+    - Can you explain how to spend BB coin?
+    - How are BB coin used in games and quizzes?
+    - Can I redeem BB coin for rewards?
+    - Are there exclusive features or content that require BB coin?
+    - Can I gift BB coin to other users?
+    - Are there discounts or offers available when using BB coin?
+    - Can I convert BB coin to real currency?
+    - Are there restrictions on using BB coin?
+    - Can I use my reward points to take subscription?
+    - Is there a way to check my BB coin balance?
+    - What items can be purchased with BB coin?
+    - Are there any expiration dates on BB coin?
+    - How do I earn more BB coin?
+    - Is there a maximum limit for holding BB coin?
+    - Can I transfer BB coin between accounts?
+    - Are there any transaction fees when using BB coin?
+    - What happens to my BB coin if I delete my account?
+    - How do I apply BB coin at checkout?
 
 - intent: minimum_withdrawal_limit
   examples: |
@@ -1936,6 +1948,7 @@ nlu:
     - Brain_Bucks for entrance exams?
     - NEET preparation with Brain_Bucks?
     - UPSC study aid with Brain_Bucks?
+    - Please provide me the details of how you can provide facilities to the students
 
 - intent: logout_instructions
   examples: |

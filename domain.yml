@@ -1053,7 +1053,7 @@ responses:
       payload: /greet
  
   utter_use_bb_money:
-  - text: BB Coins can be used to play games, participate in quizzes, unlock premium features, and access exclusive content on the platform.
+  - text: BB Coins can be used to play games, participate in quizzes, unlock premium features, take subscription and access exclusive content on the platform.
     buttons:
     - title: BrainBucks App
       payload: /about_company
