@@ -1716,21 +1716,21 @@ responses:
   
   utter_promote_brain_bucks_for_students:
   - text: "Brain_Bucks provides comprehensive exam preparation resources for various exams including
-      - UPSC
-      - SSC
-      - RRB
-      - Banking
-      - NEET
-      - JEE
-      - Current Affairs
-      - General Knowledge
-      - Delhi Police
-      - NDA
-      - CDS
-      - RPSC
-      - CRPF
-      - REET
-      - Web Development and other competitive exams. You can join rooms, practice quizzes , read news and earn rewards.It is just an awesome platform to learn and practice. Get started now!"
+          - UPSC
+          - SSC
+          - RRB
+          - Banking
+          - NEET
+          - JEE
+          - Current Affairs
+          - General Knowledge
+          - Delhi Police
+          - NDA
+          - CDS
+          - RPSC
+          - CRPF
+          - REET
+          - Web Development and other competitive exams. You can join rooms, practice quizzes , read news and earn rewards.It is just an awesome platform to learn and practice. Get started now!"
     buttons:
     - title: BrainBucks App
       payload: /about_company
@@ -1744,6 +1744,7 @@ responses:
       payload: /room_queries
     - title: Issue Support
       payload: /provide_support
+
   utter_logout_instructions:
   - text: "To log out, simply go to the settings menu and select the 'Log Out' option. You will be successfully logged out of the app."
     buttons:
