@@ -143,6 +143,7 @@ nlu:
 - intent: about_company
   examples: |
     - bb
+    - BrainBucks App
     - what is bb
     - what is that bb
     - Tell me about Brainbucks
@@ -265,6 +266,7 @@ nlu:
     - Is there a trial period or free membership option available for Brainbucks?
 - intent: update_app
   examples: |
+    - Update App
     - How do I update the app?
     - Updating the application?
     - Steps for app updates?
@@ -402,17 +404,11 @@ nlu:
     - what are quiz queries
     - How many participants are required for the quiz?
     - Am I eligible to participate in the quiz?
-    - What's the difference between paid and unpaid quizzes?
-    - How are prizes distributed in quizzes?
-    - What should I do if I find a mistake in the quiz?
     - Can I suggest topics for quizzes?
     - What are the terms and conditions for participating in the quiz?
-    - What should I do if I lose internet connection during a quiz?
     - How many quizzes can I participate in simultaneously?
     - Is there a limit to how many quizzes I can join per day?
-    - What is the eligibility criteria for entering a quiz?
     - How do I know if I joined the wrong quiz?
-    - Can I get a refund for a paid quiz if I can't participate?
     - What happens if I miss a quiz after registering?
     - Are there any age restrictions for quiz participation?
     - How is the quiz score calculated?
@@ -456,7 +452,6 @@ nlu:
     - Are there any quizzes with no time limits?
     - Can I review my answers after submitting the quiz?
     - How can I track my progress in quizzes over time?
-    - Are there any special requirements for participating in paid quizzes?
     - How do you handle disputes over quiz results?
     - Can I join quizzes hosted in other countries?
     - What are the most challenging quizzes available?
@@ -475,9 +470,7 @@ nlu:
     - How do you protect my data during quiz participation?
     - Are there any leaderboards for quiz participants?
     - Can I appeal a quiz result if I think there was a mistake?
-    - Are quizzes available in multiple languages?
     - What measures are in place to prevent cheating in quizzes?
-    - How long does it take to receive prizes after winning a quiz?
     - Can I see detailed explanations for quiz answers after completing it?
     - Are there any partner organizations or sponsors for the quizzes?
     - How do I unsubscribe from quiz notifications?
@@ -498,13 +491,11 @@ nlu:
     - how can I play with Quizzes
     - Can you provide an overview of the quiz guidelines?
     - I'm unsure about the rules of the quiz, can you clarify?
-    - Are there specific instructions I should know before participating in the quiz?
     - What are the terms and conditions for participating?
     - Are there any rules I need to agree to before participating?
     - Can you provide information on the terms and conditions?
     - Where can I find the terms and conditions?
     - Do I need to accept the terms and conditions to use the platform?
-    - Are there specific age or eligibility requirements in the terms and conditions?
     - How often are the terms and conditions updated?
     - Can I access a copy of the terms and conditions before agreeing to them?
     - What happens if I violate the terms and conditions?
@@ -524,11 +515,11 @@ nlu:
     - Can you explain the rules and terms of the quiz?
     - Where can I find information about the quiz rules?
     - How long does each quiz last?
-    - What are the instructions for joining a quiz?
     - Are there any specific rules for different types of quizzes?
 
 - intent: min_participants_quiz
   examples: |
+    - Minimum Participants in Quiz
     - What is the minimum phone of participants required for the quiz?
     - Will the quiz proceed if there are not enough participants?
     - Is there a minimum participation requirement for the quiz?
@@ -546,6 +537,8 @@ nlu:
     - reporting a quiz mistake
     - i want to rectify a quiz fault
     - there is issue in my quiz
+    - Reporting mistake in quiz
+
 - intent: quiz_registration_process
   examples: |
     - fees of quiz ?
@@ -571,6 +564,7 @@ nlu:
     - Are there any prerequisites for quiz registration?
 - intent: quiz_eligibility
   examples: |
+    - Quiz Eligibility
     - Who is eligible to participate in the quiz?
     - Are there any criteria for eligibility in the quiz?
     - What are the eligibility requirements for the quiz?
@@ -623,6 +617,8 @@ nlu:
 
 - intent: room_queries
   examples: |
+    - room
+    - rooms
     - what is a room
     - What are the features of rooms?
     - Can you explain the types of rooms available?
@@ -841,13 +837,16 @@ nlu:
     - Where all can I access Brainbucks?
     - Can I use Brainbucks from any country?
     - Are there any country-specific restrictions on accessing Brainbucks?
-    - Is Brainbucks accessible in multiple languages across different countries?
     - Do I need to provide location information to use Brainbucks?
     - Are there any plans to expand Brainbucks to new countries?
     - Can users from any country participate in quizzes and events on Brainbucks?
     - Is there customer support available for users from all countries on Brainbucks?
     - Is Brainbucks avaiable in [USA](country)?
     - Is Brainbucks avaiable in [Pakistan](country)
+    - countries_availability
+    - countries brainbucks available in
+    - is it out of india also
+    - country of brain bucks
 
 - intent: response_time
   examples: |
@@ -875,6 +874,7 @@ nlu:
 
 - intent: provide_support
   examples: |
+    - Issue Support
     - mail id??
     - okay then can I talk to you on call 
     - Can I schedule a call for support? 
@@ -926,7 +926,6 @@ nlu:
     - Can I schedule a call with customer support?
     - Is support available on weekends?
     - How do I escalate an issue to support management?
-    - What languages does customer support offer?
     - Are there user guides or manuals available from support?
     - How do I check the status of my support ticket?
     - Is there a community forum for support questions?
@@ -946,7 +945,6 @@ nlu:
     - Are there any charges for accessing customer support?
     - Can I chat with a support bot for quick assistance?
     - How do I get support for connectivity issues?
-    - Can I find support resources in different languages?
     - How do I access premium support services?
     - Is there a support app I can download?
     - Can support help me with data protection queries?
@@ -1094,6 +1092,7 @@ nlu:
     - Can I download learning content for offline access?
     - What features are available offline in the app?
     - How does the app handle intermittent internet connections?
+    - Internet requirement for programs
 
 - intent: downloadable_materials
   examples: |
@@ -1109,6 +1108,7 @@ nlu:
     - Can I share downloaded materials with others?
 - intent: laptop_browser_accessibility
   examples: |
+    - Laptop Browser Accessibility
     - Can I access the app on my laptop?
     - Is the app compatible with desktop browsers?
     - How do I use BrainBucks on a computer?
@@ -1147,6 +1147,7 @@ nlu:
     - Are there any promotions or offers for new subscribers?
 - intent: profiles_limit
   examples: |
+    - Profiles Limit
     - How many profiles can I add on the Brain_Bucks App?
     - Limit on the phone of profiles allowed?
     - Profile management in the app?
@@ -1209,6 +1210,7 @@ nlu:
     - Can I get a refund for failed transactions?
 - intent: earn_bb_money
   examples: |
+    - BBCoins
     - How can I earn BB money?
     - What are the ways to earn BB money?
     - Is there a way to get more BB money for free?
@@ -1270,6 +1272,7 @@ nlu:
     - quiz prize to winners
     - quiz money distribution
     - i got a rank what would be the price
+    -  Prizes Distribution
 
 - intent: use_bb_money
   examples: |
@@ -1329,6 +1332,7 @@ nlu:
    
 - intent: internet_connection_loss
   examples: |
+    - Internet Connection Loss
     - What happens if I lose my internet connection during a game?
     - Do I lose my BB money if my internet connection drops during a quiz?
     - How is my game affected if I have a poor internet connection?
@@ -1342,6 +1346,7 @@ nlu:
 
 - intent: paid_vs_unpaid_quizzes
   examples: |
+    - Paid vs Unpaid Quizzes
     - Can you tell me the difference between paid and unpaid quizzes?
     - What are the benefits of paid quizzes over unpaid ones?
     - Are paid quizzes more challenging than unpaid ones?
@@ -1366,6 +1371,7 @@ nlu:
 
 - intent: buy_bb_money
   examples: |
+    - Buy BB Coin
     - How can I buy BB money ?
     - What is the process to purchase BB money ?
     - Can I get more BB money by buying them?
@@ -1464,6 +1470,7 @@ nlu:
 
 - intent: get_paid_instructions
   examples: |
+    - Get Paid Instructions
     - How can I get paid?
     - What are the steps to withdraw money?
     - How do I withdraw my earnings?
@@ -1524,6 +1531,7 @@ nlu:
     - Are there different difficulty levels for quiz questions?
     - Is there a limit on the phone of attempts for quiz questions?
     - How are tiebreakers handled in the quiz?
+    - Quiz Instructions
 
 - intent: get_user_name
   examples: |
@@ -1889,6 +1897,7 @@ nlu:
 
 - intent: accidental_participation
   examples: |
+    - Can not participate in quiz
     - What if I join the wrong quiz?
     - Can I get a refund if I join by mistake?
     - What happens if I join a quiz accidentally?

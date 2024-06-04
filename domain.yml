@@ -263,8 +263,6 @@ responses:
       payload: /countries_availability
     - title: BrainBucks Headquarters
       payload: /brainbucks_headquarters
-    - title: App Not Loading
-      payload: /app_not_loading
     - title: App Pricing
       payload: /app_pricing
     - title: Data Protection, privacy and security
@@ -421,6 +419,7 @@ responses:
       payload: /room_queries
     - title: Issue Support
       payload: /provide_support
+
   utter_brainbucks_headquarters:
   - text: The headquarters of Brainbucks is located at Chandatower, Vaishali Nagar, Jaipur.
     buttons:
@@ -1029,7 +1028,7 @@ responses:
   utter_earn_bb_money:
   - text: You can earn BB Coins by participating in quizzes, completing challenges, inviting friends to the platform, and engaging in other activities specified on the platform.
     buttons:
-    - title: Buy BBMoney
+    - title: Buy BB Coin
       payload: /buy_bb_money
     - title: Get Paid Instructions
       payload: /get_paid_instructions
@@ -1045,7 +1044,7 @@ responses:
       payload: /subscription_cancellation
     - title: Subscription Cost
       payload: /subscription_cost
-    - title: Use BBMoney
+    - title: Use BB Coin
       payload: /use_bb_money    
     - title: Withdrawal Problem
       payload: /withdrawal_problem
@@ -1683,7 +1682,7 @@ responses:
       payload: /provide_support
 
   utter_accidental_participation:
-  - text: "If you join a quiz by mistake, we are unable to refund your Brain Bucks Coins. We recommend playing the quiz anyway, as you still have a chance to win!"
+  - text: "If you join a quiz by mistake or could not participate in quiz you paid for, we are unable to refund your Brain Bucks Coins. In case you joined wrong quiz, We recommend playing the quiz anyway, as you still have a chance to win!"
     buttons:
     - title: BrainBucks App
       payload: /about_company
@@ -1730,7 +1729,7 @@ responses:
           - RPSC
           - CRPF
           - REET
-          - Web Development and other competitive exams. You can join rooms, practice quizzes , read news and earn rewards.It is just an awesome platform to learn and practice. Get started now!"
+          - Web Development and other competitive exams. You can join rooms, practice quizzes, read news and earn rewards.It is just an awesome platform to learn and practice. Get started now!"
     buttons:
     - title: BrainBucks App
       payload: /about_company
