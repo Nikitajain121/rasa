@@ -468,3 +468,8 @@ rules:
   steps:
   - intent: ask_recorded_class
   - action: utter_recorded_class_response
+
+- rule: Respond to what is bb coin
+  steps:
+  - intent: whats_bbcoin
+  - action: utter_whats_bbcoin

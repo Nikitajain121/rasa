@@ -395,9 +395,9 @@ nlu:
     - Are demo classes conducted online?
     - Can I request a personalized demo class?
     - Are there different time slots available for demo classes?
+
 - intent: quiz_queries
   examples: |
-    - Can you tell me about the quiz rules?
     - How many participants are required for the quiz?
     - Am I eligible to participate in the quiz?
     - What's the difference between paid and unpaid quizzes?
@@ -405,11 +405,6 @@ nlu:
     - What should I do if I find a mistake in the quiz?
     - Can I suggest topics for quizzes?
     - What are the terms and conditions for participating in the quiz?
-    - Can you explain the rules and terms of the quiz?
-    - Where can I find information about the quiz rules?
-    - How long does each quiz last?
-    - What are the instructions for joining a quiz?
-    - Are there any specific rules for different types of quizzes?
     - What should I do if I lose internet connection during a quiz?
     - How many quizzes can I participate in simultaneously?
     - Is there a limit to how many quizzes I can join per day?
@@ -422,7 +417,6 @@ nlu:
     - Can I view the quiz results immediately after it ends?
     - Are there any special quizzes for advanced participants?
     - How do I prepare for a quiz?
-    - What are the rules for team quizzes?
     - How do I report an issue during a quiz?
     - What is the minimum number of participants required for a quiz to start?
     - Can I invite friends to join a quiz with me?
@@ -488,6 +482,7 @@ nlu:
     - How do I unsubscribe from quiz notifications?
     - What are the common reasons for disqualification in quizzes?
     - Can I provide feedback on the quizzes I participate in?
+
 - intent: quiz_rules
   examples: |
     - What are the general rules for the quiz?
@@ -522,6 +517,13 @@ nlu:
     - Can I get a refund if I accidentally join the wrong quiz?
     - How do I ensure I'm joining the correct quiz next time?
     - Is there a confirmation step before joining a quiz to prevent mistakes?
+    - Can you tell me about the quiz rules?
+    - What are the rules for team quizzes?
+    - Can you explain the rules and terms of the quiz?
+    - Where can I find information about the quiz rules?
+    - How long does each quiz last?
+    - What are the instructions for joining a quiz?
+    - Are there any specific rules for different types of quizzes?
 
 - intent: min_participants_quiz
   examples: |
@@ -1941,7 +1943,7 @@ nlu:
     - Logout instructions?
     - Steps to log out?
 
-- intent: ask_recorded_classb
+- intent: ask_recorded_class
   examples: |
     - We have recorded classes available
     - I'd like to learn more about your recorded classes

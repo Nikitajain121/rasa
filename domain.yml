@@ -5,17 +5,17 @@ intents:
 - about_company
 - account_recovery_process
 - affirm
-
+- logout_instructions
 - ask_why
 - available_quizzes
 - whats_bbcoin
 - buy_bb_money
 - compete_with_friends
 - connecting_in_room
-
+- ask_recorded_class
 - demo_class
 - deny
-
+- promote_brain_bucks_for_students
 - downloadable_materials
 - earn_bb_money
 - earning_rewards
@@ -108,7 +108,7 @@ intents:
 - terms_and_conditions
 - accidental_participation
 - quiz_time_limit
-- ask_recorded_class
+
 responses:
   utter_greet:
   - text: Hey! I'm Niki bot..I'm here to assist you. You can ask me any question related with Brainbucks.
@@ -1765,7 +1765,21 @@ responses:
       payload: /provide_support
   
   utter_whats_bbcoin:
-  - text: BB Coins are the money equivalents in Brain Bucks app having price of each coin as 1 Rs. 
+  - text: BB Coins are the money equivalents in Brain Bucks app having price of each coin as 1 Rs. You can use this from your wallet to play quizzes, take subscription of courses and do many more things.
+          Play quiz and earn coins . Also you can add money from you account to purchase these coins. 
+    buttons:
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
 slots:
   user_name:
     type: text
