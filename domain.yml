@@ -626,8 +626,20 @@ responses:
       payload: /room_queries
     - title: Issue Support
       payload: /provide_support
+
   utter_quiz_queries:
   - text: Here are your list of queries you can pose about quizzes--
+            1. Available Quizzes
+            2. Internet Connection Loss
+            3. Suggesting Quiz Topics
+            4. Quiz Eligibility
+            5. Quiz Instructions
+            6. Quiz Registration Process
+            7. Quiz Rules
+            8. Reporting mistake in quiz
+            9. Minimum Participants in Quiz
+            10.Paid vs Unpaid Quizzes
+     
     buttons:
     - title: Available Quizzes
       payload: /available_quizzes

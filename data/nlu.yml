@@ -277,6 +277,7 @@ nlu:
     - Are there any precautions I need to take before updating the app?
 - intent: course_queries
   examples: |
+    - course queries
     - What courses are currently available?
     - Tell me more about the courses offered.
     - I want to explore the courses you provide.
@@ -359,10 +360,9 @@ nlu:
     - How long does it take to get started once I sign up?
     - log in to app.
     - log in 
-    - sign 
+    - sign up
     - how can I signup and login in App
     - how can I signup in App
-
 
 - intent: live_class
   examples: |
@@ -398,6 +398,8 @@ nlu:
 
 - intent: quiz_queries
   examples: |
+    - quiz queries
+    - what are quiz queries
     - How many participants are required for the quiz?
     - Am I eligible to participate in the quiz?
     - What's the difference between paid and unpaid quizzes?
@@ -618,6 +620,7 @@ nlu:
     - Is there a feedback mechanism for rejected quiz topic suggestions?
     - can I get suggest Quizzes related to my course
     - Are there any specific channels for communicating quiz topic suggestions?
+    
 - intent: room_queries
   examples: |
     - what is a room
