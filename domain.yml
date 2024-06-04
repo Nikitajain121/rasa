@@ -8,7 +8,7 @@ intents:
 
 - ask_why
 - available_quizzes
-
+- whats_bbcoin
 - buy_bb_money
 - compete_with_friends
 - connecting_in_room
@@ -108,6 +108,7 @@ intents:
 - terms_and_conditions
 - accidental_participation
 - quiz_time_limit
+- ask_recorded_class
 responses:
   utter_greet:
   - text: Hey! I'm Niki bot..I'm here to assist you. You can ask me any question related with Brainbucks.
@@ -626,7 +627,7 @@ responses:
     - title: Issue Support
       payload: /provide_support
   utter_quiz_queries:
-  - text: Here are you list of queries you can pose about quizzes--
+  - text: Here are your list of queries you can pose about quizzes--
     buttons:
     - title: Available Quizzes
       payload: /available_quizzes
@@ -675,7 +676,7 @@ responses:
 
       9. Terms and Conditions: Participants must agree to the terms and conditions set forth by the organizers before participating in the quiz, including rules regarding privacy, data usage, and any other relevant aspects of the quiz.
     
-      10. Wrong quiz joined: If you join a quiz by mistake, we are unable to refund your bb_money .
+      10. Wrong quiz joined: If you join a quiz by mistake, we are unable to refund your BB Coins .
                           We recommend playing the quiz anyway, as you still have a chance to win!
 
       11. Quiz time limit : The time limit for each question in the quiz will be specified before the quiz begins. 
@@ -729,9 +730,9 @@ responses:
       payload: /provide_support
   utter_quiz_eligibility:
   - text: "The quiz is open to individuals who meet the minimum age requirement (i.e., 18 years or older) and comply with any additional eligibility criteria specified by the organizers. 
-      Participants must fulfill all eligibility criteria to participate in the quiz.
-      However, There is no limit to the number of quizzes you can participate in on BrainBucks!
-      Feel free to join as many quizzes as you'd like and test your knowledge to the fullest."
+          Participants must fulfill all eligibility criteria to participate in the quiz.
+          However, There is no limit to the number of quizzes you can participate in on BrainBucks!
+          Feel free to join as many quizzes as you'd like and test your knowledge to the fullest."
     buttons:
     - title: BrainBucks App
       payload: /about_company
@@ -747,8 +748,8 @@ responses:
       payload: /provide_support
 
   utter_paid_vs_unpaid_quizzes:
-  - text: 'There are two types of quizzes: free to join and paid. Free quizzes do not require any entry fee, while paid quizzes require participants to pay an entry fee to join. The entry fee for paid quizzes may vary depending on the quiz. Each game requires a different amount of bb_money , typically ranging from 5 to 50 bb_money .
-More the fee , higher the reward . Best of luck !!'
+  - text: 'There are two types of quizzes: free to join and paid. Free quizzes (Free Trivia) do not require any entry fee, while paid quizzes require participants to pay an entry fee to join. The entry fee for paid quizzes may vary depending on the quiz. Each game requires a different amount of BB coins , typically ranging from 5 to 50 BB Coins .
+            More the fee , higher the reward . Best of luck !!'
     buttons:
     - title: BrainBucks App
       payload: /about_company
@@ -792,8 +793,7 @@ More the fee , higher the reward . Best of luck !!'
 
       4. Select any category to start the quiz.
 
-      5. The quiz will consist of a predetermined number of multiple-choice questions based on a predefined topic.
-       
+      5. The quiz will consist of a predetermined number of multiple-choice questions based on a predefined topic.   
   
     buttons:
     - title: BrainBucks App
@@ -827,8 +827,6 @@ More the fee , higher the reward . Best of luck !!'
       payload: /room_queries
     - title: Issue Support
       payload: /provide_support
-
-
 
   utter_joining_room:
   - text: To join a room, simply navigate to the rooms section and select the room you'd like to join. Follow the prompts to enter the room and start participating.
@@ -904,7 +902,6 @@ More the fee , higher the reward . Best of luck !!'
       payload: /room_queries
     - title: Issue Support
       payload: /provide_support
-
 
   utter_get_paid_instructions:
   - text: |-
@@ -1018,7 +1015,7 @@ More the fee , higher the reward . Best of luck !!'
     - title: Issue Support
       payload: /provide_support
   utter_earn_bb_money:
-  - text: You can earn bb_money by participating in quizzes, completing challenges, inviting friends to the platform, and engaging in other activities specified on the platform.
+  - text: You can earn BB Coins by participating in quizzes, completing challenges, inviting friends to the platform, and engaging in other activities specified on the platform.
     buttons:
     - title: Buy BBMoney
       payload: /buy_bb_money
@@ -1032,23 +1029,19 @@ More the fee , higher the reward . Best of luck !!'
       payload: /payment_issue
     - title: Prizes Distribution
       payload: /prizes_distribution
- 
     - title: Subscription Cancellation
       payload: /subscription_cancellation
     - title: Subscription Cost
       payload: /subscription_cost
     - title: Use BBMoney
-      payload: /use_bb_money
-    
-      
+      payload: /use_bb_money    
     - title: Withdrawal Problem
       payload: /withdrawal_problem
-   
     - title: Main Menu
       payload: /greet
  
   utter_use_bb_money:
-  - text: bb_money  can be used to play games, participate in quizzes, unlock premium features, and access exclusive content on the platform.
+  - text: BB Coins can be used to play games, participate in quizzes, unlock premium features, and access exclusive content on the platform.
     buttons:
     - title: BrainBucks App
       payload: /about_company
@@ -1064,7 +1057,7 @@ More the fee , higher the reward . Best of luck !!'
       payload: /provide_support 
 
   utter_minimum_withdrawal_limit:
-  - text: The minimum withdrawal limit for bb_money is 50 Rs.At present there is no max cap on money you can withdraw. 
+  - text: The minimum withdrawal limit for BB Coins is 50 Rs. At present there is no max cap on money you can withdraw. You will get your withdrawal amount with in 2-3 working days.
     buttons:
     - title: BrainBucks App
       payload: /about_company
@@ -1095,7 +1088,7 @@ More the fee , higher the reward . Best of luck !!'
     - title: Issue Support
       payload: /provide_support
   utter_buy_bb_money:
-  - text: To buy bb_money , you need to open an account on our platform. Once you have an active account, you can purchase bb_money  by clicking on the 'Buy bb_money ' link. Follow the instructions provided to complete the purchase.
+  - text: To buy BB Coins, you need to open an account on our platform. Once you have an active account, you can purchase  BB Coins by clicking on the 'Buy BB Coins' link. Follow the instructions provided to complete the purchase.
     buttons:
     - title: BrainBucks App
       payload: /about_company
@@ -1205,7 +1198,7 @@ More the fee , higher the reward . Best of luck !!'
       payload: /provide_support
 
   utter_internet_connection_loss:
-  - text: If you lose your internet connection during a game, our system will attempt to reconnect multiple times. However, if the connection cannot be established, your game will end, and bb_money  will not be refunded.
+  - text: If you lose your internet connection during a game, our system will attempt to reconnect multiple times. However, if the connection cannot be established, your game will end, and Brain Bucks coins will not be refunded.
     buttons:
     - title: BrainBucks App
       payload: /about_company
@@ -1527,7 +1520,7 @@ More the fee , higher the reward . Best of luck !!'
   - text: >
       **Paid Quizzes:**
       - Require participants to pay an entry fee to join.
-      - The entry fee may vary depending on the quiz, typically ranging from 5 to 50 bb_money.
+      - The entry fee may vary depending on the quiz, typically ranging from 5 to 50 Brain Bucks coins.
       - Higher entry fees usually mean higher rewards.
       - Best of luck!!
     buttons:
@@ -1549,7 +1542,7 @@ More the fee , higher the reward . Best of luck !!'
       **Free Quizzes:**
       - Do not require any entry fee to join.
       - Available to all users without any cost.
-      - Participate and test your knowledge without spending bb_money.
+      - Participate and test your knowledge without spending Brain Bucks Coins.
       - Enjoy and learn!
     buttons:
     - title: BrainBucks App
@@ -1614,7 +1607,7 @@ More the fee , higher the reward . Best of luck !!'
       payload: /provide_support
 
   utter_monetary_rewards:
-  - text: "The monetary rewards will be distributed to the top 20% rank holders based on the final rankings."
+  - text: "The monetary rewards will be distributed to the top 20% rank holders based on the final rankings.Reward will be distributed in the wallet as and when the quiz ends "
     buttons:
     - title: BrainBucks App
       payload: /about_company
@@ -1678,7 +1671,7 @@ More the fee , higher the reward . Best of luck !!'
       payload: /provide_support
 
   utter_accidental_participation:
-  - text: "If you join a quiz by mistake, we are unable to refund your bb_money. We recommend playing the quiz anyway, as you still have a chance to win!"
+  - text: "If you join a quiz by mistake, we are unable to refund your Brain Bucks Coins. We recommend playing the quiz anyway, as you still have a chance to win!"
     buttons:
     - title: BrainBucks App
       payload: /about_company
@@ -1755,6 +1748,24 @@ More the fee , higher the reward . Best of luck !!'
     - title: Issue Support
       payload: /provide_support
       
+  utter_recorded_class_response:
+  - text: "We offer a variety of recorded classes on various subjects and topics. You can access them anytime at your convenience. Explore our course catalog to find the recorded classes that suit your needs."
+    buttons:
+    - title: BrainBucks App
+      payload: /about_company
+    - title: Course Queries
+      payload: /course_queries
+    - title: Quiz Queries
+      payload: /quiz_queries
+    - title: BBCoins
+      payload: /earn_bb_money
+    - title: Rooms
+      payload: /room_queries
+    - title: Issue Support
+      payload: /provide_support
+  
+  utter_whats_bbcoin:
+  - text: BB Coins are the money equivalents in Brain Bucks app having price of each coin as 1 Rs. 
 slots:
   user_name:
     type: text

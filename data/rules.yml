@@ -463,3 +463,8 @@ rules:
   steps:
   - intent: logout_instructions
   - action: utter_logout_instructions
+
+- rule: Respond to utter_recorded_class_response
+  steps:
+  - intent: ask_recorded_class
+  - action: utter_recorded_class_response

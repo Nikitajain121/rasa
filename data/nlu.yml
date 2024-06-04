@@ -381,6 +381,8 @@ nlu:
     - Are live classes accessible from mobile devices?
     - Can I access past live sessions?
     - Do live classes have a specific duration or schedule?
+    - Is BrainBucks provide competitive Exam video recorded Lectures
+
 - intent: demo_class
   examples: |
     - Are there any upcoming demo classes?
@@ -500,25 +502,6 @@ nlu:
     - Can you provide an overview of the quiz guidelines?
     - I'm unsure about the rules of the quiz, can you clarify?
     - Are there specific instructions I should know before participating in the quiz?
-    - How much time do I have to answer each question in the quiz?
-    - Is there a time limit for completing the quiz?
-    - What is the duration of the quiz?
-    - Can you tell me the time allocated per question in the quiz?
-    - How long do I have to finish the entire quiz?
-    - What is the maximum time allowed for the quiz?
-    - Are there any time constraints for the quiz?
-    - Can I extend the time limit for the quiz?
-    - Is there flexibility in the quiz duration?
-    - What happens if I exceed the time limit for the quiz?
-    - How is the time calculated for the quiz?
-    - Are breaks included in the quiz duration?
-    - Can I pause the quiz timer?
-    - Is the quiz time limit adjustable?
-    - Will I receive a warning before the quiz time runs out?
-    - What happens if I finish the quiz before the allocated time?
-    - Are there penalties for not completing the quiz within the time limit?
-    - Can I request additional time for the quiz due to unforeseen circumstances?
-    - Does the quiz time limit vary based on the difficulty of questions?
     - What are the terms and conditions for participating?
     - Are there any rules I need to agree to before participating?
     - Can you provide information on the terms and conditions?
@@ -631,6 +614,7 @@ nlu:
     - How are quiz topics categorized or classified?
     - Are there any restrictions on the content of suggested quiz topics?
     - Is there a feedback mechanism for rejected quiz topic suggestions?
+    - can I get suggest Quizzes related to my course
     - Are there any specific channels for communicating quiz topic suggestions?
 - intent: room_queries
   examples: |
@@ -814,7 +798,7 @@ nlu:
     - What types of tests can I find on Brainbucks?
     - Are there any specific quiz topics I can explore on Brainbucks?
     - what type of questions will be asked in quizzes
-    
+
 - intent: earning_rewards
   examples: |
     - How do I earn rewards on Brainbucks?
@@ -828,7 +812,7 @@ nlu:
     - Earning points on Brainbucks?
     - How to gather rewards?
     - Getting rewards on Brainbucks?
-  
+   
 - intent: compete_with_friends
   examples: |
     - Can I compete with my friends on Brainbucks?
@@ -1321,7 +1305,11 @@ nlu:
     - What's the largest amount for withdrawal?
     - Is there a maximum cash out limit?
     - Largest BB money withdrawal amount
-
+    - Can i get immediate refunds?
+    - in how many days i can get my money ?
+    - refunds i  how much time?
+    - can I get withdrawl money instant in my account?
+   
 - intent: internet_connection_loss
   examples: |
     - What happens if I lose my internet connection during a game?
@@ -1356,6 +1344,8 @@ nlu:
     - Can I earn back BB money by playing games?
     - Is there a way to test games before spending BB money?
     - Are there subscription options that include access to games?
+    - Can I play on Brain Bucks App
+
 
 - intent: buy_bb_money
   examples: |
@@ -1803,16 +1793,16 @@ nlu:
 
 - intent: query_free_quizzes
   examples: |
-    - Tell me about free quizzes
-    - What are free quizzes?
-    - Information on free quizzes
-    - Details about free quizzes
-    - Explain free quizzes
-    - How do free quizzes work?
-    - Are free quizzes available?
-    - Do I need to pay for free quizzes?
-    - How to join free quizzes?
-    - What is the reward for free quizzes?
+    - Tell me about Free quizzes (Free Trivia)
+    - What are Free quizzes (Free Trivia)?
+    - Information on Free quizzes (Free Trivia)
+    - Details about Free quizzes (Free Trivia)
+    - Explain Free quizzes (Free Trivia)
+    - How do Free quizzes (Free Trivia) work?
+    - Are Free quizzes (Free Trivia) available?
+    - Do I need to pay for Free quizzes (Free Trivia)?
+    - How to join Free quizzes (Free Trivia)?
+    - What is the reward for Free quizzes (Free Trivia)?
 
 
 - intent: quiz_eligibility
@@ -1854,6 +1844,7 @@ nlu:
     - How are the monetary rewards distributed?
     - What can I win in terms of money?
     - How much money can I earn from the quiz?
+    - When I get my earning rewards in wallet
 
 - intent: tiebreaker_rules
   examples: |
@@ -1894,6 +1885,28 @@ nlu:
     - What happens if I exceed the time limit?
     - Is there a time limit for the quiz?
     - How strict is the time limit for answering?
+    - time duration of  quizzes?
+    - duration of quizzes
+    - How much time do I have to answer each question in the quiz?
+    - Is there a time limit for completing the quiz?
+    - What is the duration of the quiz?
+    - Can you tell me the time allocated per question in the quiz?
+    - How long do I have to finish the entire quiz?
+    - What is the maximum time allowed for the quiz?
+    - Are there any time constraints for the quiz?
+    - Can I extend the time limit for the quiz?
+    - Is there flexibility in the quiz duration?
+    - What happens if I exceed the time limit for the quiz?
+    - How is the time calculated for the quiz?
+    - Are breaks included in the quiz duration?
+    - Can I pause the quiz timer?
+    - Is the quiz time limit adjustable?
+    - Will I receive a warning before the quiz time runs out?
+    - What happens if I finish the quiz before the allocated time?
+    - Are there penalties for not completing the quiz within the time limit?
+    - Can I request additional time for the quiz due to unforeseen circumstances?
+    - Does the quiz time limit vary based on the difficulty of questions?
+
 
 - intent: promote_brain_bucks_for_students
   examples: |
@@ -1927,6 +1940,24 @@ nlu:
     - How to sign out?
     - Logout instructions?
     - Steps to log out?
+
+- intent: ask_recorded_classb
+  examples: |
+    - We have recorded classes available
+    - I'd like to learn more about your recorded classes
+    - What recorded classes do you offer?
+    - Can I access recorded classes anytime?
+    - How do I find the recorded classes I'm interested in?
+
+- intent: whats_bbcoin
+  examples: |
+    - BB money ??
+    - BB coin?
+    - BB coins?
+    - Brain bucks coins
+    - brainbucks money
+    - coins on brain bucks
+
 
 - synonym: bb_money
   examples: |
