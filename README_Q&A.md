@@ -294,4 +294,166 @@ It copies all local project files into the container’s working directory (`/sr
 
 ---
 
+## ⚙️ Rasa `config.yml` QnA
+
+### 🔁 Q39: What is the purpose of the `pipeline` section in `config.yml`?
+**Answer:**  
+It defines the sequence of components used for Natural Language Understanding (NLU), such as tokenization, featurization, intent classification, and entity extraction.
+
+---
+
+### 🧩 Q40: What does the `WhitespaceTokenizer` component do?
+**Answer:**  
+It splits the user input into tokens based on whitespace, preparing the text for further processing.
+
+---
+
+### 🔍 Q41: How does the `RegexFeaturizer` help in NLU?
+**Answer:**  
+It extracts features from user inputs by matching predefined regular expressions, helping detect patterns in the text.
+
+---
+
+### 🕸️ Q42: What is the role of `CRFEntityExtractor`?
+**Answer:**  
+It uses Conditional Random Fields (CRF) to extract entities by considering the context and sequence of tokens, improving entity recognition accuracy.
+
+---
+
+### 🔄 Q43: What is the function of `EntitySynonymMapper`?
+**Answer:**  
+It maps different entity values to a canonical synonym, ensuring consistency in how entities are handled internally.
+
+---
+
+### 📊 Q44: Why use `CountVectorsFeaturizer` with `analyzer: "char_wb"` and n-grams?
+**Answer:**  
+This featurizer creates vector representations based on character n-grams within word boundaries, capturing subword information useful for recognizing typos or variations.
+
+---
+
+### 🧠 Q45: What does the `DIETClassifier` component do?
+**Answer:**  
+It is a transformer-based classifier that jointly performs intent classification and entity extraction, providing efficient and accurate predictions.
+
+---
+
+### 🧭 Q46: How does `FallbackClassifier` improve conversation flow?
+**Answer:**  
+It triggers fallback actions when the confidence of intent recognition falls below the specified threshold (0.4), helping handle unclear user inputs gracefully.
+
+---
+
+### 📜 Q47: What is the role of `RulePolicy` in the `policies` section?
+**Answer:**  
+It manages simple and predictable conversation flows (rules), including fallback handling based on confidence thresholds.
+
+---
+
+### 🔄 Q48: Why is `MemoizationPolicy` important?
+**Answer:**  
+It remembers previous conversation turns and helps the bot predict the next action based on exact dialogue history matches, useful for replicating story flows.
+
+---
+
+### 📝 Q49: Why is `SpacyNLP` and `SpacyEntityExtractor` included?
+**Answer:**  
+`SpacyNLP` provides a pretrained language model for better text processing, while `SpacyEntityExtractor` leverages SpaCy’s entity recognition to extract entities like PERSON.
+
+---
+
+### 🎯 Q50: What is the significance of setting epochs for `DIETClassifier` and `ResponseSelector` to 150?
+**Answer:**  
+More epochs generally mean more training iterations, which can improve model accuracy but increase training time. Here, both are set to 150 to balance performance.
+
+---
+
+### 🔍 Q51: What is the difference between `ResponseSelector` and `DIETClassifier`?
+**Answer:**  
+- `DIETClassifier`: Used for intent classification and entity extraction.  
+- `ResponseSelector`: Used to classify user inputs into predefined response templates, useful for FAQs or chitchat.
+
+---
+
+### ⚠️ Q52: Why might the `FallbackClassifier` threshold be set at 0.4?
+**Answer:**  
+A threshold of 0.4 means the bot will trigger fallback if intent confidence is below 40%, balancing between false positives and catching uncertain inputs.
+
+---
+
+### 🧩 Q53: What are the commented-out lines about in the config file?
+**Answer:**  
+They show alternative or previous pipeline configurations and provide notes on the role of certain components like CRF, lexical-syntactic featurizer, and vectorizers.
+
+---
+
+### 📌 Q54: What does the `version: "3.1"` specify?
+**Answer:**  
+It indicates the version of the Rasa configuration schema to ensure compatibility with the Rasa framework.
+
+---
+# Why Use Particular Policies in Rasa? Q&A
+
+---
+
+### Q1: Why did you use `RulePolicy` in the config.yml?
+
+**Answer:**  
+`RulePolicy` is used to handle simple, predictable conversation paths such as FAQs, greetings, or fallback handling. It allows defining explicit conversational rules that must be strictly followed and ensures fallback actions are triggered when confidence falls below a threshold (0.4).
+
+**Example:**  
+User asks "What are your hours?" → Bot replies with a fixed answer using a rule.
+
+---
+
+### Q2: Why did you use `MemoizationPolicy` in the config.yml?
+
+**Answer:**  
+`MemoizationPolicy` remembers exact conversation turn histories and predicts the next action if the current state matches a memorized sequence. It is effective for short, repetitive multi-turn dialogues and predefined stories.
+
+**Example:**  
+User says "Hi" → Bot replies "Hello, how can I help?" → User asks about pricing → Bot replies with pricing info. This exact sequence is memorized for quick response prediction.
+
+---
+
+### Q3: Why not use other policies like `TEDPolicy` or `AugmentedMemoizationPolicy`?
+
+**Answer:**  
+- **TEDPolicy** is transformer-based and better for complex, flexible dialogues requiring generalization but is more resource-intensive.  
+- **AugmentedMemoizationPolicy** offers some generalization but adds complexity.  
+- Your bot’s current requirements are simpler and don’t need these advanced policies yet.
+
+---
+
+### Q4: Why avoid deprecated or less flexible policies like `FallbackPolicy` or `MappingPolicy`?
+
+**Answer:**  
+- `FallbackPolicy` is deprecated and replaced by the fallback mechanism in `RulePolicy`.  
+- `MappingPolicy` is less flexible, mainly used for direct intent-action mappings in simple bots, which may not suit more dynamic conversations.
+
+---
+
+### Q5: When should you consider switching or adding other policies?
+
+**Answer:**  
+- When your bot needs to handle **complex conversations** that are not predictable or memorized.  
+- If you want the bot to **generalize to unseen user inputs** better.  
+- When working with **large dialogue datasets** or requiring transformer-based prediction.
+
+---
+
+### Summary Table
+
+| Policy                | Purpose                                  | Why Used / Not Used Here                         |
+|-----------------------|------------------------------------------|-------------------------------------------------|
+| `RulePolicy`          | Handle simple rules and fallback        | Used for predictable flows and fallback control |
+| `MemoizationPolicy`   | Memorize exact conversation sequences   | Used for fast, accurate prediction in known flows |
+| `TEDPolicy`           | Transformer-based, flexible dialogs     | Not used due to complexity and resource needs    |
+| `AugmentedMemoizationPolicy` | Mix of memoization + generalization | Not needed for current bot complexity            |
+| `FallbackPolicy`      | Old fallback mechanism                   | Deprecated, replaced by `RulePolicy`             |
+| `MappingPolicy`       | Direct intent to action mapping          | Less flexible, avoided for richer conversations  |
+
+---
+
+
 
