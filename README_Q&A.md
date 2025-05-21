@@ -539,7 +539,170 @@ User says "Hi" → Bot replies "Hello, how can I help?" → User asks about pric
 
 ---
 
+# RASA domain.yml - Interview Questions & Answers
+
+---
+
+### Q1: What is the purpose of the `domain.yml` file in RASA?
+
+**A1:**  
+The `domain.yml` file defines the core components of the bot such as intents, entities, slots, responses, actions, and forms. It acts as the central configuration describing the bot's capabilities and conversational elements.
+
+---
+
+### Q2: What key sections are typically present in a `domain.yml` file?
+
+**A2:**  
+Typical sections include:  
+- **intents:** User intents the bot can recognize.  
+- **entities:** Extracted variables from user messages.  
+- **slots:** Variables to store context or conversation state.  
+- **responses:** Predefined bot replies mapped to response names.  
+- **actions:** Custom actions or default actions the bot can execute.  
+- **forms:** Used to collect multiple pieces of information from users.
+
+---
+
+### Q3: How do `slots` differ from `entities` in RASA?
+
+**A3:**  
+- **Entities** are extracted from the user’s current message and represent specific pieces of information (e.g., date, location).  
+- **Slots** store values over the conversation lifecycle, keeping track of information persistently to influence dialogue flow and decisions.
+
+---
+
+### Q4: What is the purpose of the `responses` section, and how do you define multiple variants?
+
+**A4:**  
+`responses` define bot replies mapped by unique response keys. You can provide multiple variations of a response as a list to enable the bot to randomly choose, making replies less repetitive and more natural.
+
+---
+
+### Q5: What role do `forms` play in the domain file?
+
+**A5:**  
+Forms automate the process of collecting multiple required pieces of information (slots) from the user by asking predefined questions. This ensures that all necessary data is gathered before proceeding.
+
+---
+
+### Q6: How do you add a new intent and corresponding response in the domain file?
+
+**A6:**  
+Add the intent name under `intents`, then add a response key under `responses` with the bot’s reply. For example:
 
 
+intents:
+  - greet
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you today?"
+### Q7: How are custom actions referenced in the domain file?
+
+**A7:**  
+Custom actions are listed under the `actions:` section by their Python action class name or action name as registered. This enables RASA to invoke the action when specified in stories or rules.
+
+---
+
+### Q8: Why is it important to keep the domain file consistent with your training data (stories/rules)?
+
+**A8:**  
+The domain file defines the scope of what the bot can understand and respond to. If intents, slots, or actions are missing or inconsistent between the domain and training data, the bot may fail to parse messages or execute workflows correctly.
+
+---
+
+### Q9: Can slots be of different types, and how does that affect bot behavior?
+
+**A9:**  
+Yes, slots can have types like `text`, `bool`, `float`, `list`, or even custom types. Slot types influence how values are stored and how conditions in stories/rules are evaluated, affecting branching and flow control.
+
+---
+
+### Q10: How would you manage responses in multiple languages using the domain file?
+
+**A10:**  
+You can define language-specific responses by creating separate domain files per language or using structured responses with language keys, depending on RASA version and multilingual strategy.
+
+
+
+
+# RASA endpoints.yml - Interview Q&A
+
+---
+
+### Q1: What is the purpose of the `action_endpoint` in RASA?
+
+**A1:**  
+The `action_endpoint` specifies the URL where the RASA custom action server is running. This server handles custom actions such as API calls, database queries, or any backend logic that cannot be handled by predefined responses. It allows the bot to perform dynamic operations during conversations.
+
+---
+
+### Q2: Why might the `action_endpoint` URL differ between Docker and local setups?
+
+**A2:**  
+In a Docker environment, services communicate via container names or internal network aliases, so the URL is often something like `http://app:5055/webhook`. In local setups, the URL points to `localhost` since the action server runs on the local machine. This distinction helps RASA connect to the correct action server depending on deployment.
+
+---
+
+### Q3: What is the role of the tracker store in RASA?
+
+**A3:**  
+The tracker store maintains the state of conversations by storing all events and dialogue history. This persistence enables the bot to remember context across messages and recover conversation state even after restarts or crashes.
+
+---
+
+### Q4: What are some common types of tracker stores supported by RASA?
+
+**A4:**  
+RASA supports multiple tracker stores including:  
+- In-memory (default, not persistent)  
+- SQL databases (PostgreSQL, MySQL, SQLite)  
+- Redis (key-value store)  
+- MongoDB (NoSQL database)  
+
+Each has use cases depending on scalability, persistence, and performance needs.
+
+---
+
+### Q5: Why is it a security risk to store database credentials directly in the endpoints file?
+
+**A5:**  
+Storing sensitive credentials like usernames and passwords in plain text within config files exposes them to anyone who has access to the codebase or deployment environment. This can lead to unauthorized access or data breaches. Best practice is to use environment variables or secret management systems.
+
+---
+
+### Q6: What is the purpose of configuring a model server URL in RASA?
+
+**A6:**  
+Configuring a model server URL allows RASA to fetch the latest trained models automatically from a remote server. This enables continuous deployment workflows where models can be updated without manual intervention and the bot can serve the newest version seamlessly.
+
+---
+
+### Q7: How does event streaming (event brokers) enhance RASA bots?
+
+**A7:**  
+Event brokers allow streaming of conversation events (user messages, bot actions, slots set) to external systems like Kafka, RabbitMQ, or other message queues. This integration is useful for analytics, monitoring, real-time alerts, or triggering workflows outside RASA.
+
+---
+
+### Q8: What changes would you recommend before deploying this endpoints file to a production environment?
+
+**A8:**  
+- Secure credentials via environment variables or secrets managers instead of plain text.  
+- Use a managed or cloud-hosted database for tracker store for scalability and reliability.  
+- Configure a model server URL for automated model updates.  
+- Enable an event broker if real-time event streaming or monitoring is needed.  
+- Use HTTPS endpoints to secure communication.
+
+---
+
+### Q9: How does persistent tracking improve user experience in chatbots?
+
+**A9:**  
+Persistent tracking stores conversation history and user context, allowing the bot to maintain continuity in conversations across sessions or unexpected interruptions. This leads to more natural, context-aware interactions and avoids forcing users to repeat information.
+
+---
+
+If you want, I can also provide answers with code snippets or configuration examples to deepen your preparation.
 
 
