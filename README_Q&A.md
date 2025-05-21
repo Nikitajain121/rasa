@@ -743,4 +743,71 @@ Docker Compose allows defining and running multi-container applications. It simp
 
 ---
 
+# Key Interview Q&A: RASA Chatbot and Frontend Integration
+
+---
+
+### Q1: What is RASA?
+
+**A:**  
+RASA is an open-source framework for building conversational AI chatbots with natural language understanding (NLU) and dialogue management.
+
+---
+
+### Q2: How do you connect a RASA chatbot with a web frontend?
+
+**A:**  
+You use Socket.IO or REST APIs for communication between frontend and RASA backend. Socket.IO enables real-time message exchange.
+
+---
+
+### Q3: What is the purpose of `session_id` in chatbot interaction?
+
+**A:**  
+`session_id` maintains user conversation context across multiple messages, allowing the bot to keep track of the dialogue state.
+
+---
+
+### Q4: How are messages sent and received using Socket.IO?
+
+**A:**  
+User messages are emitted using an event like `user_uttered`, and bot responses are received via `bot_uttered` event listeners.
+
+---
+
+### Q5: How do you handle bot responses in the frontend?
+
+**A:**  
+Bot messages are appended dynamically to the chat window with distinct styling for sent and received messages, enhancing user experience.
+
+---
+
+### Q6: How do you implement text-to-speech in the chatbot frontend?
+
+**A:**  
+Using the browser's `speechSynthesis` API, bot text responses can be converted to voice output, controlled by a toggle button for enabling/disabling voice.
+
+---
+
+### Q7: What are quick replies and how are they implemented?
+
+**A:**  
+Quick replies are predefined response buttons that users can click to send a payload directly to the bot, implemented by rendering clickable buttons in the chat UI.
+
+---
+
+### Q8: How do you reset a chatbot session?
+
+**A:**  
+By clearing the stored `session_id` or sending a `/restart` intent to the RASA backend, resetting the conversation state.
+
+---
+
+### Q9: What are best practices for securing communication between frontend and RASA?
+
+**A:**  
+Use HTTPS, implement CORS restrictions, authenticate sessions, and consider tokens or API keys to protect backend endpoints.
+
+---
+
 
