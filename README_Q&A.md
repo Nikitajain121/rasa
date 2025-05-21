@@ -158,7 +158,7 @@ E.g., all forms like "BB coin", "virtual currency", etc., are mapped to `bb_mone
 **Answer:**  
 `rules.yml` defines strict, single-turn conversations.  
 Example:
-```yaml
+
 - rule: Respond to utter_recorded_class_response
   steps:
   - intent: ask_recorded_class
@@ -224,4 +224,74 @@ Overlapping examples between intents can confuse the classifier. It’s importan
 - Test frequently with `rasa interactive` and `rasa test`.
 
 ---
+
+## 🐳 Docker & CI/CD - Rasa Bot Deployment QnA
+
+### 🔁 Q31: What is the purpose of the main `Dockerfile` in the Rasa project?
+**Answer:**  
+The main Dockerfile sets up the environment to run the Rasa chatbot. It:
+- Uses Python 3.8.10 slim as the base image.
+- Installs Python dependencies from `requirements.txt`.
+- Copies the Rasa project files into the container.
+- (Optionally) includes commands to train the model or run the Rasa server.
+
+---
+
+### ⚙️ Q32: What does the Rasa custom action Dockerfile (`actions` folder) do?
+**Answer:**  
+It builds a Docker container specifically for the custom action server:
+- Base image: `rasa/rasa-sdk:3.6.2`.
+- Installs dependencies listed in `requirements_actions.txt`.
+- Copies the `actions/` folder into the image.
+- Switches from root to a safer non-root user (`1001`) to run the container.
+
+---
+
+### 🔄 Q33: Why is a separate Dockerfile used for custom actions?
+**Answer:**  
+To isolate the action server from the main Rasa chatbot. This ensures:
+- Cleaner deployment pipelines.
+- Smaller images per service.
+- Custom dependencies only in the action server.
+
+---
+
+### 🔐 Q34: What does the `USER 1001` line mean in Dockerfiles?
+**Answer:**  
+It switches from the default `root` user to a non-root user (`1001`) to follow Docker security best practices. This prevents accidental file or system modifications by running the container with limited permissions.
+
+---
+
+### 🚀 Q35: What is the role of `action_server.yml` GitHub Actions workflow?
+**Answer:**  
+It automates building and deploying the custom action server Docker image:
+- Triggers on `push` to the `main` branch.
+- Uses `RasaHQ/action-server-gha` GitHub Action to:
+  - Build the Docker image.
+  - Push it to DockerHub using credentials stored in GitHub secrets.
+
+---
+
+### 🧠 Q36: How can you tag your Docker image using GitHub Actions?
+**Answer:**  
+Using `${{ github.sha }}` assigns the image a unique tag based on the commit hash, which helps track and rollback to specific versions.
+
+---
+
+### 🔁 Q37: What files are critical to the Docker-based Rasa deployment?
+**Answer:**  
+- `Dockerfile` – for the main Rasa server.
+- `requirements.txt` – Python dependencies for Rasa bot.
+- `requirements_actions.txt` – dependencies for custom actions.
+- `Dockerfile` in `/actions/` – builds action server image.
+- `.github/workflows/action_server.yml` – CI/CD pipeline for deployment.
+
+---
+
+### 📦 Q38: Why is `COPY . .` used in the Dockerfile?
+**Answer:**  
+It copies all local project files into the container’s working directory (`/src`) so the Rasa bot can access training data, configuration, and models inside the container.
+
+---
+
 
