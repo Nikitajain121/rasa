@@ -138,3 +138,90 @@ Yes, you can extend `db.py` with `SELECT` statements and return values in a simi
 - Catch and log all exceptions, not just `OperationalError`.  
 - Return meaningful error messages to users and logs.  
 - Use connection pooling if scaled.
+
+---
+
+### 📘 Q21: What is the purpose of the `nlu.yml` file?
+**Answer:**  
+It contains training examples for user intents and synonyms. It helps RASA's NLU component classify user input correctly and map synonymous terms.
+
+---
+
+### 🔍 Q22: What are synonyms used for in `nlu.yml`?
+**Answer:**  
+Synonyms help normalize different expressions to a common value.  
+E.g., all forms like "BB coin", "virtual currency", etc., are mapped to `bb_money`.
+
+---
+
+### 💬 Q23: How does RASA use the `rules.yml` file?
+**Answer:**  
+`rules.yml` defines strict, single-turn conversations.  
+Example:
+```yaml
+- rule: Respond to utter_recorded_class_response
+  steps:
+  - intent: ask_recorded_class
+  - action: utter_recorded_class_response
+
+---
+
+### 🔁 Q24: How do rules differ from stories?
+**Answer:**
+
+- **Rules**: One-turn or simple predictable paths. Used for FAQs or fixed logic.  
+- **Stories**: Multi-turn conversations that reflect real user interactions.
+
+---
+
+### 📖 Q25: What happens in the `interactive_story_1` story?
+**Answer:**  
+This story handles greeting the user, extracting their name and phone number, and saving it. Steps include:
+1. User greets → bot replies.  
+2. User provides name → slot is set.  
+3. Bot asks for phone → user replies.  
+4. Slot is set → data is saved using a custom action.
+
+---
+
+### ⚙️ Q26: What is the purpose of `action_extract_slots` and `action_save_data`?
+**Answer:**
+
+- `action_extract_slots`: Extracts user input entities and sets them to slots.  
+- `action_save_data`: Custom action that likely saves user data (e.g., name, phone) to a database.
+
+---
+
+### 📦 Q27: Can one intent be reused in multiple stories or rules?
+**Answer:**  
+Yes. Intents like `get_user_name` or `greet` can appear in multiple stories/rules to model different conversation flows.
+
+---
+
+### 🛠️ Q28: How would you make `ask_recorded_class` intent more robust?
+**Answer:**
+
+- Add more diverse training examples.  
+- Ensure `utter_recorded_class_response` is relevant.  
+- Validate via RASA NLU interactive mode or tests.
+
+---
+
+### 🔐 Q29: What is the risk of overlapping intent examples like "BB coin?"?
+**Answer:**  
+Overlapping examples between intents can confuse the classifier. It’s important to:
+- Add clear, distinct examples.  
+- Use `rasa test nlu` and `rasa data validate` to detect confusion.
+
+---
+
+### 🔄 Q30: What is the best practice for writing stories?
+**Answer:**
+
+- Keep stories modular and focused on specific use cases.  
+- Avoid repetition — use rules for simple paths.  
+- Use checkpoints or story fragments for reusable sequences.  
+- Test frequently with `rasa interactive` and `rasa test`.
+
+---
+
