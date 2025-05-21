@@ -703,6 +703,44 @@ Persistent tracking stores conversation history and user context, allowing the b
 
 ---
 
-If you want, I can also provide answers with code snippets or configuration examples to deepen your preparation.
+### Docker Compose Interview Questions for RASA Setup
+
+---
+
+**Q1: What is the purpose of the `volumes` directive in the `docker-compose.yml` file?**  
+**A1:**  
+The `volumes` directive mounts a local directory or file into the container’s filesystem. In this case, `./:/src` mounts the current directory into `/src` inside the container, allowing the container to access local code, models, or configuration files dynamically.
+
+---
+
+**Q2: Why is the `command` field used in the `rasa` service, and what does it do?**  
+**A2:**  
+The `command` field overrides the default container command. Here, it runs the RASA server with API enabled, listens on port 5005, allows cross-origin requests (`--cors "*"`) and loads models from the `/models` directory.
+
+---
+
+**Q3: What is the difference between `ports` and `expose` in Docker Compose?**  
+**A3:**  
+`ports` maps container ports to host machine ports, allowing external access. `expose` makes the container port accessible to linked services but does not publish it to the host machine.
+
+---
+
+**Q4: Why might the `app` service have the `command` field commented out? What would the command `"rasa run actions"` do?**  
+**A4:**  
+The `command` might be commented out during development or testing. The command `"rasa run actions"` starts the action server to run custom actions defined for RASA, listening by default on port 5055.
+
+---
+
+**Q5: What is the significance of the `image` names `rasa_custom` and `rasa_action:latest`?**  
+**A5:**  
+`rasa_custom` likely refers to a custom-built Docker image for the RASA server with specific dependencies or models included. `rasa_action:latest` is the image for the action server that executes custom actions, built separately.
+
+---
+
+**Q6: How does Docker Compose facilitate the development and deployment of a RASA chatbot with custom actions?**  
+**A6:**  
+Docker Compose allows defining and running multi-container applications. It simplifies managing separate containers for the RASA server and custom action server, ensuring correct port mapping, volumes for live code updates, and easy startup with a single command.
+
+---
 
 
